@@ -17,7 +17,7 @@ module.exports = {
   },
   themeConfig: {
     // 所有页面自动生成侧边栏
-    sidebar: 'auto',
+    // sidebar: 'auto',
     // 仓库地址
     repo: 'https://github.com/scott180/vuepress-blog',
     // 仓库链接label
@@ -25,42 +25,65 @@ module.exports = {
     // 编辑链接
     editLinks: false,
     // 导航
-    nav: [
-	  	  
-	  { text: '笔记',
-	   items: [
-          { text: 'note', link: '/笔记/note'}, 
-          { text: 'java', link: '/笔记/java'}, 
-          { text: 'gitNote', link: '/笔记/gitNote'}, 
-          { text: 'linuxNote', link: '/笔记/linuxNote-x'}
-        ]
-      },
-      { text: '数据库', items: [
-          { text: 'mysqlNote', link: '/数据库/mysqlNote'}, 
-          { text: 'oracleNote', link: '/数据库/oracleNote'}, 
-          { text: '数据库隔离级别', link: '/数据库/数据库隔离级别'}, 
-          { text: 'mysql开启log-bin日志', link: '/数据库/mysql开启log-bin日志'}
-        ]
-      },
-	  { text: '资料', items: [
-          { text: 'eclipse', link: '/资料/eclipse'}, 
-          { text: 'docker', link: '/资料/docker'}, 
-          { text: 'markdown常用语法', link: '/资料/markdown常用语法'}, 
-          { text: 'gitlab、github绑定自定义域名', link: '/资料/gitlab、github绑定自定义域名'}, 
-          { text: 'git平台docsify布署markdown文件', link: '/资料/git平台docsify布署markdown文件'}, 
-          { text: 'gitlab、github、gitee布署mkdocs主题仓库', link: '/资料/gitlab、github、gitee布署mkdocs主题仓库'}
-        ]
-      },
-	  { text: '文档', items: [
-          { text: '古文诗词', link: '/文档/古文诗词'}, 
-          { text: '多宝塔碑', link: '/文档/多宝塔碑'}, 
-          { text: '《心经》书法', link: '/文档/《心经》书法'}, 
-          { text: '书法练习轨迹ReadMe', link: '/文档/书法练习轨迹ReadMe'}, 
-          { text: '无为徐生', link: '/文档/无为徐生'}
-        ]
-      }
+    nav: [  
+	  { text: '笔记',link: '/笔记/note'}, 
+      { text: '数据库', link: '/数据库/mysqlNote'}, 
+	  { text: '资料', link: '/资料/eclipse'}, 
+	  { text: '文档', link: '/文档/古文诗词'}, 
 
-  ]
+    ],
+    // 侧边栏
+    sidebar: {
+          '/笔记/': [{
+              title: '笔记',
+			  collapsable: true, // 可选的, 默认值是 true,
+              sidebarDepth: 2,   // 可选的, 默认值是 1
+              children: [
+                {title:'note',path:'note'},
+                {title:'java',path:'java'},
+                {title:'gitNote',path:'gitNote'},
+                {title:'linuxNote',path:'linuxNote-x'},
+              ]
+            }],
+		  '/数据库/': [{
+              title: '数据库',
+			  collapsable: true, // 可选的, 默认值是 true,
+              sidebarDepth: 2,   // 可选的, 默认值是 1
+              children: [
+                {title:'mysqlNote',path:'mysqlNote'},
+                {title:'oracleNote',path:'oracleNote'},
+                {title:'redis',path:'redis'},
+                {title:'mongo',path:'mongo'},
+                {title:'数据库隔离级别',path:'数据库隔离级别'},
+                {title:'mysql开启log-bin日志',path:'mysql开启log-bin日志'},
+              ]
+            }],
+		   '/资料/': [{
+              title: '资料',
+			  collapsable: true, // 可选的, 默认值是 true,
+              sidebarDepth: 2,   // 可选的, 默认值是 1
+              children: [
+                {title:'eclipse',path:'eclipse'},
+                {title:'markdown常用语法',path:'markdown常用语法'},
+                {title:'gitlab、github绑定自定义域名',path:'gitlab、github绑定自定义域名'},
+                {title:'git平台docsify布署markdown文件',path:'git平台docsify布署markdown文件'},
+                {title:'gitlab、github、gitee布署mkdocs主题仓库',path:'gitlab、github、gitee布署mkdocs主题仓库'},
+              ]
+            }],
+		   '/文档/': [{
+              title: '文档',
+			  collapsable: true, // 可选的, 默认值是 true,
+              sidebarDepth: 2,   // 可选的, 默认值是 1
+              children: [
+                {title:'古文诗词',path:'古文诗词'},
+                {title:'多宝塔碑',path:'多宝塔碑'},
+                {title:'《心经》书法',path:'《心经》书法'},
+                {title:'书法练习轨迹ReadMe',path:'书法练习轨迹ReadMe'},
+                {title:'无为徐生',path:'无为徐生'},
+              ]
+            }]
+        }
+		 
   
   },
   configureWebpack: {
