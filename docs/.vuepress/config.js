@@ -3,7 +3,7 @@ module.exports = {
   title: '个人博客',
   // 网页描述
   description: '程序员笔记*书法练习记录',
-  // base: '/vuepress-blog/',
+  base: '/vuepress-blog/',
   head: [
     // 页面icon
     ['link', { rel: 'icon', href: '/icon.png' }]
