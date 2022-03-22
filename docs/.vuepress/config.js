@@ -4,7 +4,6 @@ module.exports = {
   // 网页描述
   description: '程序员笔记*书法练习记录',
   // base: '/vuepress-blog/',
-  base: '/',
   head: [
     // 页面icon
     ['link', { rel: 'icon', href: '/icon.png' }]
