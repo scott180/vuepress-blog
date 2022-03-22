@@ -16,6 +16,14 @@ module.exports = {
 	extractHeaders: [ 'h2', 'h3', 'h4' ]
   },
   themeConfig: {
+	// 备案
+    record: '浙ICP备2022008289号-1',
+    recordLink: 'http://beian.miit.gov.cn',
+    cyberSecurityRecord: '公安部备案文案',
+    cyberSecurityLink: 'http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=123',
+    // 项目开始时间，只填写年份
+    startYear: '2022',
+	
     // 所有页面自动生成侧边栏
     // sidebar: 'auto',
     // 仓库地址
@@ -64,6 +72,7 @@ module.exports = {
               sidebarDepth: 2,   // 可选的, 默认值是 1
               children: [
                 {title:'eclipse',path:'eclipse'},
+                {title:'docker',path:'docker'},
                 {title:'markdown常用语法',path:'markdown常用语法'},
                 {title:'gitlab、github绑定自定义域名',path:'gitlab、github绑定自定义域名'},
                 {title:'git平台docsify布署markdown文件',path:'git平台docsify布署markdown文件'},
