@@ -89,6 +89,7 @@ module.exports = {
                 {title:'《心经》书法',path:'《心经》书法'},
                 {title:'书法练习轨迹ReadMe',path:'书法练习轨迹ReadMe'},
                 {title:'无为徐生',path:'无为徐生'},
+                {title:'徐书法',path:'徐书法'},
               ]
             }]
         }
