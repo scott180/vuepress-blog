@@ -65,7 +65,7 @@ npm run docs:build
 # 进入生成的文件夹
 cd docs/.vuepress/dist
 
-# 如果是发布到自定义域名
+# 如果是发布到自定义域名   `docs\.vuepress\config.js` 的 `base` 需注释掉
 # echo 'www.example.com' > CNAME
 
 git init
