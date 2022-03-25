@@ -12,5 +12,9 @@ features:
   details: 数据库及开发工具资料 mysql oracle idea github 
 - title: 文档
   details: 古文诗词 无为徐生 书法练习轨迹
-footer: Copyright © 2022 xushufa.cn
 ---
+
+::: slot footer
+Copyright © 2022 · xushufa.cn · 无为徐生 <br/>  [浙ICP备2022008289号-1]( http://beian.miit.gov.cn/ ) <img src="/ba.png" width="20"> [浙公网安备 33011002016354号]( http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33011002016354 ) 
+:::
+

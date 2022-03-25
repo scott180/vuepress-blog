@@ -1,9 +1,15 @@
 module.exports = {
-  theme: 'reco',
   // 页面标题
   title: '个人博客',
   // 网页描述
   description: '程序员笔记*书法练习记录',
+  // base: '/vuepress-blog/',
+  head: [
+    // 页面icon
+    ['link', { rel: 'icon', href: '/icon.png' }]
+  ],
+  // 端口号
+  port: 3000,
   markdown: {
     // 代码块行号
     lineNumbers: true,
@@ -18,8 +24,6 @@ module.exports = {
     // 项目开始时间，只填写年份
     startYear: '2022',
 	
-	// author: 'xushufa',
-	
     // 所有页面自动生成侧边栏
     // sidebar: 'auto',
     // 仓库地址
@@ -30,20 +34,17 @@ module.exports = {
     editLinks: false,
     // 导航
     nav: [  
-	  { text: '首页',link: '/'}, 
 	  { text: '笔记',link: '/笔记/note'}, 
       { text: '数据库', link: '/数据库/mysqlNote'}, 
 	  { text: '资料', link: '/资料/eclipse'}, 
 	  { text: '文档', link: '/文档/古文诗词'}, 
 
     ],
-	// 子侧边栏，在右侧
-	subSidebar: 'auto',
     // 侧边栏
     sidebar: {
           '/笔记/': [{
               title: '笔记',
-			  collapsable: false, // 可选的, 默认值是 true,
+			  collapsable: true, // 可选的, 默认值是 true,
               sidebarDepth: 2,   // 可选的, 默认值是 1
               children: [
                 {title:'note',path:'note'},
@@ -54,8 +55,8 @@ module.exports = {
             }],
 		  '/数据库/': [{
               title: '数据库',
-			  collapsable: false, // 可选的, 默认值是 true,
-              sidebarDepth: 1,   // 可选的, 默认值是 1
+			  collapsable: true, // 可选的, 默认值是 true,
+              sidebarDepth: 2,   // 可选的, 默认值是 1
               children: [
                 {title:'mysqlNote',path:'mysqlNote'},
                 {title:'oracleNote',path:'oracleNote'},
@@ -94,5 +95,14 @@ module.exports = {
         }
 		 
   
+  },
+  configureWebpack: {
+    resolve: {
+      // 静态资源的别名
+      alias: {
+        '@vuepress': '../images/vuepress',
+        '@vue': '../images/vue'
+      }
+    }
   }
 }
