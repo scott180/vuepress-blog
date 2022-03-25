@@ -13,13 +13,13 @@ lang: zh-CN
 heroText: 个人博客
 heroImage: /logo.jpg
 actionText: 开始 →
-actionLink: /文档/古文诗词
+actionLink: /书法/古文诗词
 features:
 - title: 笔记
   details: 程序员笔记 git linux java 
 - title: 资料
   details: 数据库及开发工具资料 mysql oracle idea github 
-- title: 文档
+- title: 书法
   details: 古文诗词 无为徐生 书法练习轨迹
 ---
 
@@ -129,7 +129,6 @@ cd -
 
 运行 `npm run deploy` 即可部署到github静态页面
 
-
 ---
 
 > 如出现样式丢失，css文件不能加载问题，需要在 `docs\.vuepress\config.js` 配置 `base` 字段
@@ -145,9 +144,7 @@ module.exports = {
 
 ---
 
-> vuepress 底部添加网站备案号：ICP备案号与公安备案号
-
-[富文本 footer]( https://vuepress.vuejs.org/zh/theme/default-theme-config.html#%E5%AF%8C%E6%96%87%E6%9C%AC-footer )
+> vuepress 底部添加网站备案号：ICP备案号与公安备案号  [富文本 footer]( https://vuepress.vuejs.org/zh/theme/default-theme-config.html#%E5%AF%8C%E6%96%87%E6%9C%AC-footer )
 
 ```
 ---

@@ -16,13 +16,6 @@ module.exports = {
 	extractHeaders: [ 'h2', 'h3', 'h4' ]
   },
   themeConfig: {
-	// 备案
-    record: '浙ICP备2022008289号-1',
-    recordLink: 'http://beian.miit.gov.cn',
-    cyberSecurityRecord: '公安部备案文案',
-    cyberSecurityLink: 'http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=123',
-    // 项目开始时间，只填写年份
-    startYear: '2022',
 	
     // 所有页面自动生成侧边栏
     // sidebar: 'auto',
@@ -37,7 +30,7 @@ module.exports = {
 	  { text: '笔记',link: '/笔记/note'}, 
       { text: '数据库', link: '/数据库/mysqlNote'}, 
 	  { text: '资料', link: '/资料/eclipse'}, 
-	  { text: '文档', link: '/文档/古文诗词'}, 
+	  { text: '书法', link: '/书法/古文诗词'}, 
 
     ],
     // 侧边栏
@@ -79,8 +72,8 @@ module.exports = {
                 {title:'gitlab、github、gitee布署mkdocs主题仓库',path:'gitlab、github、gitee布署mkdocs主题仓库'},
               ]
             }],
-		   '/文档/': [{
-              title: '文档',
+		   '/书法/': [{
+              title: '书法',
 			  collapsable: true, // 可选的, 默认值是 true,
               sidebarDepth: 2,   // 可选的, 默认值是 1
               children: [
