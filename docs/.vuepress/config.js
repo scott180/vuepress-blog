@@ -27,6 +27,7 @@ module.exports = {
     editLinks: false,
     // 导航
     nav: [  
+	  { text: '主页',link: '/'}, 
 	  { text: '笔记',link: '/笔记/note'}, 
       { text: '数据库', link: '/数据库/mysqlNote'}, 
 	  { text: '资料', link: '/资料/eclipse'}, 
