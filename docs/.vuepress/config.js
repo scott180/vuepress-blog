@@ -20,9 +20,9 @@ module.exports = {
     // 所有页面自动生成侧边栏
     // sidebar: 'auto',
     // 仓库地址
-    repo: 'https://github.com/scott180/vuepress-blog',
+    // repo: 'https://github.com/scott180/vuepress-blog',
     // 仓库链接label
-    repoLabel: 'Github',
+    // repoLabel: 'Github',
     // 编辑链接
     editLinks: false,
     // 导航
@@ -32,6 +32,7 @@ module.exports = {
       { text: '数据库', link: '/数据库/mysqlNote'}, 
 	  { text: '资料', link: '/资料/eclipse'}, 
 	  { text: '书法', link: '/书法/古文诗词'}, 
+	  { text: '关于我', link: '/关于我'},
 
     ],
     // 侧边栏
@@ -68,6 +69,7 @@ module.exports = {
                 {title:'eclipse',path:'eclipse'},
                 {title:'docker',path:'docker'},
                 {title:'markdown常用语法',path:'markdown常用语法'},
+                {title:'vuepress构建项目',path:'vuepress构建项目'},
                 {title:'gitlab、github绑定自定义域名',path:'gitlab、github绑定自定义域名'},
                 {title:'git平台docsify布署markdown文件',path:'git平台docsify布署markdown文件'},
                 {title:'gitlab、github、gitee布署mkdocs主题仓库',path:'gitlab、github、gitee布署mkdocs主题仓库'},
