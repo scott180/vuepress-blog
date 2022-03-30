@@ -68,6 +68,7 @@ module.exports = {
               children: [
                 {title:'eclipse',path:'eclipse'},
                 {title:'docker',path:'docker'},
+                {title:'nginx笔记',path:'nginx笔记'},
                 {title:'markdown常用语法',path:'markdown常用语法'},
                 {title:'vuepress构建项目',path:'vuepress构建项目'},
                 {title:'gitlab、github绑定自定义域名',path:'gitlab、github绑定自定义域名'},
