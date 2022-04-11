@@ -27,17 +27,18 @@ module.exports = {
     editLinks: false,
     // 导航
     nav: [  
-	  { text: '主页',link: '/'}, 
+	  { text: 'home',link: '/'}, 
 	  { text: '笔记',link: '/笔记/note'}, 
       { text: '数据库', link: '/数据库/mysqlNote'}, 
-	  { text: '资料', link: '/资料/eclipse'}, 
+	  { text: 'java', link: '/java/资料/javaNote'}, 
 	  { text: '书法', link: '/书法/古文诗词'}, 
 	  { text: '关于我', link: '/关于我'},
 
     ],
     // 侧边栏
     sidebar: {
-          '/笔记/': [{
+          '/笔记/': [
+		  {
               title: '笔记',
 			  collapsable: true, // 可选的, 默认值是 true,
               sidebarDepth: 2,   // 可选的, 默认值是 1
@@ -46,8 +47,26 @@ module.exports = {
                 {title:'java',path:'java'},
                 {title:'gitNote',path:'gitNote'},
                 {title:'linuxNote',path:'linuxNote-x'},
-              ]
-            }],
+				
+              ]					
+            },
+			{
+			  title: '资料',
+			  collapsable: true, // 可选的, 默认值是 true,
+			  sidebarDepth: 2,   // 可选的, 默认值是 1
+			  children: [
+				{title:'eclipse',path:'资料/eclipse'},
+				{title:'docker',path:'资料/docker'},
+				{title:'nginx笔记',path:'资料/nginx笔记'},
+				{title:'markdown常用语法',path:'资料/markdown常用语法'},
+				{title:'vuepress构建项目',path:'资料/vuepress构建项目'},
+				{title:'gitlab、github绑定自定义域名',path:'资料/gitlab、github绑定自定义域名'},
+				{title:'git平台docsify布署markdown文件',path:'资料/git平台docsify布署markdown文件'},
+				{title:'gitlab、github、gitee布署mkdocs主题仓库',path:'资料/gitlab、github、gitee布署mkdocs主题仓库'},
+				
+			  ]
+		   }
+		  ],
 		  '/数据库/': [{
               title: '数据库',
 			  collapsable: true, // 可选的, 默认值是 true,
@@ -61,21 +80,25 @@ module.exports = {
                 {title:'mysql开启log-bin日志',path:'mysql开启log-bin日志'},
               ]
             }],
-		   '/资料/': [{
-              title: '资料',
-			  collapsable: true, // 可选的, 默认值是 true,
-              sidebarDepth: 2,   // 可选的, 默认值是 1
-              children: [
-                {title:'eclipse',path:'eclipse'},
-                {title:'docker',path:'docker'},
-                {title:'nginx笔记',path:'nginx笔记'},
-                {title:'markdown常用语法',path:'markdown常用语法'},
-                {title:'vuepress构建项目',path:'vuepress构建项目'},
-                {title:'gitlab、github绑定自定义域名',path:'gitlab、github绑定自定义域名'},
-                {title:'git平台docsify布署markdown文件',path:'git平台docsify布署markdown文件'},
-                {title:'gitlab、github、gitee布署mkdocs主题仓库',path:'gitlab、github、gitee布署mkdocs主题仓库'},
-              ]
-            }],
+          '/java/': [
+			  {
+				  title: '教程',
+				  collapsable: true, // 可选的, 默认值是 true,
+				  sidebarDepth: 2,   // 可选的, 默认值是 1
+				  children: [
+					{title:'java介绍',path:'教程/java介绍'},
+				  ]					
+				},
+				{
+				  title: '资料',
+				  collapsable: true, // 可选的, 默认值是 true,
+				  sidebarDepth: 2,   // 可选的, 默认值是 1
+				  children: [
+					{title:'javaNote',path:'资料/javaNote'}
+				  ]					
+				}
+			
+		   ],
 		   '/书法/': [{
               title: '书法',
 			  collapsable: true, // 可选的, 默认值是 true,
