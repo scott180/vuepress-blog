@@ -44,7 +44,6 @@ module.exports = {
               sidebarDepth: 2,   // 可选的, 默认值是 1
               children: [
                 {title:'note',path:'note'},
-                {title:'java',path:'java'},
                 {title:'gitNote',path:'gitNote'},
                 {title:'linuxNote',path:'linuxNote-x'},
 				
@@ -87,6 +86,7 @@ module.exports = {
 				  sidebarDepth: 2,   // 可选的, 默认值是 1
 				  children: [
 					{title:'java介绍',path:'教程/java介绍'},
+					{title:'java',path:'教程/java'},
 				  ]					
 				},
 				{
@@ -94,7 +94,8 @@ module.exports = {
 				  collapsable: true, // 可选的, 默认值是 true,
 				  sidebarDepth: 2,   // 可选的, 默认值是 1
 				  children: [
-					{title:'javaNote',path:'资料/javaNote'}
+					{title:'javaNote',path:'资料/javaNote'},
+					{title:'布隆过滤器',path:'资料/布隆过滤器'},
 				  ]					
 				}
 			
