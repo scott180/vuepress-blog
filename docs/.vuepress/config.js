@@ -86,7 +86,10 @@ module.exports = {
 				  sidebarDepth: 2,   // 可选的, 默认值是 1
 				  children: [
 					{title:'java介绍',path:'教程/java介绍'},
-					{title:'java',path:'教程/java'},
+					{title:'jquery笔记',path:'教程/jquery笔记'},
+					{title:'mybatis笔记',path:'教程/mybatis笔记'},
+					{title:'springmvc笔记',path:'教程/springmvc笔记'},
+					{title:'servlet-jsp课程学习',path:'教程/servlet-jsp课程学习'},
 				  ]					
 				},
 				{
@@ -95,6 +98,7 @@ module.exports = {
 				  sidebarDepth: 2,   // 可选的, 默认值是 1
 				  children: [
 					{title:'javaNote',path:'资料/javaNote'},
+					{title:'java资料集',path:'资料/java资料集'},
 					{title:'布隆过滤器',path:'资料/布隆过滤器'},
 				  ]					
 				}
