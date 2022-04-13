@@ -28,7 +28,7 @@ module.exports = {
     // 导航
     nav: [  
 	  { text: 'home',link: '/'}, 
-	  { text: '笔记',link: '/笔记/note'}, 
+	  { text: '资料',link: '/资料/笔记/note'}, 
       { text: '数据库', link: '/数据库/mysqlNote'}, 
 	  { text: 'java', link: '/java/资料/javaNote'}, 
 	  { text: '书法', link: '/书法/古文诗词'}, 
@@ -37,31 +37,32 @@ module.exports = {
     ],
     // 侧边栏
     sidebar: {
-          '/笔记/': [
+          '/资料/': [
 		  {
               title: '笔记',
 			  collapsable: true, // 可选的, 默认值是 true,
               sidebarDepth: 2,   // 可选的, 默认值是 1
               children: [
-                {title:'note',path:'note'},
-                {title:'gitNote',path:'gitNote'},
-                {title:'linuxNote',path:'linuxNote-x'},
-				
+                {title:'note',path:'笔记/note'},
+                {title:'gitNote',path:'笔记/gitNote'},
+                {title:'linuxNote',path:'笔记/linuxNote-x'},
+				{title:'nginx笔记',path:'笔记/nginx笔记'},
+				{title:'eclipse',path:'笔记/eclipse'},
+				{title:'docker',path:'笔记/docker'},
               ]					
             },
 			{
-			  title: '资料',
+			  title: '文档',
 			  collapsable: true, // 可选的, 默认值是 true,
 			  sidebarDepth: 2,   // 可选的, 默认值是 1
 			  children: [
-				{title:'eclipse',path:'资料/eclipse'},
-				{title:'docker',path:'资料/docker'},
-				{title:'nginx笔记',path:'资料/nginx笔记'},
-				{title:'markdown常用语法',path:'资料/markdown常用语法'},
-				{title:'vuepress构建项目',path:'资料/vuepress构建项目'},
-				{title:'gitlab、github绑定自定义域名',path:'资料/gitlab、github绑定自定义域名'},
-				{title:'git平台docsify布署markdown文件',path:'资料/git平台docsify布署markdown文件'},
-				{title:'gitlab、github、gitee布署mkdocs主题仓库',path:'资料/gitlab、github、gitee布署mkdocs主题仓库'},
+				{title:'本地安装kafka',path:'文档/本地安装kafka'},
+				{title:'本地安装zookeeper',path:'文档/本地安装zookeeper'},
+				{title:'markdown常用语法',path:'文档/markdown常用语法'},
+				{title:'vuepress构建项目',path:'文档/vuepress构建项目'},
+				{title:'gitlab、github绑定自定义域名',path:'文档/gitlab、github绑定自定义域名'},
+				{title:'git平台docsify布署markdown文件',path:'文档/git平台docsify布署markdown文件'},
+				{title:'gitlab、github、gitee布署mkdocs主题仓库',path:'文档/gitlab、github、gitee布署mkdocs主题仓库'},
 				
 			  ]
 		   }
