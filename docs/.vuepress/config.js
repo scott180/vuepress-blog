@@ -47,7 +47,6 @@ module.exports = {
                 {title:'gitNote',path:'笔记/gitNote'},
                 {title:'linuxNote',path:'笔记/linuxNote-x'},
 				{title:'nginx笔记',path:'笔记/nginx笔记'},
-				{title:'eclipse',path:'笔记/eclipse'},
 				{title:'docker',path:'笔记/docker'},
               ]					
             },
@@ -88,6 +87,7 @@ module.exports = {
 				  children: [
 					{title:'java介绍',path:'教程/java介绍'},
 					{title:'jquery笔记',path:'教程/jquery笔记'},
+					{title:'eclipse笔记',path:'教程/eclipse笔记'},
 					{title:'mybatis笔记',path:'教程/mybatis笔记'},
 					{title:'springmvc笔记',path:'教程/springmvc笔记'},
 					{title:'servlet-jsp课程学习',path:'教程/servlet-jsp课程学习'},
@@ -99,6 +99,7 @@ module.exports = {
 				  sidebarDepth: 2,   // 可选的, 默认值是 1
 				  children: [
 					{title:'javaNote',path:'资料/javaNote'},
+					{title:'排序算法',path:'资料/排序算法'},
 					{title:'java资料集',path:'资料/java资料集'},
 					{title:'布隆过滤器',path:'资料/布隆过滤器'},
 				  ]					
