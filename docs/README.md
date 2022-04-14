@@ -6,10 +6,10 @@ heroImage: /logo.jpg
 actionText: 开始 →
 actionLink: /书法/古文诗词
 features:
-- title: 笔记
-  details: 程序员笔记 git linux java 
 - title: 资料
-  details: 数据库及开发工具资料 mysql oracle idea github 
+  details: 笔记 数据库 git linux 
+- title: java
+  details: idea  spring  mybatis  github 
 - title: 书法
   details: 古文诗词 无为徐生 书法练习轨迹
 ---

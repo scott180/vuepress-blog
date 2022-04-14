@@ -1,8 +1,8 @@
 module.exports = {
   // 页面标题
-  title: '个人博客',
+  title: '无为徐生',
   // 网页描述
-  description: '程序员笔记*书法练习记录',
+  description: '程序员笔记*书法练习轨迹',
   // base: '/vuepress-blog/',
   head: [
     // 页面icon
