@@ -91,7 +91,7 @@ module.exports = {
 					{title:'mybatis笔记',path:'教程/mybatis笔记'},
 					{title:'springmvc笔记',path:'教程/springmvc笔记'},
 					{title:'servlet-jsp学习',path:'教程/servlet-jsp学习'},
-					{title:'Spring Cloud 入门',path:'教程/Spring Cloud 入门'},
+					{title:'SpringCloud入门',path:'教程/SpringCloud入门'},
 				  ]					
 				},
 				{
