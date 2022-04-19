@@ -4,7 +4,7 @@ lang: zh-CN
 heroText: 个人博客
 heroImage: /logo.jpg
 actionText: 开始 →
-actionLink: /书法/古文诗词
+actionLink: /书法/练习/古文诗词
 features:
 - title: 资料
   details: linux  nginx  git  vuepress 
