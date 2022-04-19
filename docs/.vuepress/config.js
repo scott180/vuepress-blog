@@ -1,6 +1,7 @@
 module.exports = {
   // 页面标题
   title: '无为徐生',
+  lang: 'zh-CN',
   // 网页描述
   description: '程序员笔记*书法练习轨迹',
   // base: '/vuepress-blog/',
@@ -16,13 +17,13 @@ module.exports = {
 	extractHeaders: [ 'h2', 'h3', 'h4' ]
   },
   themeConfig: {
-	
     // 所有页面自动生成侧边栏
-    // sidebar: 'auto',
+    sidebar: 'auto',
     // 仓库地址
     // repo: 'https://github.com/scott180/vuepress-blog',
     // 仓库链接label
     // repoLabel: 'Github',
+	lastUpdated: '更新时间',
     // 编辑链接
     editLinks: false,
     // 导航
@@ -132,5 +133,25 @@ module.exports = {
         '@vue': '../images/vue'
       }
     }
-  }
+  },
+  locales: {
+    '/': {
+      lang: 'zh-CN',
+      title: 'VuePress',
+      description: 'Vue 驱动的静态网站生成器'
+    }
+  },
+  plugins: [
+    [
+      '@vuepress/last-updated',
+      {
+        transformer: (timestamp, lang) => {
+          // 不要忘了安装 moment
+          const moment = require('moment')
+          moment.locale(lang)
+          return moment(timestamp).format('YYYY-MM-DD HH:mm:ss');
+        }
+      }
+    ]
+  ]
 }
