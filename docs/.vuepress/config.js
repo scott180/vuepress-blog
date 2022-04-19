@@ -28,10 +28,31 @@ module.exports = {
     editLinks: false,
     // 导航
     nav: [  
-	  { text: 'home',link: '/'}, 
-	  { text: '资料',link: '/资料/笔记/note'}, 
-	  { text: 'java', link: '/java/资料/javaNote'}, 
-	  { text: '书法', link: '/书法/练习/书法练习轨迹ReadMe'}, 
+	  { text: '主页',link: '/'}, 
+	  { text: '资料', items: [
+          { text: 'linuxNote', link: '/资料/笔记/linuxNote-x'}, 
+          { text: 'gitNote', link: '/资料/笔记/gitNote'}, 
+          { text: '本地安装zookeeper', link: '/资料/文档/本地安装zookeeper'}, 
+          { text: 'vuepress构建项目', link: '/资料/文档/vuepress构建项目'}, 
+        ]
+      },
+	  { text: 'java', items: [
+          { text: 'java介绍', link: '/java/教程/java介绍'}, 
+          { text: 'SpringCloud入门', link: '/java/教程/SpringCloud入门'}, 
+          { text: 'javaNote', link: '/java/资料/javaNote'}, 
+          { text: '排序算法', link: '/java/资料/排序算法'}, 
+          { text: 'mysqlNote', link: '/java/数据库/mysqlNote'}, 
+          { text: 'oracleNote', link: '/java/数据库/oracleNote'}, 
+        ]
+      },
+	  { text: '书法', items: [
+          { text: '多宝塔碑', link: '/书法/书法/多宝塔碑'}, 
+          { text: '无为徐生', link: '/书法/练习/无为徐生'}, 
+          { text: '古文诗词', link: '/书法/练习/古文诗词'}, 
+          { text: '书法练习轨迹ReadMe', link: '/书法/练习/书法练习轨迹ReadMe'}, 
+          { text: '有感之杂说', link: '/书法/轨迹/有感之杂说'}, 
+        ]
+      },
 	  { text: '关于我', link: '/关于我'},
 
     ],
