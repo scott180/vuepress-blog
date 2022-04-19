@@ -7,9 +7,9 @@ actionText: 开始 →
 actionLink: /书法/古文诗词
 features:
 - title: 资料
-  details: 笔记 数据库 git linux 
+  details: linux  nginx  git  vuepress 
 - title: java
-  details: idea  spring  mybatis  github 
+  details: idea  spring  mybatis  github  mysql
 - title: 书法
   details: 古文诗词 无为徐生 书法练习轨迹
 ---
