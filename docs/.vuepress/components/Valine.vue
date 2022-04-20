@@ -1,7 +1,7 @@
 <template>
     <div class="u-valine">
       <span class="leancloud-visitors"
-            data-flag-title="xushufa.cn">
+            data-flag-title="blog.xushufa.cn">
         <span class="stat update-time">
             <img class="icon" src="/update-time.png" />{{$page.lastUpdated}}
         </span>

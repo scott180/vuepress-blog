@@ -7,7 +7,7 @@ actionText: 开始 →
 actionLink: /书法/练习/古文诗词
 features:
 - title: 资料
-  details: linux  nginx  git  vuepress 
+  details: git  linux  nginx  vuepress 
 - title: java
   details: idea  spring  mybatis  github  mysql
 - title: 书法

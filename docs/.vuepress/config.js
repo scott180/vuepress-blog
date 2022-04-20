@@ -30,8 +30,8 @@ module.exports = {
     nav: [  
 	  { text: '主页',link: '/'}, 
 	  { text: '资料', items: [
-          { text: 'linuxNote', link: '/资料/笔记/linuxNote-x'}, 
-          { text: 'gitNote', link: '/资料/笔记/gitNote'}, 
+	      { text: 'gitNote', link: '/资料/笔记/gitNote'}, 
+          { text: 'linuxNote', link: '/资料/笔记/linuxNote-x'},
           { text: '本地安装zookeeper', link: '/资料/文档/本地安装zookeeper'}, 
           { text: 'vuepress构建项目', link: '/资料/文档/vuepress构建项目'}, 
         ]
@@ -64,11 +64,11 @@ module.exports = {
 			  collapsable: true, // 可选的, 默认值是 true,
               sidebarDepth: 2,   // 可选的, 默认值是 1
               children: [
+                {title:'note',path:'笔记/note'},
+                {title:'gitNote',path:'笔记/gitNote'},
                 {title:'linuxNote',path:'笔记/linuxNote-x'},
 				{title:'nginx笔记',path:'笔记/nginx笔记'},
-				{title:'gitNote',path:'笔记/gitNote'},
 				{title:'docker',path:'笔记/docker'},
-				{title:'note',path:'笔记/note'},
               ]					
             },
 			{
