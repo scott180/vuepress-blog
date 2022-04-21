@@ -198,7 +198,7 @@ module.exports = {
     '/': {
       lang: 'zh-CN',
 	  title: '无为徐生',
-      description: '生活随笔*编程笔记*书法练习轨迹',
+      description: '生活随笔-编程笔记-书法练习轨迹',
     }
   },
   plugins: [
