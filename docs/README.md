@@ -6,10 +6,10 @@ heroImage: /logo.jpg
 actionText: 开始 →
 actionLink: /书法/练习/古文诗词
 features:
-- title: 资料
-  details: git  linux  nginx  vuepress 
-- title: java
-  details: idea  spring  mybatis  github  mysql
+- title: 生活
+  details: 随笔  日常  记录
+- title: 编程
+  details: git  java  linux  mysql
 - title: 书法
   details: 古文诗词 无为徐生 书法练习轨迹
 ---

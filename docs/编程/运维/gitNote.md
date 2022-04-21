@@ -242,6 +242,7 @@ git tag
 
 // 新建标签
 git tag t20220330
+git tag -a v1.1 -m '版本介绍'
 
 // 推送标签
 git push origin t20220330
