@@ -45,7 +45,9 @@ module.exports = {
         ]
       },
 	  { text: '书法', items: [
+          { text: '灵飞经', link: '/书法/书法/灵飞经'}, 
           { text: '多宝塔碑', link: '/书法/书法/多宝塔碑'}, 
+          { text: '徐书法', link: '/书法/练习/徐书法'}, 
           { text: '无为徐生', link: '/书法/练习/无为徐生'}, 
           { text: '古文诗词', link: '/书法/练习/古文诗词'}, 
           { text: '书法练习轨迹', link: '/书法/练习/书法练习轨迹ReadMe'}, 
@@ -136,6 +138,8 @@ module.exports = {
 				{title:'jquery笔记',path:'资料/jquery笔记'},
 				{title:'二进制数负数',path:'资料/二进制数负数'},
 				{title:'markdown常用语法',path:'资料/markdown常用语法'},
+				{title:'window安装consul',path:'资料/window安装consul'},
+				{title:'window安装RabbitMQ',path:'资料/window安装RabbitMQ'},
 				{title:'本地安装kafka',path:'资料/本地安装kafka'},
 				{title:'本地安装zookeeper',path:'资料/本地安装zookeeper'},
 			  ]
