@@ -20,7 +20,7 @@ module.exports = {
     // repo: 'https://github.com/scott180/vuepress-blog',
     // 仓库链接label
     // repoLabel: 'Github',
-	lastUpdated: '更新时间',
+	lastUpdated: '最近更新',
     // 编辑链接
     editLinks: false,
     // 导航

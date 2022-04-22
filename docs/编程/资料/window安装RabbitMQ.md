@@ -28,7 +28,7 @@
 
 --------------
 
-```
+```sh
 D:\>cd D:\ProgramFiles\rabbitmq-server-3.8.2\rabbitmq_server-3.8.2\sbin
 
 D:\ProgramFiles\rabbitmq-server-3.8.2\rabbitmq_server-3.8.2\sbin>rabbitmqctl status
