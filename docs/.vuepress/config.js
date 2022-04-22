@@ -182,7 +182,8 @@ module.exports = {
 				{ title: '自序', path: '轨迹/自序'}, 
 				{ title: '诗词杂句', path: '轨迹/诗词杂句'}, 
 				{ title: '有感之杂说', path: '轨迹/有感之杂说'},
-				{ title: '书法练习轨迹remark', path: '轨迹/书法练习轨迹remark'}
+				{ title: '书法练习轨迹remark', path: '轨迹/书法练习轨迹remark'},
+				{ title: '书法练习轨迹--明月几时有-无图版', path: '轨迹/书法练习轨迹--明月几时有-无图版'}
 			  ]
 			}
 		    ]
