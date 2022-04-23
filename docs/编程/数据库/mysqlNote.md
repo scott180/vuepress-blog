@@ -888,6 +888,32 @@ SELECT * INTO 表2 FROM 表1
 ```
 
 
+```
+sql中文排序 
+SELECT id,name FROM `T_USER` ORDER BY convert(name using gbk)  ASC limit 10,100;
+```
+
+
+```
+	
+https://www.cnblogs.com/kyosusan/p/5198934.html	
+修改root密码
+
+一、知道原来的myql数据库的root密码；
+
+①： 在终端命令行输入 mysqladmin -u root -p password "新密码" 回车 ，Enter password: 【输入原来的旧密码】
+②： 登录mysql系统修改， mysql -uroot -p 回车 Enter password: 【输入原来的密码】
+
+mysql>use mysql;
+
+mysql> update user set password=password("新密码") where user='root';        【密码注意大小写】
+
+mysql> flush privileges;
+
+mysql> exit;   
+```
+
+
 ### 4.2、文档
 
 - [数据库隔离级别]( https://blog.xushufa.cn )

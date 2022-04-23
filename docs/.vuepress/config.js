@@ -41,6 +41,7 @@ module.exports = {
           { text: 'vuepress构建项目', link: '/编程/运维/vuepress构建项目'}, 
           { text: 'mysqlNote', link: '/编程/数据库/mysqlNote'}, 
           { text: 'oracleNote', link: '/编程/数据库/oracleNote'}, 
+          { text: 'javaScript笔记', link: '/编程/资料/javaScript笔记'}, 
           { text: '本地安装zookeeper', link: '/编程/资料/本地安装zookeeper'}, 
         ]
       },
@@ -90,6 +91,7 @@ module.exports = {
 			  children: [
 				{title:'java介绍',path:'java/java介绍'},
 				{title:'java资料集',path:'java/java资料集'},
+				{title:'tomcat笔记',path:'java/tomcat笔记'},
 				{title:'eclipse笔记',path:'java/eclipse笔记'},
 				{title:'mybatis笔记',path:'java/mybatis笔记'},
 				{title:'springmvc笔记',path:'java/springmvc笔记'},
@@ -136,6 +138,7 @@ module.exports = {
 			  sidebarDepth: 2,   // 可选的, 默认值是 1
 			  children: [
 				{title:'jquery笔记',path:'资料/jquery笔记'},
+				{title:'javaScript笔记',path:'资料/javaScript笔记'},
 				{title:'二进制数负数',path:'资料/二进制数负数'},
 				{title:'markdown常用语法',path:'资料/markdown常用语法'},
 				{title:'window安装consul',path:'资料/window安装consul'},
