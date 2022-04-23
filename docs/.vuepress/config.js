@@ -28,6 +28,7 @@ module.exports = {
 	  { text: '主页',link: '/'}, 
 	  { text: '生活', items: [
 	      { text: '日常Note', link: '/生活/随笔/日常Note'}, 
+	      { text: '驾考记事', link: '/生活/随笔/驾考记事'}, 
 	      { text: '健身与学习', link: '/生活/随笔/健身与学习'}, 
 	      { text: '如何练好书法', link: '/生活/文档/如何练好书法'}, 
 	      { text: '安徽电信免费流量获取方法', link: '/生活/文档/安徽电信免费流量获取方法'}, 
@@ -67,6 +68,7 @@ module.exports = {
               sidebarDepth: 2,   // 可选的, 默认值是 1
               children: [
                 {title:'日常Note',path:'随笔/日常Note'},
+                {title:'驾考记事',path:'随笔/驾考记事'},
                 {title:'健身与学习',path:'随笔/健身与学习'},
                 {title:'二十四式太极拳',path:'随笔/二十四式太极拳'},
                 {title:'短期远行必备物品',path:'随笔/短期远行必备物品'},
