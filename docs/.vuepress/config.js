@@ -95,6 +95,7 @@ module.exports = {
 				{title:'java资料集',path:'java/java资料集'},
 				{title:'tomcat笔记',path:'java/tomcat笔记'},
 				{title:'eclipse笔记',path:'java/eclipse笔记'},
+				{title:'cpu过高分析',path:'java/cpu过高分析'},
 				{title:'mybatis笔记',path:'java/mybatis笔记'},
 				{title:'springmvc笔记',path:'java/springmvc笔记'},
 				{title:'servlet-jsp学习',path:'java/servlet-jsp学习'},
