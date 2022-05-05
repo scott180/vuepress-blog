@@ -23,6 +23,12 @@ module.exports = {
 	lastUpdated: '最近更新',
     // 编辑链接
     editLinks: false,
+	// algolia 全局搜索
+    algolia: {
+      apiKey: 'e9a0a602fe9acf6235cc3423f80fc44c',
+      indexName: 'xushufa',
+      appId: 'ODP1ID8WCB',
+    },
     // 导航
     nav: [  
 	  { text: '主页',link: '/'}, 
