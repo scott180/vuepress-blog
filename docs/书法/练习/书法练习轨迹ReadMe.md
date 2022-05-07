@@ -146,7 +146,7 @@
 
 ### 2.3、建站历程
 
-> 前5G &ensp; `gitee、github、gitcode、gitlab、coding`
+> 前5G &ensp; `gitee、github、gitcode、gitlab、coding` &ensp; `5个git平台，简称5G`
 
 - 自二零二零年九月底练习书法以来，刚开始一直在`gitee`仓库记录更新每周练习情况，毕竟这是国产网站，还是要支持的。 <br/>
 后来有鉴于某云盘背信弃义停止服务，一个网站保存资料不保险，鸡蛋不能放到一个篮子里。 <br/>
