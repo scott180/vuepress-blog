@@ -137,6 +137,7 @@ module.exports = {
 			  children: [
 				{title:'mysqlNote',path:'数据库/mysqlNote'},
 				{title:'oracleNote',path:'数据库/oracleNote'},
+				{title:'ldapNote',path:'数据库/ldapNote'},
 				{title:'redis',path:'数据库/redis'},
 				{title:'mongo',path:'数据库/mongo'},
 				{title:'数据库隔离级别',path:'数据库/数据库隔离级别'},
