@@ -149,6 +149,7 @@ module.exports = {
 			  collapsable: true, // 可选的, 默认值是 true,
 			  sidebarDepth: 2,   // 可选的, 默认值是 1
 			  children: [
+				{title:'npm笔记',path:'资料/npm笔记'},
 				{title:'jquery笔记',path:'资料/jquery笔记'},
 				{title:'javaScript笔记',path:'资料/javaScript笔记'},
 				{title:'二进制数负数',path:'资料/二进制数负数'},
