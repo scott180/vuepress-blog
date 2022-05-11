@@ -53,6 +53,13 @@ npm config set disturl https://npm.taobao.org/dist --global
 npm install -g vue
 npm install express -g
 
+简写
+npm i vue  // i表示install
+
+全局安装
+npm i vue -g  // g表示global
+
+
 使用淘宝定制的 cnpm (gzip 压缩支持) 命令行工具代替默认的 npm
 npm install -g cnpm --registry=https://registry.npm.taobao.org
 
@@ -145,7 +152,8 @@ cdn
 https://www.jsdelivr.com/
 
 https://cdn.jsdelivr.net/npm/xushufa-shu/yan/duo1-1000/0001大.jpg
-https://cdn.jsdelivr.net/npm/xushufa-shu/yan/duo1-1000/0005千.jpg
+https://cdn.jsdelivr.net/npm/xushufa-imgs/imgs/mingyue/2020/IMG_20210101_141310.jpg
+https://cdn.jsdelivr.net/npm/xushufa-imgs@1.0.0/imgs/mingyue/2020/IMG_20210101_141310.jpg
 
 
 
