@@ -327,6 +327,96 @@ Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinHttpAutoProxySv
 
 ```
 
+#### 1.3.4、shell批量推送git
+
+```sh
+#!/bin/bash
+#sh push-ca.sh
+#agit 1
+data_dir=/e/Project/gitlab/agit/calligraphy
+echo $data_dir'......'
+cp -r /e/Project/gitlab/calligraphy/*.md $data_dir
+cp -r /e/Project/gitlab/calligraphy/书法字帖 $data_dir
+cd $data_dir
+git add .
+git commit -m "fix"
+git push
+
+#bitbucket 2
+data_dir=/e/Project/gitlab/bitbucket/calligraphy
+echo $data_dir'......'
+cp -r /e/Project/gitlab/calligraphy/*.md $data_dir
+cp -r /e/Project/gitlab/calligraphy/书法字帖 $data_dir
+cd $data_dir
+git add .
+git commit -m "fix"
+git push
+
+#codeberg 3
+data_dir=/e/Project/gitlab/codeberg/calligraphy
+echo $data_dir'......'
+cp -r /e/Project/gitlab/calligraphy/*.md $data_dir
+cp -r /e/Project/gitlab/calligraphy/书法字帖 $data_dir
+cd $data_dir
+git add .
+git commit -m "fix"
+git push
+
+#coding 4
+data_dir=/e/Project/gitlab/coding/calligraphy
+echo $data_dir'......'
+cp -r /e/Project/gitlab/calligraphy/*.md $data_dir
+cp -r /e/Project/gitlab/calligraphy/书法字帖 $data_dir
+cd $data_dir
+git add .
+git commit -m "fix"
+git push
+
+#gitcode 5
+data_dir=/e/Project/gitlab/gitcode/calligraphy
+echo $data_dir'......'
+cp -r /e/Project/gitlab/calligraphy/*.md $data_dir
+cp -r /e/Project/gitlab/calligraphy/书法字帖 $data_dir
+cd $data_dir
+git add .
+git commit -m "fix"
+git push
+
+#gitea 6
+data_dir=/e/Project/gitlab/gitea/calligraphy
+echo $data_dir'......'
+cp -r /e/Project/gitlab/calligraphy/*.md $data_dir
+cp -r /e/Project/gitlab/calligraphy/书法字帖 $data_dir
+cd $data_dir
+git add .
+git commit -m "fix"
+git push
+
+#sourceforge 7  need password
+
+#gitee 8
+data_dir=/e/Project/gitee/calligraphy
+echo $data_dir'......'
+cp -r /e/Project/gitlab/calligraphy/*.md $data_dir
+cp -r /e/Project/gitlab/calligraphy/书法字帖 $data_dir
+cd $data_dir
+git add .
+git commit -m "fix"
+git push
+
+#github 9
+data_dir=/e/Project/github/calligraphy
+echo $data_dir'......'
+cp -r /e/Project/gitlab/calligraphy/*.md $data_dir
+cp -r /e/Project/gitlab/calligraphy/书法字帖 $data_dir
+cd $data_dir
+git add .
+git commit -m "fix"
+git push
+
+
+```
+
 <h2 id="work"></h2>
 
 ## 2、工作
