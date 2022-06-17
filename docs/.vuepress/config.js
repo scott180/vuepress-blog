@@ -32,6 +32,7 @@ module.exports = {
     // 导航
     nav: [  
 	  { text: '主页',link: '/'}, 
+	  { text: '目录',link: '/目录'}, 
 	  { text: '生活', items: [
 	      { text: '日常Note', link: '/生活/随笔/日常Note'}, 
 	      { text: '驾考记事', link: '/生活/随笔/驾考记事'}, 
