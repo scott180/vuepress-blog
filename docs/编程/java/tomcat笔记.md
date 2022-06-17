@@ -180,7 +180,7 @@ http://jingyan.baidu.com/article/642c9d34ca8cba644a46f71b.html
 	
 ## Could not publish	
 
-```npm
+```c
 
 ====================================================================================
 问题5：
