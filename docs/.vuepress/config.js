@@ -124,6 +124,7 @@ module.exports = {
 				{title:'nginx笔记',path:'运维/nginx笔记'},
 				{title:'shell语法',path:'运维/shell语法'},
 				{title:'定时执行脚本',path:'运维/定时执行脚本'},
+				{title:'批量推送布署徐书法项目',path:'运维/批量推送布署徐书法项目'},
 				{title:'gitbook部署博客',path:'运维/gitbook部署博客'},
 				{title:'vuepress构建项目',path:'运维/vuepress构建项目'},
 				{title:'gitlab、github绑定自定义域名',path:'运维/gitlab、github绑定自定义域名'},
