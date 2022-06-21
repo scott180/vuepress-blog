@@ -99,8 +99,11 @@ module.exports = {
 			  collapsable: true, // 可选的, 默认值是 true,
 			  sidebarDepth: 2,   // 可选的, 默认值是 1
 			  children: [
+			  	{title:'javaNote',path:'java/javaNote'},
+				{title:'排序算法',path:'java/排序算法'},
 				{title:'java介绍',path:'java/java介绍'},
 				{title:'java资料集',path:'java/java资料集'},
+			    {title:'布隆过滤器',path:'java/布隆过滤器'},
 				{title:'tomcat笔记',path:'java/tomcat笔记'},
 				{title:'eclipse笔记',path:'java/eclipse笔记'},
 				{title:'cpu过高分析',path:'java/cpu过高分析'},
@@ -108,9 +111,7 @@ module.exports = {
 				{title:'springmvc笔记',path:'java/springmvc笔记'},
 				{title:'servlet-jsp学习',path:'java/servlet-jsp学习'},
 				{title:'SpringCloud入门',path:'java/SpringCloud入门'},
-				{title:'javaNote',path:'java/javaNote'},
-				{title:'排序算法',path:'java/排序算法'},
-				{title:'布隆过滤器',path:'java/布隆过滤器'},
+
 			  ]					
 			},
 			{
@@ -120,13 +121,13 @@ module.exports = {
 			  children: [
 			  	{title:'docker',path:'运维/docker'},
 				{title:'gitNote',path:'运维/gitNote'},
+				{title:'shell语法',path:'运维/shell语法'},
 				{title:'linuxNote',path:'运维/linuxNote-x'},
 				{title:'nginx笔记',path:'运维/nginx笔记'},
-				{title:'shell语法',path:'运维/shell语法'},
 				{title:'定时执行脚本',path:'运维/定时执行脚本'},
-				{title:'批量推送布署徐书法项目',path:'运维/批量推送布署徐书法项目'},
 				{title:'gitbook部署博客',path:'运维/gitbook部署博客'},
 				{title:'vuepress构建项目',path:'运维/vuepress构建项目'},
+				{title:'批量推送布署徐书法项目',path:'运维/批量推送布署徐书法项目'},
 				{title:'gitlab、github绑定自定义域名',path:'运维/gitlab、github绑定自定义域名'},
 				{title:'git平台docsify布署markdown文件',path:'运维/git平台docsify布署markdown文件'},
 				{title:'gitlab、github、gitee布署mkdocs主题仓库',path:'运维/gitlab、github、gitee布署mkdocs主题仓库'},
@@ -153,13 +154,13 @@ module.exports = {
 			  children: [
 				{title:'npm笔记',path:'资料/npm笔记'},
 				{title:'jquery笔记',path:'资料/jquery笔记'},
-				{title:'javaScript笔记',path:'资料/javaScript笔记'},
 				{title:'二进制数负数',path:'资料/二进制数负数'},
-				{title:'markdown常用语法',path:'资料/markdown常用语法'},
-				{title:'window安装consul',path:'资料/window安装consul'},
-				{title:'window安装RabbitMQ',path:'资料/window安装RabbitMQ'},
+				{title:'javaScript笔记',path:'资料/javaScript笔记'},
 				{title:'本地安装kafka',path:'资料/本地安装kafka'},
+				{title:'本地安装consul',path:'资料/本地安装consul'},
 				{title:'本地安装zookeeper',path:'资料/本地安装zookeeper'},
+				{title:'markdown常用语法',path:'资料/markdown常用语法'},
+				{title:'window安装RabbitMQ',path:'资料/window安装RabbitMQ'},
 			  ]
 			}
 		   ],
