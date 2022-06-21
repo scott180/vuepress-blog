@@ -99,13 +99,13 @@ module.exports = {
 			  collapsable: true, // 可选的, 默认值是 true,
 			  sidebarDepth: 2,   // 可选的, 默认值是 1
 			  children: [
+				{title:'java介绍',path:'java/java介绍'},
 			  	{title:'javaNote',path:'java/javaNote'},
 				{title:'排序算法',path:'java/排序算法'},
-				{title:'java介绍',path:'java/java介绍'},
 				{title:'java资料集',path:'java/java资料集'},
 			    {title:'布隆过滤器',path:'java/布隆过滤器'},
-				{title:'tomcat笔记',path:'java/tomcat笔记'},
 				{title:'eclipse笔记',path:'java/eclipse笔记'},
+				{title:'tomcat笔记',path:'java/tomcat笔记'},
 				{title:'cpu过高分析',path:'java/cpu过高分析'},
 				{title:'mybatis笔记',path:'java/mybatis笔记'},
 				{title:'springmvc笔记',path:'java/springmvc笔记'},
