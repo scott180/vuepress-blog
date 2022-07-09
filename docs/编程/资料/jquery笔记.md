@@ -2,7 +2,7 @@
 
 ## 1、导入jquery
 
-```
+```js
 黑马第十期
 
 安装插件 jsPlugin4Myeclipse.rar
@@ -29,7 +29,7 @@
 
 ```
 	
-```
+```java
 jquery 和 dom 的转换
 	<script type="text/javascript">
 		window.onload = function(){
@@ -112,7 +112,7 @@ jquery 和 dom 的转换
   </script>
 ```
 
-```  
+```js
 层次选择器  子选择器 $("#one>div")
   	<script type="text/javascript">
 		//<input type="button" id="b1" value="改变body内div的颜色">
@@ -265,7 +265,7 @@ table行背景色
   </script>
 ```
  
-``` 
+```js
 表单选择器
 	  <html>
 	  <head>
@@ -360,7 +360,7 @@ table行背景色
 
 ## 3、ajax
 
-```	
+```js
 /**
  * 使用ajax查询数据
  */
@@ -591,7 +591,7 @@ delegate 给未来的元素添加事件
 		});
 ```					
 
-```					
+```js			
 自定义事件					
 		$().ready(function(){
 			
@@ -788,8 +788,7 @@ jquery plugin
 
 ## 5、函数说明
 
-```
-
+```js
 //函数两种创建方式
 		var F1=function(){}
 		function F2(){
