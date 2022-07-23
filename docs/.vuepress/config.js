@@ -112,6 +112,7 @@ module.exports = {
 				{title:'springmvc笔记',path:'java/springmvc笔记'},
 				{title:'servlet-jsp学习',path:'java/servlet-jsp学习'},
 				{title:'SpringCloud入门',path:'java/SpringCloud入门'},
+				{title:'springboot启动banner图案',path:'java/springboot启动banner图案'},
 
 			  ]					
 			},
