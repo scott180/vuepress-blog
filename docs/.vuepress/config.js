@@ -54,7 +54,7 @@ module.exports = {
         ]
       },
 	  { text: '书法', items: [
-          { text: '灵飞经', link: '/书法/书法/灵飞经'}, 
+          { text: '赤壁赋', link: '/书法/书法/赤壁赋'}, 
           { text: '多宝塔碑', link: '/书法/书法/多宝塔碑'}, 
           { text: '徐书法', link: '/书法/练习/徐书法'}, 
           { text: '无为徐生', link: '/书法/练习/无为徐生'}, 
@@ -174,6 +174,7 @@ module.exports = {
 			  sidebarDepth: 2,   // 可选的, 默认值是 1
 			  children: [
 				{ title: '书法名帖', path: '书法/书法名帖'}, 
+				{ title: '赤壁赋', path: '书法/赤壁赋'},
 				{ title: '灵飞经', path: '书法/灵飞经'},
 				{ title: '多宝塔碑', path: '书法/多宝塔碑'},
 				{ title: '《心经》书法', path: '书法/《心经》书法'},
