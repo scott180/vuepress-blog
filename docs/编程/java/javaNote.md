@@ -446,6 +446,7 @@ Project - Show Options Menu - Show Members
 idea常用插件 File -- Settings -- Plugins
 lombok
 Free Mybatis plugin    MybatisX
+GenerateAllSetter      Alt+Enter
 Spring Assistant 
 Translation
 
