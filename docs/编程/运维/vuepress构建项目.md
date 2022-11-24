@@ -319,6 +319,82 @@ pathsToMatch: ["https://blog.xushufa.cn/**"]
 
 ```
 
+### 1.7 流程图
+
+```
+参考
+https://vuepress-plugin-mermaidjs.efrane.com/
+https://www.npmjs.com/package/vuepress-plugin-mermaidjs?activeTab=readme
+https://github.com/vuejs/vuepress/issues/111
+```
+
+
+```js
+下载   
+npm install --save-dev vuepress-plugin-mermaidjs
+或
+yarn add -D vuepress-plugin-mermaidjs
+
+
+配置
+// .vuepress/config.js
+module.exports = {
+    // ...
+    plugins: [
+        'vuepress-plugin-mermaidjs'
+    ]
+    // ...
+}
+
+```
+
+```js
+
+引号格式不支持，只能用箭头格式的。
+
+
+添加文件
+// .vuepress/components/mermaid.vue
+
+<template>
+  <div class="mermaid">
+    <slot></slot>
+  </div>
+</template>
+
+<script>
+export default {
+  mounted() {
+    import("mermaid/dist/mermaid").then(m => {
+      m.initialize({
+        startOnLoad: true
+      });
+      m.init();
+    });
+  }
+};
+</script>
+
+
+
+使用这种格式的
+### Random mermaid example
+
+<mermaid>
+graph TD
+  A[Silvester] -->|Get money| B(Go shopping)
+  B --> C{Let me think}
+  C -->|One| D[Laptop]
+  C -->|Two| E[iPhone]
+  C -->|Three| F[Car]
+  C -->|Four| F[Mac]
+</mermaid>
+
+```
+
+
+
+
 
 ## 二、vuepress-theme-reco主题
 
