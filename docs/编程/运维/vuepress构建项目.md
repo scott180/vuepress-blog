@@ -1,6 +1,6 @@
 # vuepress构建项目
 
-## 一、vuepress默认主题
+## 一、vuepress
 
 使用vuepress构建的博客。
 [github]( https://github.com/scott180/vuepress-blog ) &ensp; [vuepress-blog]( https://scott180.github.io/vuepress-blog )  &ensp; [vuepress-calligraphy]( https://scott180.github.io/vuepress-calligraphy )
@@ -204,6 +204,15 @@ npm run deploy
 
 ```
 
+---
+
+```sh
+git clone git@github.com:scott180/vuepress-blog.git
+
+npm install
+
+```
+
 
 ### 1.3 备案号
 
@@ -235,7 +244,129 @@ Copyright © 2022 · xushufa.cn · 无为徐生 <br/>  [浙ICP备2022008289号-1
 
 
 
-### 1.4 阅读量
+## 二、vuepress-theme-reco
+
+使用vuepress-theme-reco构建的博客。
+
+[github]( https://github.com/scott180/reco-blog ) &ensp; [reco-blog]( https://scott180.github.io/reco-blog )  &ensp; [reco-calligraphy]( https://scott180.github.io/reco-calligraphy )
+
+### 2.1 安装
+
+参考 [vuepress]( https://vuepress.vuejs.org/zh/ )  &ensp; [vuepress-theme-reco]( https://vuepress-theme-reco.recoluan.com/views/1.x/configJs.html )  &ensp; [vuepress-reco]( https://github.com/vuepress-reco/vuepress-theme-reco-1.x )  &ensp; [vuepress-theme-reco 主题优化]( https://blog.csdn.net/qq_42937522/article/details/122676915 ) &ensp; [vuepress-calligraphy]( https://github.com/scott180/vuepress-calligraphy )
+
+```sh
+# init
+npm install @vuepress-reco/theme-cli -g
+theme-cli init my-blog
+
+# install
+cd my-blog
+npm install
+
+# run
+npm run dev
+
+# build
+npm run build
+
+```
+
+
+```
+中文路径无效，需要安装插件
+
+npm install -D  vuepress-plugin-permalink-pinyin
+
+module.exports = {
+  plugins: [
+      // 支持中文文件名
+      [
+        "permalink-pinyin",
+        {
+          lowercase: true, // Converted into lowercase, default: true
+          separator: "-", // Separator of the slug, default: '-'
+        },
+      ],
+  ]
+}
+
+```
+
+
+
+### 2.2 部署
+
+根目录创建 `deploy.sh` 文件
+
+```js
+#!/usr/bin/env sh
+
+# 确保脚本抛出遇到的错误
+set -e
+
+# 生成静态文件
+npm run build
+
+# 进入生成的文件夹
+cd .vuepress/dist
+
+# 如果是发布到自定义域名
+# echo 'www.example.com' > CNAME
+
+git init
+git add -A
+git commit -m 'deploy'
+
+# 如果发布到 https://<USERNAME>.github.io
+# git push -f git@github.com:scott180/scott180.github.io.git master
+
+# 如果发布到 https://<USERNAME>.github.io/<REPO>  注意配置 `.vuepress\config.js` 的 `base`
+# git push -f git@github.com:scott180/reco-calligraphy.git master:gh-pages
+
+cd -
+
+```
+
+---
+
+设置 `package.json`
+```
+{
+    "scripts": {
+        "deploy": "bash deploy.sh"
+      }
+}
+
+```
+
+运行 `npm run deploy` 即可部署到github静态页面
+
+
+---
+
+> vuepress 底部添加网站备案号：ICP备案号与公安备案号  [备案信息]( https://vuepress-theme-reco.recoluan.com/views/1.x/configJs.html#%E5%A4%87%E6%A1%88%E4%BF%A1%E6%81%AF%E5%92%8C%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%A7%8B%E6%97%B6%E9%97%B4 )
+
+```
+module.exports = {
+  themeConfig: {
+    record: '浙ICP备2022008289号-1',
+    recordLink: 'http://beian.miit.gov.cn',
+    cyberSecurityRecord: '浙公网安备 33011002016354号',
+    cyberSecurityLink: 'http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33011002016354',
+  }
+}
+
+```
+
+
+
+
+## 三、插件
+
+[插件广场]( https://vuepress-theme-reco.recoluan.com/views/other/recommend.html ) &ensp; [plugin-medium-zoom]( https://v1.vuepress.vuejs.org/zh/plugin/official/plugin-medium-zoom.html#%E5%AE%89%E8%A3%85 )  &ensp; [medium-zoom]( https://vuepress-community.netlify.app/zh/plugins/medium-zoom/#%E5%AE%89%E8%A3%85 )
+
+
+### 3.1 阅读量
 
 参考 [Vuepress-阅读量统计]( https://heshiyu1996.github.io/blog/tool/vuepress-stat/ ) &ensp; [valine]( https://valine.js.org/ ) &ensp; [leancloud]( https://console.leancloud.cn/apps )
 
@@ -252,7 +383,7 @@ yarn add valine -S
 
 
 
-### 1.5 时间格式化
+### 3.2 时间格式化
 
 [plugin-last-updated]( https://vuepress.vuejs.org/zh/plugin/official/plugin-last-updated.html ) &ensp; [momentjs]( http://momentjs.cn/ )
 
@@ -289,8 +420,9 @@ locales: {
 
 ```
 
-### 1.6 全局搜索
 
+
+### 3.3 全局搜索
 
 ```js
 themeConfig: {
@@ -319,7 +451,9 @@ pathsToMatch: ["https://blog.xushufa.cn/**"]
 
 ```
 
-### 1.7 流程图
+
+
+### 3.4 流程图
 
 ```
 参考
@@ -393,130 +527,10 @@ graph TD
 ```
 
 
-
-
-
-## 二、vuepress-theme-reco主题
-
-使用vuepress-theme-reco构建的博客。
-
-[github]( https://github.com/scott180/reco-blog ) &ensp; [reco-blog]( https://scott180.github.io/reco-blog )  &ensp; [reco-calligraphy]( https://scott180.github.io/reco-calligraphy )
-
-### 2.1 安装
-
-参考 [vuepress]( https://vuepress.vuejs.org/zh/ )  &ensp; [vuepress-theme-reco]( https://vuepress-theme-reco.recoluan.com/views/1.x/configJs.html )  &ensp; [vuepress-reco]( https://github.com/vuepress-reco/vuepress-theme-reco-1.x )  &ensp; [vuepress-theme-reco 主题优化]( https://blog.csdn.net/qq_42937522/article/details/122676915 ) &ensp; [vuepress-calligraphy]( https://github.com/scott180/vuepress-calligraphy )
-
-```
-# init
-npm install @vuepress-reco/theme-cli -g
-theme-cli init my-blog
-
-# install
-cd my-blog
-npm install
-
-# run
-npm run dev
-
-# build
-npm run build
-
-```
-
-
-```
-中文路径无效，需要安装插件
-
-npm install -D  vuepress-plugin-permalink-pinyin
-
-module.exports = {
-  plugins: [
-      // 支持中文文件名
-      [
-        "permalink-pinyin",
-        {
-          lowercase: true, // Converted into lowercase, default: true
-          separator: "-", // Separator of the slug, default: '-'
-        },
-      ],
-  ]
-}
-
-```
-
-
-
-### 2.2 部署
-
-根目录创建 `deploy.sh` 文件
-
-```
-#!/usr/bin/env sh
-
-# 确保脚本抛出遇到的错误
-set -e
-
-# 生成静态文件
-npm run build
-
-# 进入生成的文件夹
-cd .vuepress/dist
-
-# 如果是发布到自定义域名
-# echo 'www.example.com' > CNAME
-
-git init
-git add -A
-git commit -m 'deploy'
-
-# 如果发布到 https://<USERNAME>.github.io
-# git push -f git@github.com:scott180/scott180.github.io.git master
-
-# 如果发布到 https://<USERNAME>.github.io/<REPO>  注意配置 `.vuepress\config.js` 的 `base`
-# git push -f git@github.com:scott180/reco-calligraphy.git master:gh-pages
-
-cd -
-
-```
-
----
-
-设置 `package.json`
-```
-{
-    "scripts": {
-        "deploy": "bash deploy.sh"
-      }
-}
-
-```
-
-运行 `npm run deploy` 即可部署到github静态页面
-
-
----
-
-> vuepress 底部添加网站备案号：ICP备案号与公安备案号  [备案信息]( https://vuepress-theme-reco.recoluan.com/views/1.x/configJs.html#%E5%A4%87%E6%A1%88%E4%BF%A1%E6%81%AF%E5%92%8C%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%A7%8B%E6%97%B6%E9%97%B4 )
-
-```
-module.exports = {
-  themeConfig: {
-    record: '浙ICP备2022008289号-1',
-    recordLink: 'http://beian.miit.gov.cn',
-    cyberSecurityRecord: '浙公网安备 33011002016354号',
-    cyberSecurityLink: 'http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33011002016354',
-  }
-}
-
-```
-
-
 ---
 
 
-### 2.3 插件 
-
-参考 [插件广场]( https://vuepress-theme-reco.recoluan.com/views/other/recommend.html ) &ensp; [plugin-medium-zoom]( https://v1.vuepress.vuejs.org/zh/plugin/official/plugin-medium-zoom.html#%E5%AE%89%E8%A3%85 )  &ensp; [medium-zoom]( https://vuepress-community.netlify.app/zh/plugins/medium-zoom/#%E5%AE%89%E8%A3%85 )
+### 3.5 图片放大
 
 > 图片放大
 
@@ -566,14 +580,15 @@ module.exports = {
 }
 ```
 
----
 
+
+### 3.6 展示名人名句
 
 > 默认随机展示名人名句
 
 参考 [vuepress-plugin-boxx]( https://github.com/zpj80231/vuepress-plugin-boxx )
 
-```
+```js
 在文件package.json中的devDependencies下加入"vuepress-plugin-boxx": "0.0.7"：
 
 
@@ -592,7 +607,7 @@ module.exports = {
 
 ```
 
-```
+```sh
 npm install
 
 在文档标题前一行添加 <Boxx/>
@@ -602,19 +617,5 @@ npm install
 
 ---
 
-> 主要命令
 
-```sh
-# 启动 
-npm run dev
-
-# 打包
-npm run build
-
-# 部署
-npm run deploy
-
-```
-
----
 
