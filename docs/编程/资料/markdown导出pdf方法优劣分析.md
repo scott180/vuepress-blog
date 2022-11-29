@@ -25,24 +25,26 @@ markdown导出pdf期望达到理想效果：
 
 使用了`Typora`，`作业部落`，`小书匠`，`马克飞象`，`浏览器打印`，`pandoc`，`xelatex`，`wkhtmltopdf`，`vscode`，`MarkText`等等许多方法将markdown导出pdf。有的收费，有的加水印，有的丢文字，有的丢图片，最后发现：
 - 操作markdown文件，使用`Typora`最方便。
-- 若markdown导出pdf，`MarkText`搭配`PDFPatcher`最优秀。
+- 导出markdown为pdf，`MarkText`搭配`PDFPatcher`最优秀。
 
 ---
 
 ### 1.3 相关
+
+markdown相关操作，格式转换与项目布署。
+
 
 > html转markdown文件
 
 - pandoc 转化  `pandoc -f html -t markdown -o 202010.md 202110.html`
 - turndown `Convert HTML into Markdown with JavaScript.`  https://mixmark-io.github.io/turndown/
 
-
 > markdown文件部署项目
 
 - gitlab、github、gitee布署`mkdocs`主题仓库
 - git平台`docsify`布署markdown文件
-- `vuepress`构建项目
-- `gitbook`部署博客  https://web.xushufa.cn
+- `vuepress`构建项目 https://blog.xushufa.cn
+- `gitbook`部署博客  https://scott180.github.io/gitbook-blog
 
 
 
@@ -182,9 +184,9 @@ MarkText是一个简单开源的 Markdown 编辑器。 https://github.com/markte
 | marktext    | https://marktext.app/                | https://github.com/marktext/marktext   |
 | PDFPatcher  | https://www.cnblogs.com/pdfpatcher/  | https://github.com/wmjordan/PDFPatcher |
 
-
+综上，`MarkText`四星半夺得魁首，`Typora`屈居亚席。总之： <br/>
 操作markdown文件，使用`Typora`最方便。 <br/>
-若markdown导出pdf，`MarkText`搭配`PDFPatcher`最优秀。 <br/>
+导出markdown为pdf，`MarkText`搭配`PDFPatcher`最优秀。 <br/>
 
 
 
