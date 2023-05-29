@@ -2,7 +2,7 @@
 
 使用vuepress构建的博客。
 
-[xushufa]( https://xushufa.cn ) &ensp; [scott180.github.io]( https://scott180.github.io/vuepress-blog ) &ensp; [vuepress-blog]( https://github.com/scott180/vuepress-blog )
+[xushufa]( https://github.com/scott180/calligraphy ) &ensp; [scott180.github.io]( https://scott180.github.io/vuepress-blog ) &ensp; [vuepress-blog]( https://github.com/scott180/vuepress-blog )
 
 ## 首页
 
