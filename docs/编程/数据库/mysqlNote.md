@@ -6,7 +6,7 @@
 
 ```js
 压缩包，免安装文件，安装mysql。参考：
-http://blog.xushufa.cn
+http://xushufa.cn
 http://blog.csdn.net/wengengeng/article/details/52013650
 https://www.cnblogs.com/jyjia/archive/2019/03/07/10490013.html
 
