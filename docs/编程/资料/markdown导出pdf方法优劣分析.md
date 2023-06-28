@@ -4,7 +4,7 @@
 
 `md2pdf`  `pandoc`  `Typora`  `MarkText`  `PDFPatcher`  --20220903
 
-> [xushufa]( https://web.xushufa.cn ) &ensp; [blog]( https://blog.xushufa.cn ) &ensp; [gitlab]( https://gitlab.com/xuyq123/mynotes ) &ensp; [gitee]( https://gitee.com/xy180/MyNotes ) 
+> [xushufa]( https://xushufa.cn ) &ensp; [gitlab]( https://gitlab.com/xuyq123/mynotes ) &ensp; [gitee]( https://gitee.com/xy180/MyNotes ) 
 
 
 
@@ -12,7 +12,7 @@
 
 ### 1.1 目标
 
-markdown导出pdf期望达到理想效果：
+markdown导出pdf期望达到的理想效果：
 - **内容不丢失**，标题、正文、高亮、代码块等内容不会丢失，即使是代码块也能无损导出。
 - **格式不变形**，字体、样式与markdown看到的基本一致。
 - **有图片**，markdown的图片不论是网络链接还是base64都能正常导出。
