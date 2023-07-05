@@ -1,7 +1,7 @@
 module.exports = {
   // 页面标题
   title: '无为徐生',
-  base: '/vuepress-blog/',
+  base: '/blog/',
   head: [
     // 页面icon
     ['link', { rel: 'icon', href: '/icon.png' }]
