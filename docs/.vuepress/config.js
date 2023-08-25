@@ -92,6 +92,7 @@ module.exports = {
 			  sidebarDepth: 2,   // 可选的, 默认值是 1
 			  children: [
 				{title:'如何练好书法',path:'文档/如何练好书法'},
+				{title:'三千个脑筋急转弯',path:'文档/三千个脑筋急转弯'},
 				{title:'文言文翻译网络流行语',path:'文档/文言文翻译网络流行语'},
 				{title:'安徽电信免费流量获取方法',path:'文档/安徽电信免费流量获取方法'},
 				{title:'安徽电信-流量来啦-每日必点',path:'文档/安徽电信-流量来啦-每日必点'},
@@ -159,7 +160,7 @@ module.exports = {
 			  collapsable: true, // 可选的, 默认值是 true,
 			  sidebarDepth: 2,   // 可选的, 默认值是 1
 			  children: [
-				{title:'npm笔记',path:'资料/npm笔记'},
+				{title:'nodejs与npm笔记',path:'资料/nodejs与npm笔记'},
 				{title:'jquery笔记',path:'资料/jquery笔记'},
 				{title:'二进制数负数',path:'资料/二进制数负数'},
 				{title:'javaScript笔记',path:'资料/javaScript笔记'},
