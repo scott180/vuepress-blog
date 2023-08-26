@@ -182,19 +182,6 @@ npm publish
 
 
 ```
-cdn
-https://www.jsdelivr.com/
-
-https://cdn.jsdelivr.net/npm/xushufa-shu/yan/duo1-1000/0001大.jpg
-https://cdn.jsdelivr.net/npm/xushufa-imgs/imgs/mingyue/2020/IMG_20210101_141310.jpg
-https://cdn.jsdelivr.net/npm/xushufa-imgs@1.0.0/imgs/mingyue/2020/IMG_20210101_141310.jpg
-
-
-
-配置淘宝镜像
-npm config get registry
-npm config set registry http://registry.npm.taobao.org/
-
 删除包
 npm unpublish 包名@版本号  //指定删除包
 npm unpublish 包名 --force //删除整个包
@@ -212,10 +199,26 @@ npm info xushufa
 安装
 npm i xushufa
 
+配置淘宝镜像
+npm config get registry
+npm config set registry http://registry.npm.taobao.org/
+
+
+```
+
+
+```
+cdn
+https://www.jsdelivr.com/
+https://cdn.jsdelivr.net/npm/xushufa-shu/yan/duo1-1000/0001大.jpg
+https://cdn.jsdelivr.net/npm/xushufa-imgs/imgs/mingyue/2020/IMG_20210101_141310.jpg
+https://cdn.jsdelivr.net/npm/xushufa-imgs@1.0.0/imgs/mingyue/2020/IMG_20210101_141310.jpg
+
 
 地址
 https://www.npmjs.com/~xushufa
 https://www.npmjs.com/package/x-mynotes
+
 
 ```
 
