@@ -439,7 +439,22 @@ git clone git@github.com:scott180/MyNotes.git
 ```
 
 
-### 3.2、git pull冲突
+### 3.2、github登录不上
+
+```
+参考 https://blog.csdn.net/ych9527/article/details/114372201
+
+1、查询github域名
+搜索DNS查询 http://tool.chinaz.com/dns/?type=1&host=github.com&ip=.   得到IP
+
+2、修改系统hosts文件
+在 C:\Windows\System32\drivers\etc\hosts 加上如下文本
+13.229.188.59 github.com
+
+```
+
+
+### 3.3、git pull冲突
 
 ``` java
 用git pull来更新代码的时候，遇到了下面的问题：
@@ -484,7 +499,7 @@ git config --system --unset credential.helper
 
 ```
 
-### 3.3、git push失败
+### 3.4、git push失败
 
 ```sql
 在git（小乌龟）向github远程推送（push）文件是会报一个异常 no supported authentication methods avaiable         
