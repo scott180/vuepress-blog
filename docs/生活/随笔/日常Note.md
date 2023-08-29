@@ -46,7 +46,7 @@ Win+R   打开"运行"对话框，输入命令开启相关功能
 cmd 			命令行控制台
 reg 			注册表
 mstsc			远程登录
-services.msc 		本地服务
+services.msc 	本地服务
 	
 F2   文件改名
 F5   浏览器页面刷新
