@@ -549,3 +549,30 @@ GitHub  Setting -> SSH Keys-> New SSH key  添加秘钥。
 
 ```
 
+
+### 3.5、Git bash Error
+
+
+```
+问题：打开 git bash 报错
+Git bash Error: Could not fork child process: There are no available terminals (-1)
+
+参考：
+https://blog.csdn.net/qq_26910073/article/details/80046283
+https://juejin.cn/post/6904071917209124872
+
+
+解决方法：
+1、打开命令行控制台
+win+r，输入 cmd
+
+2、tasklist 查看 git-bash.exe 和 bash.exe的进程
+
+3、终止相应进程号：
+taskkill /pid 12345 -t -f
+
+```
+
+
+
+
