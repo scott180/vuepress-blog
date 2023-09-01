@@ -934,7 +934,50 @@ SELECT id,name FROM `T_USER` ORDER BY convert(name using gbk)  ASC limit 10,100;
 ```
 
 
-### 3.3、分组取最值
+### 3.3、截取字符串
+
+```sql
+-- SUBSTRING  从指定角标开始截取
+-- LOCATE     查找字符串中指定字符的位置
+
+select id, mode_name, action_name, goods_handle_id, handle_name, handle_time, mark,SUBSTRING(info, 
+LOCATE('283510',info) , 200) log from ins_handle_log where goods_handle_id in (12257) order by id desc
+
+```
+
+```
+SUBSTRING_INDEX - 按分隔符截取字符串
+SUBSTRING_INDEX(str, delimiter, count)
+返回一个 str 的子字符串，在 delimiter 出现 count 次的位置截取。
+
+如果 count > 0，从则左边数起，且返回位置前的子串；
+如果 count < 0，从则右边数起，且返回位置后的子串。
+delimiter 是大小写敏感，且是多字节安全的。
+
+mysql> SELECT SUBSTRING_INDEX('www.mysql.com', '.', 2);
+        -> 'www.mysql'
+mysql> SELECT SUBSTRING_INDEX('www.mysql.com', '.', -2);
+        -> 'mysql.com'
+		
+```
+
+```
+LEFT(str,len)
+从左边开始截取，str：被截取字符串；len：截取长度
+
+RIGHT(str,len)
+从右边开始截取，str：被截取字符串；len：截取长度
+
+SUBSTR(str, pos, len)
+与SUBSTRING(str, pos, len)函数的使用一样
+
+MID(str, pos, len)
+与SUBSTRING(str, pos, len)函数的使用一样
+
+```
+
+
+### 3.4、分组取最值
 
 ```sql
 分组取最值
@@ -947,7 +990,7 @@ Insert into fd_supplier VALUES (null,#{supplier_id},#{s_code}) on duplicate key 
 ```
 
 
-### 3.4、修改root密码
+### 3.5、修改root密码
 
 ```js
 	
@@ -969,7 +1012,7 @@ mysql> exit;
 ```
 
 
-### 3.5、Deadlock found
+### 3.6、Deadlock found
 
 ```js
 https://blog.csdn.net/qq_44240587/article/details/108400666   死锁
@@ -989,7 +1032,7 @@ kill 进程ID
 ```
 
 
-### 3.6、文档
+### 3.7、文档
 
 - [数据库隔离级别]( https://xushufa.cn/docs/bian-cheng/shu-ju-ku/shu-ju-ku-ge-chi-ji-bie.html )
 
