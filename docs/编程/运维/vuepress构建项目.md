@@ -307,6 +307,10 @@ markdown文件标题下一行的换行格式不符合要求。
 > vuepress 底部添加网站备案号：ICP备案号与公安备案号  [富文本 footer]( https://vuepress.vuejs.org/zh/theme/default-theme-config.html#%E5%AF%8C%E6%96%87%E6%9C%AC-footer )
 
 ```
+在 docs/README.md 添加备案
+```
+
+```
 ---
 home: true
 ---
@@ -430,9 +434,14 @@ cd -
 运行 `npm run deploy` 即可部署到github静态页面
 
 
----
+
+### 2.3 备案号
 
 > vuepress 底部添加网站备案号：ICP备案号与公安备案号  [备案信息]( https://vuepress-theme-reco.recoluan.com/views/1.x/configJs.html#%E5%A4%87%E6%A1%88%E4%BF%A1%E6%81%AF%E5%92%8C%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%A7%8B%E6%97%B6%E9%97%B4 )
+
+```
+在 .vuepress/config.js 添加备案
+```
 
 ```
 module.exports = {
@@ -441,6 +450,7 @@ module.exports = {
     recordLink: 'http://beian.miit.gov.cn',
     cyberSecurityRecord: '浙公网安备 33011002016354号',
     cyberSecurityLink: 'http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33011002016354',
+    startYear: '2022'
   }
 }
 
