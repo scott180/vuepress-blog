@@ -51,7 +51,7 @@ module.exports = {
           { text: 'mysqlNote', link: '/编程/数据库/mysqlNote'}, 
           { text: 'oracleNote', link: '/编程/数据库/oracleNote'}, 
           { text: 'javaScript笔记', link: '/编程/资料/javaScript笔记'}, 
-          { text: '本地安装zookeeper', link: '/编程/资料/本地安装zookeeper'}, 
+          { text: '工具网站readMe', link: '/编程/资料/工具网站readMe'}, 
         ]
       },
 	  { text: '书法', items: [
@@ -161,6 +161,7 @@ module.exports = {
 			  collapsable: true, // 可选的, 默认值是 true,
 			  sidebarDepth: 2,   // 可选的, 默认值是 1
 			  children: [
+				{title:'工具网站readMe',path:'资料/工具网站readMe'},
 				{title:'nodejs与npm笔记',path:'资料/nodejs与npm笔记'},
 				{title:'jquery笔记',path:'资料/jquery笔记'},
 				{title:'二进制数负数',path:'资料/二进制数负数'},
