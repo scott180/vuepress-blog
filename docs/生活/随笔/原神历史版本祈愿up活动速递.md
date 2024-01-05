@@ -1,15 +1,16 @@
 # 原神历史版本祈愿up活动速递
 
-原神历史版本，每期up角色及版本时间统计，资料来自官方社区[米游社]( https://www.miyoushe.com/ys )。<br/>
-最近更新可访问网站 [xushufa]( https://www.xushufa.cn ) / [bitbucket]( https://bitbucket.org/xu12345/document/src/master/imgs/yuanshen/%E6%B4%BB%E5%8A%A8%E9%80%9F%E9%80%92/%E5%8E%9F%E7%A5%9E%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC%E7%A5%88%E6%84%BFup%E6%B4%BB%E5%8A%A8%E9%80%9F%E9%80%92.md ) / [gitcode]( https://gitcode.net/xu180/document/-/blob/master/article/%E9%9A%8F%E7%AC%94/%E5%8E%9F%E7%A5%9E%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC%E7%A5%88%E6%84%BFup%E6%B4%BB%E5%8A%A8%E9%80%9F%E9%80%92.md )。
+原神up角色及版本时间数据来自官方社区[米游社]( https://www.miyoushe.com/ys )。<br/>
+文档最近更新可访问个人网站 [xushufa]( https://www.xushufa.cn ) / [bitbucket]( https://bitbucket.org/xu12345/document/src/master/imgs/yuanshen/%E6%B4%BB%E5%8A%A8%E9%80%9F%E9%80%92/%E5%8E%9F%E7%A5%9E%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC%E7%A5%88%E6%84%BFup%E6%B4%BB%E5%8A%A8%E9%80%9F%E9%80%92.md ) / [gitcode]( https://gitcode.net/xu180/document/-/blob/master/article/%E9%9A%8F%E7%AC%94/%E5%8E%9F%E7%A5%9E%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC%E7%A5%88%E6%84%BFup%E6%B4%BB%E5%8A%A8%E9%80%9F%E9%80%92.md )。<br/>
+我的提瓦特之旅可查看 [我的原神旅行观测记录]( https://xushufa.cn/docs/sheng-huo/sui-bi/wo-de-yuan-shen-lu-xing-guan-ce-ji-lu.html ) / [纪念一下，三百天打满深渊]( https://vuepress-blog.xushufa.cn/%E7%94%9F%E6%B4%BB/%E9%9A%8F%E7%AC%94/%E7%BA%AA%E5%BF%B5%E4%B8%80%E4%B8%8B%EF%BC%8C%E4%B8%89%E7%99%BE%E5%A4%A9%E6%89%93%E6%BB%A1%E6%B7%B1%E6%B8%8A.html ) / [角色练度]( https://sourceforge.net/p/xdocument/code/ci/master/tree/imgs/yuanshen/%E6%88%91%E7%9A%84/ )。 <br/>
 
-
+---
 
 ## 原神
 
 ### 历史版本
 
-|    | 版本号 |	版本时间	            | 版本名称               | 五星up  				       | 四星陪跑  |
+|序号| 版本号 |	版本时间	            | 版本名称               | 五星up  				       | 四星陪跑  |
 | -- | --     | --                      | --                     | -----------------           | --        |
 | 1  | 1.0	  | 2020.09.28~2020.11.10	| 捕风的异乡人           | 温迪 <br/>可莉			   | 芭芭拉、菲谢尔、香菱 <br/>行秋、砂糖、诺艾尔         |
 | 2  | 1.1	  | 2020.11.11~2020.12.22	| 迫近的客星             | 达达利亚 <br/>钟离          | 凝光、迪奥娜、北斗 <br/>重云、辛焱、雷泽             |
@@ -39,6 +40,7 @@
 | 26 | 4.0    | 2023.08.16~2023.09.26	| 仿若无因飘落的轻雨     | 林尼/夜兰 <br/>钟离/公子    | 琳妮特、班尼特、芭芭拉<br/>菲米尼、早柚、诺艾尔     |
 | 27 | 4.1    | 2023.09.27~2023.11.07	| 向深水中的晨星         | 那维莱特/胡桃 <br/>莱欧斯利/温迪  | 菲谢尔、行秋、迪奥娜<br/>重云、托马、多莉     |
 | 28 | 4.2    | 2023.11.08~2023.12.19	| 罪人舞步旋             | 芙宁娜/白术 <br/>赛诺/神里绫人    | 夏洛蒂、柯莱、北斗<br/>绮良良、久岐忍、香菱   |
+| 29 | 4.3    | 2023.12.20~2024.01.30	| 蔷薇与铳枪             | 娜维娅/神里绫华 <br/>雷电将军/宵宮  | 砂糖、罗莎莉亚、坎蒂丝<br/>夏沃蕾、九条裟罗、班尼特 |
 
 
 以上每个版本的持续时间基本都固定为42天，除非特殊情况下会延迟版本时间。 <br/>
@@ -49,7 +51,7 @@
 
 ### 活动速递
 
-|    | 版本号 |	米游社活动速递 |
+|序号| 版本号 |	米游社活动速递 |
 | -- | --     | --             |
 | 1  | 1.0	  | [「闪耀偶像」免费获取——公测活动前瞻！]( https://www.miyoushe.com/ys/article/1866427 ) &ensp; [【原神2周年回忆录】原神研发与内测期间编年史]( https://www.miyoushe.com/ys/article/29454651 ) |
 | 2  | 1.1 | [丘丘人带你一图流看更新——1.1版本活动速递第一期]( https://www.miyoushe.com/ys/article/2586437 ) &ensp; [丘丘人带你一图流看活动——1.1版本活动速递第二期]( https://www.miyoushe.com/ys/article/2904813 ) |
@@ -79,6 +81,8 @@
 | 26 | 4.0 | [「仿若无因飘落的轻雨」4.0版本活动速递第一期]( https://www.miyoushe.com/ys/article/42347814 ) &ensp;  [《原神》4.0版本「仿若无因飘落的轻雨」前瞻特别节目回顾长图]( https://www.miyoushe.com/ys/article/42024064 ) &ensp;  [「仿若无因飘落的轻雨」4.0版本活动速递第二期]( https://www.miyoushe.com/ys/article/42990611 ) |
 | 27 | 4.1 | [「向深水中的晨星」4.1版本活动速递第一期]( https://www.miyoushe.com/ys/article/43746006 ) &ensp;  [「向深水中的晨星」4.1版本活动速递第二期]( https://www.miyoushe.com/ys/article/44411551 ) |
 | 28 | 4.2 | [「罪人舞步旋」4.2版本活动速递第一期]( https://www.miyoushe.com/ys/article/45181203 ) &ensp;  [「罪人舞步旋」4.2版本活动速递第二期]( https://www.miyoushe.com/ys/article/45825097 ) |
+| 29 | 4.3 | [「蔷薇与铳枪」4.3版本活动速递第一期]( https://www.miyoushe.com/ys/article/46664338 ) &ensp;  [「蔷薇与铳枪」4.3版本活动速递第二期]( https://www.miyoushe.com/ys/article/47577976 ) |
+
 
 账号【飞翔的丘丘人】及【原神】版本更新前于米游社发布活动速递。
 
@@ -105,8 +109,6 @@ https://baijiahao.baidu.com/s?id=1733410878724992545 ) &ensp; [夜兰wiki]( http
 
 <br/>
 
-个人提瓦特之旅可查看 《[我的原神旅行观测记录]( https://xushufa.cn/docs/sheng-huo/sui-bi/wo-de-yuan-shen-lu-xing-guan-ce-ji-lu.html )》 &ensp; 《[纪念一下，三百天打满深渊]( https://vuepress-blog.xushufa.cn/%E7%94%9F%E6%B4%BB/%E9%9A%8F%E7%AC%94/%E7%BA%AA%E5%BF%B5%E4%B8%80%E4%B8%8B%EF%BC%8C%E4%B8%89%E7%99%BE%E5%A4%A9%E6%89%93%E6%BB%A1%E6%B7%B1%E6%B8%8A.html )》 。 <br/>
-
 
 ---
 
@@ -122,15 +124,15 @@ https://baijiahao.baidu.com/s?id=1733410878724992545 ) &ensp; [夜兰wiki]( http
 | 2020/09/28~2020/10/18 | 上    | 杯装之诗  风色诗人     | 温迪  | 芭芭拉、菲谢尔、香菱 |
 | 2020/10/19~2020/11/10 | 下    | 闪焰的驻足  逃跑的太阳 | 可莉  | 行秋、砂糖、诺艾尔   |
 
-![0]( https://bitbucket.org/xu12345/document/raw/882532c5e953ea266c2e64b0c5948281e68fbbe3/imgs/yuanshen/%E6%B4%BB%E5%8A%A8%E9%80%9F%E9%80%92/0.jpg )
+[0]( https://bitbucket.org/xu12345/document/raw/882532c5e953ea266c2e64b0c5948281e68fbbe3/imgs/yuanshen/%E6%B4%BB%E5%8A%A8%E9%80%9F%E9%80%92/0.jpg )
 
 ---
 
-![1.0_1]( https://bitbucket.org/xu12345/document/raw/882532c5e953ea266c2e64b0c5948281e68fbbe3/imgs/yuanshen/%E6%B4%BB%E5%8A%A8%E9%80%9F%E9%80%92/1.0_1.jpg )
+[1.0_1]( https://bitbucket.org/xu12345/document/raw/882532c5e953ea266c2e64b0c5948281e68fbbe3/imgs/yuanshen/%E6%B4%BB%E5%8A%A8%E9%80%9F%E9%80%92/1.0_1.jpg )
 
 ---
 
-![1.0_2]( https://bitbucket.org/xu12345/document/raw/882532c5e953ea266c2e64b0c5948281e68fbbe3/imgs/yuanshen/%E6%B4%BB%E5%8A%A8%E9%80%9F%E9%80%92/1.0_2.jpg )
+[1.0_2]( https://bitbucket.org/xu12345/document/raw/882532c5e953ea266c2e64b0c5948281e68fbbe3/imgs/yuanshen/%E6%B4%BB%E5%8A%A8%E9%80%9F%E9%80%92/1.0_2.jpg )
 
 ---
 
@@ -630,8 +632,6 @@ https://baijiahao.baidu.com/s?id=1733410878724992545 ) &ensp; [夜兰wiki]( http
 
 ---
 
----
-
 ### 4.1 向深水中的晨星
 
 | 祈愿时间              | 场次  | 祈愿开启  | UP    | 四星  |
@@ -682,6 +682,33 @@ https://baijiahao.baidu.com/s?id=1733410878724992545 ) &ensp; [夜兰wiki]( http
 
 ---
 
+---
+
+### 4.3 蔷薇与铳枪
+
+| 祈愿时间              | 场次  | 祈愿开启  | UP    | 四星  |
+| --	                | --    | --        | --    | --     |
+| 2023/12/20~2024/01/09 | 上    | 娜维娅/神里绫华   |刺玫的铭誓  明花蔓舵 / 白鹭之庭  白鹭霜华 | 砂糖、罗莎莉亚、坎蒂丝    |
+| 2024/01/09~2024/01/20	| 下    | 雷电将军/宵宮 | 影寂天下人  一心净土 / 焰色天河  琉焰华舞 | 夏沃蕾、九条裟罗、班尼特  |
+
+[4.3_1]( https://bitbucket.org/xu12345/document/raw/ed0e85e03de69ceb33b328557cea3cc4076fec09/imgs/yuanshen/%E6%B4%BB%E5%8A%A8%E9%80%9F%E9%80%92/4.3_1.jpg )
+
+---
+
+[4.3_2]( https://bitbucket.org/xu12345/document/raw/ed0e85e03de69ceb33b328557cea3cc4076fec09/imgs/yuanshen/%E6%B4%BB%E5%8A%A8%E9%80%9F%E9%80%92/4.3_2.jpg )
+
+---
+
+[4.3_3]( https://bitbucket.org/xu12345/document/raw/ed0e85e03de69ceb33b328557cea3cc4076fec09/imgs/yuanshen/%E6%B4%BB%E5%8A%A8%E9%80%9F%E9%80%92/4.3_3.jpg )
+
+---
+
+
+[4.3_4]( https://bitbucket.org/xu12345/document/raw/ed0e85e03de69ceb33b328557cea3cc4076fec09/imgs/yuanshen/%E6%B4%BB%E5%8A%A8%E9%80%9F%E9%80%92/4.3_4.jpg )
+
+
+
+---
 
 
 ## 提瓦特
@@ -694,10 +721,4 @@ https://baijiahao.baidu.com/s?id=1733410878724992545 ) &ensp; [夜兰wiki]( http
 ![wa1]( https://bitbucket.org/xu12345/document/raw/6a85088838e4848036b410fb25ea35712761476f/imgs/yuanshen/%E6%B4%BB%E5%8A%A8%E9%80%9F%E9%80%92/wa1.jpg )
 
 ---
-
-
-
-[^图片链接说明]: 原图保存在bitbucket，注意链接前缀会有不同， 882532c5e953ea266c2e64b0c5948281e68fbbe3 ， 6a85088838e4848036b410fb25ea35712761476f ， 187f59dcdf6991f421c9381323d547b2ad796762  。
-
-
 
