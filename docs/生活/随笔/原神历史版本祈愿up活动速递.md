@@ -41,6 +41,7 @@
 | 27 | 4.1    | 2023.09.27~2023.11.07	| 向深水中的晨星         | 那维莱特/胡桃 <br/>莱欧斯利/温迪  | 菲谢尔、行秋、迪奥娜<br/>重云、托马、多莉     |
 | 28 | 4.2    | 2023.11.08~2023.12.19	| 罪人舞步旋             | 芙宁娜/白术 <br/>赛诺/神里绫人    | 夏洛蒂、柯莱、北斗<br/>绮良良、久岐忍、香菱   |
 | 29 | 4.3    | 2023.12.20~2024.01.30	| 蔷薇与铳枪             | 娜维娅/神里绫华 <br/>雷电将军/宵宮  | 砂糖、罗莎莉亚、坎蒂丝<br/>夏沃蕾、九条裟罗、班尼特 |
+| 30 | 4.4    | 2024.01.31~2024.03.12	| 彩鹞栉春风             | 闲云/纳西妲 <br/>魈/八重神子 | 嘉明、珐露珊、诺艾尔<br/>瑶瑶、凝光、辛焱          |
 
 
 以上每个版本的持续时间基本都固定为42天，除非特殊情况下会延迟版本时间。 <br/>
@@ -82,7 +83,7 @@
 | 27 | 4.1 | [「向深水中的晨星」4.1版本活动速递第一期]( https://www.miyoushe.com/ys/article/43746006 ) &ensp;  [「向深水中的晨星」4.1版本活动速递第二期]( https://www.miyoushe.com/ys/article/44411551 ) |
 | 28 | 4.2 | [「罪人舞步旋」4.2版本活动速递第一期]( https://www.miyoushe.com/ys/article/45181203 ) &ensp;  [「罪人舞步旋」4.2版本活动速递第二期]( https://www.miyoushe.com/ys/article/45825097 ) |
 | 29 | 4.3 | [「蔷薇与铳枪」4.3版本活动速递第一期]( https://www.miyoushe.com/ys/article/46664338 ) &ensp;  [「蔷薇与铳枪」4.3版本活动速递第二期]( https://www.miyoushe.com/ys/article/47577976 ) |
-
+| 30 | 4.4 | [「彩鹞栉春风」4.4版本活动速递]( https://www.miyoushe.com/ys/article/48499091 )  |
 
 账号【飞翔的丘丘人】及【原神】版本更新前于米游社发布活动速递。
 
@@ -705,6 +706,27 @@ https://baijiahao.baidu.com/s?id=1733410878724992545 ) &ensp; [夜兰wiki]( http
 
 
 [4.3_4]( https://bitbucket.org/xu12345/document/raw/ed0e85e03de69ceb33b328557cea3cc4076fec09/imgs/yuanshen/%E6%B4%BB%E5%8A%A8%E9%80%9F%E9%80%92/4.3_4.jpg )
+
+---
+
+---
+
+### 4.4 彩鹞栉春风
+
+| 祈愿时间              | 场次  | 祈愿开启  | UP    | 四星  |
+| --	                | --    | --        | --    | --     |
+| 2024/01/31~2024/02/20 | 上    | 闲云/纳西妲 | 云府鹤行  鸾音鹤信 / 月草的赐慧  白草净华 | 嘉明、珐露珊、诺艾尔 |
+| 2024/02/20~2024/03/12	| 下    | 魈/八重神子 | 烟火之邀  护法夜叉 / 华紫樱绯  浮世笑百姿 | 瑶瑶、凝光、辛焱     |
+
+[4.4_0]( https://bitbucket.org/xu12345/document/raw/5e7ac1ccdcaef28479f78c19fab9aa68d3e9e513/imgs/yuanshen/%E6%B4%BB%E5%8A%A8%E9%80%9F%E9%80%92/4.4_0.jpg )
+
+---
+
+[4.4_1]( https://bitbucket.org/xu12345/document/raw/5e7ac1ccdcaef28479f78c19fab9aa68d3e9e513/imgs/yuanshen/%E6%B4%BB%E5%8A%A8%E9%80%9F%E9%80%92/4.4_1.jpg )
+
+---
+
+[4.4_2]( https://bitbucket.org/xu12345/document/raw/5e7ac1ccdcaef28479f78c19fab9aa68d3e9e513/imgs/yuanshen/%E6%B4%BB%E5%8A%A8%E9%80%9F%E9%80%92/4.4_2.jpg )
 
 
 
