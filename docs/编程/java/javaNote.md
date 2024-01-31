@@ -2,6 +2,8 @@
 
 ## 1、java编程
 
+[calligraphy-boot]( https://gitlab.com/xuyq123/calligraphy-boot )  &ensp; [util]( https://gitlab.com/xuyq123/calligraphy-boot/-/blob/dev_20210728/calligraphy-boot-common/src/main/java/com/xu/calligraphy/boot/common/util/LogisticsUtil.java )
+
 ### 1.1、常用方法
 
 ```java
@@ -60,46 +62,101 @@ List<SettlementProcessInstanceDO> querySettlementProcessInstanceList(@Param("bil
 
 ```
 
+
 ```java
-<dependency>
-    <groupId>net.sf.dozer</groupId>
-    <artifactId>dozer</artifactId>
-    <version>5.5.1</version>
-</dependency>
+
+// java中Map遍历的四种方式
+https://www.cnblogs.com/damoblog/p/9124937.html
+
+Map<String,String> map = new HashMap<String,String>();
+map.put("熊大", "棕色");
+map.put("熊二", "黄色");
 
 
-    /**
-     * 深度复制
-     * @param args
-     */
-    public static void main(String[] args) {
-        Object sourceObject = new Object();
-        Object targetObject = new Object();
-        DozerBeanMapper dozerBeanMapper = new DozerBeanMapper();
-        dozerBeanMapper.map(sourceObject, targetObject);
-    }
+for(Map.Entry<String, String> entry : map.entrySet()){
+    String mapKey = entry.getKey();
+    String mapValue = entry.getValue();
+    System.out.println(mapKey+":"+mapValue);
+}
 
-	
-	
-	
-    /**
-     * 正则分割中文和数字
-     *
-     * @param region
-     * @return
-     */
-    public static List spitRegion(String region) {
-		Pattern REGION_PATTERN = Pattern.compile("[\\u4e00-\\u9fa5]+|\\d+");
-		
-        List<String> list = new ArrayList<>();
-        Matcher m = REGION_PATTERN.matcher(region);
-        while (m.find()) {
-            list.add(m.group());
-        }
-        return list;
-    }
-	
+ map.entrySet().forEach(en->{
+                en.getKey();
+                en.getValue();
+            });
+
+//key
+for(String key : map.keySet()){
+    System.out.println(key);
+}
+//value
+for(String value : map.values()){
+    System.out.println(value);
+}
+
+
+Iterator<Entry<String, String>> entries = map.entrySet().iterator();
+while(entries.hasNext()){
+    Entry<String, String> entry = entries.next();
+    String key = entry.getKey();
+    String value = entry.getValue();
+    System.out.println(key+":"+value);
+}
+
+
+for(String key : map.keySet()){
+    String value = map.get(key);
+    System.out.println(key+":"+value);
+}
+
+
 ```
+
+
+```java
+// 创建数组的四种方法
+int[] a1;
+int[] a2 = {1, 2, 3};
+int[] a3 = new int[]{1, 2, 3};
+
+int[] a4 = new int[3];
+a4[0] = 1;
+a4[2] = 2;
+a4[3] = 3;
+
+```
+
+```java
+// 几个快速添加list的方法
+1. 使用Collections.addAll()方法，前提还是需要手动 new ArrayList
+ArrayList<String> s = new ArrayList();
+Collections.addAll(s,"1","2","3")
+
+2. 使用Arrays.asList(...args) 直接返回一个List
+List<String> s = Arrays.asList("1","2","3")
+// 可能会抛异常 UnsupportOperationException
+
+3. 如果引入了Guava的工具包，可以使用他的Lists.newArrayList(...args)方法
+List<String> list = Lists.newArrayList("1","2","3")
+
+4. 如果是Java9，可以使用自带的List类
+List<String> s = List.of("1","2","3")
+
+```
+
+```
+使用Arrays.asList()报错 UnsupportOperationException 原因
+
+常常使用Arrays.asLisvt()后调用add，remove这些method时出现java.lang.UnsupportedOperationException异常。这是由于：
+Arrays.asLisvt() 返回java.util.Arrays$ArrayList， 而不是ArrayList。
+
+Arrays$ArrayList和ArrayList都是继承AbstractList，remove，add等 method在AbstractList中是默认throw UnsupportedOperationException而且不作任何操作。
+ArrayList override这些method来对list进行操作，但是Arrays$ArrayList没有override remove(int)，add(int)等，所以throw UnsupportedOperationException。
+
+解决方法：
+List<String> list=new ArrayList(Arrays.asList(nameList));
+ 
+```
+
 
 
 ### 1.2、lambda表达式
@@ -193,55 +250,79 @@ basketList.parallelStream().collect(Collectors.groupingBy(item -> item.getAddrTe
 
 ```
 
-### 1.3、Map遍历
+
+
+### 1.3、通用工具
+
+```java
+<dependency>
+    <groupId>net.sf.dozer</groupId>
+    <artifactId>dozer</artifactId>
+    <version>5.5.1</version>
+</dependency>
+
+
+/**
+ * 深度复制
+ * @param sourceObject
+ * @param targetObject
+ */
+public static void copyPropertiesByDeep(Object sourceObject, Object targetObject) {
+    DozerBeanMapper dozerBeanMapper = new DozerBeanMapper();
+    dozerBeanMapper.map(sourceObject, targetObject);
+}
+
+	
+	
+	
+/**
+ * 正则分割中文和数字
+ *
+ * @param region
+ * @return
+ */
+public static List spitRegion(String region) {
+	Pattern REGION_PATTERN = Pattern.compile("[\\u4e00-\\u9fa5]+|\\d+");
+	
+    List<String> list = new ArrayList<>();
+    Matcher m = REGION_PATTERN.matcher(region);
+    while (m.find()) {
+        list.add(m.group());
+    }
+    return list;
+}
+	
+```
 
 ```java
 
-java中Map遍历的四种方式
-https://www.cnblogs.com/damoblog/p/9124937.html
+    /**
+     * 特殊字符检测
+     *
+     * @param str
+     * @return
+     */
+    public static Boolean filterString(String str) {
+        String regEx = "[`~!@#$%^&*()+=|{}':;'\\[\\].<>/?~！@#￥%……&*（）——+|{}【】‘；：”“’。，、？]";
+        Pattern p = Pattern.compile(regEx);
+        Matcher m = p.matcher(str);
+        return m.replaceAll("").trim().length() != str.length();
+    }
 
-Map<String,String> map = new HashMap<String,String>();
-map.put("熊大", "棕色");
-map.put("熊二", "黄色");
-
-
-for(Map.Entry<String, String> entry : map.entrySet()){
-    String mapKey = entry.getKey();
-    String mapValue = entry.getValue();
-    System.out.println(mapKey+":"+mapValue);
-}
-
- map.entrySet().forEach(en->{
-                en.getKey();
-                en.getValue();
-            });
-
-//key
-for(String key : map.keySet()){
-    System.out.println(key);
-}
-//value
-for(String value : map.values()){
-    System.out.println(value);
-}
-
-
-Iterator<Entry<String, String>> entries = map.entrySet().iterator();
-while(entries.hasNext()){
-    Entry<String, String> entry = entries.next();
-    String key = entry.getKey();
-    String value = entry.getValue();
-    System.out.println(key+":"+value);
-}
-
-
-for(String key : map.keySet()){
-    String value = map.get(key);
-    System.out.println(key+":"+value);
-}
-
-
+    /**
+     * sql注入检测
+     *
+     * @param str
+     * @return
+     */
+    public static Boolean filterStringSql(String str) {
+        Pattern pattern = Pattern.compile("\\b(and|exec|insert|select|drop|grant|alter|delete|update|count|chr|mid|master|truncate|char|declare|or)\\b|(\\*|;|\\+|'|%)");
+        Matcher matcher = pattern.matcher(str.toString().toLowerCase());
+        return matcher.find();
+    }
 ```
+
+
 
 ### 1.4、java排序
 
@@ -362,7 +443,7 @@ public static TreeMap<String, List<LogisticsStatisticsDAO>> getCustomSortTreeMap
 	
 ```
 
-### 1.5、flatmap,peek,newArrayList
+### 1.5、flatmap,peek
 
 ```java
 JAVA8 中的flatmap
@@ -418,50 +499,6 @@ Java 8 Stream peek 与 map的区别
 
 ```
 
-```java
-// 创建数组的四种方法
-int[] a1;
-int[] a2 = {1, 2, 3};
-int[] a3 = new int[]{1, 2, 3};
-
-int[] a4 = new int[3];
-a4[0] = 1;
-a4[2] = 2;
-a4[3] = 3;
-
-```
-
-```java
-几个快速添加list的方法
-1. 使用Collections.addAll()方法，前提还是需要手动 new ArrayList
-ArrayList<String> s = new ArrayList();
-Collections.addAll(s,"1","2","3")
-
-2. 使用Arrays.asList(...args) 直接返回一个List
-List<String> s = Arrays.asList("1","2","3")
-// 可能会抛异常 UnsupportOperationException
-
-3. 如果引入了Guava的工具包，可以使用他的Lists.newArrayList(...args)方法
-List<String> list = Lists.newArrayList("1","2","3")
-
-4. 如果是Java9，可以使用自带的List类
-List<String> s = List.of("1","2","3")
-
-```
-
-```
-使用Arrays.asList()报错 UnsupportOperationException 原因
-
-常常使用Arrays.asLisvt()后调用add，remove这些method时出现java.lang.UnsupportedOperationException异常。这是由于：
-Arrays.asLisvt() 返回java.util.Arrays$ArrayList， 而不是ArrayList。
-
-Arrays$ArrayList和ArrayList都是继承AbstractList，remove，add等 method在AbstractList中是默认throw UnsupportedOperationException而且不作任何操作。
-ArrayList override这些method来对list进行操作，但是Arrays$ArrayList没有override remove(int)，add(int)等，所以throw UnsupportedOperationException。
-
-解决方法：
-List<String> list=new ArrayList(Arrays.asList(nameList));
- 
-```
 
 ---
 
@@ -721,8 +758,7 @@ maven常用打包命令
 
 > **公众号**
 
-- 注册了微信公众号及今日头条号：[**无为徐生**]( https://scott180.github.io/calligraphy/%E6%97%A0%E4%B8%BA%E5%BE%90%E7%94%9F )，以后会将书法练习轨迹、程序员笔记以及一些随笔感想更新在此。<br/>
-- 每周一会在无为徐生**微信公众号**同步《书法练习轨迹》，持续更新，敬请关注。
+- 注册了微信公众号及今日头条号：[**无为徐生**]( https://scott180.github.io/calligraphy/%E6%97%A0%E4%B8%BA%E5%BE%90%E7%94%9F )，将书法练习轨迹、程序员笔记以及一些随笔感想更新在此。<br/>
 
 | 无为徐生   | 微信公众号                                               	 |  &ensp; |  今日头条号        |
 | ---------  | ------------------------------------------------------------- |  -      |  ----------        |
