@@ -6,6 +6,9 @@
 
 ### 1.1、常用方法
 
+> @Data、JSON、@JsonFormat、ThreadPoolTaskExecutor、@MapKey、@Select
+> Map遍历、创建数组、快速添加list、UnsupportOperationException
+
 ```java
 @Data
 @AllArgsConstructor
@@ -161,6 +164,8 @@ List<String> list=new ArrayList(Arrays.asList(nameList));
 
 ### 1.2、lambda表达式
 
+> AtomicInteger、stream/map/filter/mapToInt/reduce/groupingBy/toMap/max、Optional、flatmap、peek
+
 ```java
 
 /*** lambda表达式 */
@@ -250,9 +255,69 @@ basketList.parallelStream().collect(Collectors.groupingBy(item -> item.getAddrTe
 
 ```
 
+---
+
+---
+
+```java
+JAVA8 中的flatmap
+
+使用flatMap方法的效果是，各个数组并不是分别映射一个流，而是映射成流的内容，所有使用map(Array::stream)时生成的单个流被合并起来，即扁平化为一个流。
+https://blog.csdn.net/liyantianmin/article/details/96178586
+https://blog.csdn.net/zhuwukai/article/details/82888316
+https://www.jianshu.com/p/ecb8e8f77a89
+
+ public static void main(String[] args) {
+	List<User> uList = Lists.newArrayList();
+	User u1 = new User();
+	u1.setAddr("a1;a2;a3;a4;a5");
+
+	User u2 = new User();
+	u2.setAddr("b1;b2;b3;b4;b5");
+
+	uList.add(u1);
+	uList.add(u2);
+
+	List<String> addrList = uList.stream().map(x -> x.getAddr()).flatMap(x-> Arrays.stream(x.split(";"))).collect(Collectors.toList());
+	//或者
+	List<String> ridStrList = uList.stream().map(x -> x.getAddr()).map(x -> x.split(";")).flatMap(Arrays::stream).collect(Collectors.toList());
+	System.out.println(addrList);
+}
+
+@Data
+@NoArgsConstructor
+public class User{
+	private   String addr;
+}
+
+
+---
+
+
+public static class User {
+        private String name;
+        private List<String> relativeUsers;
+}
+
+List<String> strings = users.stream()
+  .flatMap(user -> user.getRelativeUsers().stream())
+  .collect(Collectors.toList());
+	
+```
+
+
+```
+Java 8 Stream peek 与 map的区别
+原文链接：https://blog.csdn.net/tckt75433/article/details/81510743
+总结：peek接收一个没有返回值的λ表达式，可以做一些输出，外部处理等。map接收一个有返回值的λ表达式，之后Stream的泛型类型将转换为map参数λ表达式返回的类型。
+
+```
+
 
 
 ### 1.3、通用工具
+
+> 深度复制、正则分割中文和数字、特殊字符检测、sql注入检测
 
 ```java
 <dependency>
@@ -325,6 +390,8 @@ public static List spitRegion(String region) {
 
 
 ### 1.4、java排序
+
+> Arrays.sort、Collections.sort、new Comparator、compareTo、stream/Comparator/comparing
 
 ```java
 java排序
@@ -443,61 +510,22 @@ public static TreeMap<String, List<LogisticsStatisticsDAO>> getCustomSortTreeMap
 	
 ```
 
-### 1.5、flatmap,peek
-
-```java
-JAVA8 中的flatmap
-
-使用flatMap方法的效果是，各个数组并不是分别映射一个流，而是映射成流的内容，所有使用map(Array::stream)时生成的单个流被合并起来，即扁平化为一个流。
-https://blog.csdn.net/liyantianmin/article/details/96178586
-https://blog.csdn.net/zhuwukai/article/details/82888316
-https://www.jianshu.com/p/ecb8e8f77a89
-
- public static void main(String[] args) {
-	List<User> uList = Lists.newArrayList();
-	User u1 = new User();
-	u1.setAddr("a1;a2;a3;a4;a5");
-
-	User u2 = new User();
-	u2.setAddr("b1;b2;b3;b4;b5");
-
-	uList.add(u1);
-	uList.add(u2);
-
-	List<String> addrList = uList.stream().map(x -> x.getAddr()).flatMap(x-> Arrays.stream(x.split(";"))).collect(Collectors.toList());
-	//或者
-	List<String> ridStrList = uList.stream().map(x -> x.getAddr()).map(x -> x.split(";")).flatMap(Arrays::stream).collect(Collectors.toList());
-	System.out.println(addrList);
-}
-
-@Data
-@NoArgsConstructor
-public class User{
-	private   String addr;
-}
-
-
----
-
-
-public static class User {
-        private String name;
-        private List<String> relativeUsers;
-}
-
-List<String> strings = users.stream()
-  .flatMap(user -> user.getRelativeUsers().stream())
-  .collect(Collectors.toList());
-	
-```
-
+### 1.5、死锁Deadlock
 
 ```
-Java 8 Stream peek 与 map的区别
-原文链接：https://blog.csdn.net/tckt75433/article/details/81510743
-总结：peek接收一个没有返回值的λ表达式，可以做一些输出，外部处理等。map接收一个有返回值的λ表达式，之后Stream的泛型类型将转换为map参数λ表达式返回的类型。
+--查询一下mysql的事务处理表
+select * from information_schema.INNODB_TRX  
+
+--杀掉进程
+kill 进程ID
+
+详情见笔记
+https://gitlab.com/xuyq123/mynotes/-/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93/mysqlNote.md?ref_type=heads#user-content-36%E6%AD%BB%E9%94%81deadlock
+
+https://xushufa.cn/docs/bian-cheng/shu-ju-ku/mysqlnote.html
 
 ```
+
 
 
 ---

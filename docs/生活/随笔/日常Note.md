@@ -2,7 +2,7 @@
 
 <br />
 
-[blog]( https://xushufa.cn ) &ensp;  [gitlab]( https://gitlab.com/xuyq123/mynotes ) &ensp; [gitee]( https://gitee.com/xy180/MyNotes ) &ensp; [github]( https://github.com/scott180/MyNotes ) &ensp; [xushufa]( https://vuepress-blog.xushufa.cn )
+[xushufa]( https://xushufa.cn ) &ensp;  [gitlab]( https://gitlab.com/xuyq123/mynotes ) &ensp; [gitee]( https://gitee.com/xy180/MyNotes ) &ensp; [github]( https://github.com/scott180/MyNotes ) &ensp; [blog]( https://vuepress-blog.xushufa.cn )
 
 <br />
 
@@ -25,7 +25,7 @@ Ctrl+W  关闭程序
 Ctrl+Z  撤销刚才进行的操作
 Ctrl+Y  恢复刚才进行的操作
 Ctrl+N  新建一个空白文档
-Ctrl+P  打开"打印"对话框
+Ctrl+P  打开打印
 Ctrl+O  打开文档
 
 Ctrl+Shift	输入法切换
@@ -36,19 +36,19 @@ Ctrl+Shift+End	选中当前到末尾所有内容
 Ctrl+Shift+Esc	打开任务管理器
 Ctrl+Shift+Del	浏览器打开清除缓存对话框
 
-Alt+Tab     程序切换（小图标）
-Win+Tab     程序切换（大图标）
+Alt+Tab     程序切换-小图标
+Win+Tab     程序切换-大图标
 
 Win     显示开始菜单
 Win+L   锁定计算机
 Win+E   启动"我的电脑"
 Win+D   快速显示桌面
 
-Win+R   打开"运行"对话框，输入命令开启相关功能
-cmd 			命令行控制台
-reg 			注册表
+Win+R		打开运行-输入命令开启相关功能
+cmd			命令行控制台
+reg			注册表
 mstsc			远程登录
-services.msc 	本地服务
+services.msc		本地服务
 	
 F2   文件改名
 F5   浏览器页面刷新
@@ -75,7 +75,7 @@ Shift+光标+右键	 选中内容
 右击--打开方式--选择默认程序
 
 **3.注册表设置** <br/>
-Win+R 在运行里面输入regedit（注册表编辑器），HEY_CLASS_ROOT下面是所有文件的后缀名文件，找到你想取消关联的后缀名，如.ppt。 <br/>
+Win+R 在运行里面输入regedit（注册表编辑器），`HEY_CLASS_ROOT`下面是所有文件的后缀名文件，找到你想取消关联的后缀名，如.ppt。 <br/>
 单击这个文件夹，右边出现的“数据”一项，双击“（默认）”，打开对话框，将“数据”下面可以填写的部分清除，保持空白，确定。 <br/>
 
 你的电脑里面所有.ppt文件就没有了任何关联和默认程序，再按自己的想法重新关联或默认就行了。 <br/>

@@ -980,12 +980,12 @@ MID(str, pos, len)
 ### 3.4、分组取最值
 
 ```sql
-分组取最值
+-- 分组取最值
 select * from (select * from ins_delivery_region_sort order by update_time desc limit 99999999) so group by region
 ```
 
 ```sql
-新增或修改数据
+-- 新增或修改数据
 Insert into fd_supplier VALUES (null,#{supplier_id},#{s_code}) on duplicate key update s_code=#{s_code}
 ```
 
@@ -1012,23 +1012,54 @@ mysql> exit;
 ```
 
 
-### 3.6、Deadlock found
+### 3.6、死锁Deadlock
 
 ```js
-https://blog.csdn.net/qq_44240587/article/details/108400666   死锁
 Mysql报Deadlock found when trying to get lock; try restarting transaction问题解决!!
+https://blog.csdn.net/qq_44240587/article/details/108400666   
 
-
-行级锁在使用的时候并不是直接锁掉这行记录,而是锁索引
+行级锁在使用的时候并不是直接锁掉这行记录,而是锁索引.
 如果一条sql用到了主键索引(mysql主键自带索引),mysql会锁住主键索引;
 如果一条sql操作了非主键索引,mysql会先锁住非主键索引,再锁定主键索引.
 
 
+--查询一下mysql的事务处理表
 select * from information_schema.INNODB_TRX  
 
+--杀掉进程
 kill 进程ID
 
-  
+
+```
+
+```java
+如何检测锁定表（由LOCK TABLE锁定）
+https://www.toutiao.com/article/7237364692283458106
+
+SHOW ENGINE INNODB STATUS;
+该命令会输出当前 InnoDB 存储引擎的详细状态信息，其中包括事务、锁定和死锁等信息。
+
+SHOW OPEN TABLES;
+该命令会返回一个表格，其中显示了所有打开的表的详细信息，包括库名、表名、表类型、锁类型等。
+
+
+```
+
+```
+mysql数据库死锁：Deadlock found when trying to get lock; try restarting transaction
+https://www.w3cschool.cn/article/3739209.html
+
+减少死锁：
+使用事务，不使用 lock tables 。
+保证没有长事务。
+操作完之后立即提交事务，特别是在交互式命令行中。
+如果在用 (SELECT ... FOR UPDATE or SELECT ... LOCK IN SHARE MODE)，尝试降低隔离级别。
+修改多个表或者多个行的时候，将修改的顺序保持一致。
+创建索引，可以使创建的锁更少。
+最好不要用 (SELECT ... FOR UPDATE or SELECT ... LOCK IN SHARE MODE)。
+如果上述都无法解决问题，那么尝试使用 lock tables t1, t2, t3 锁多张表
+
+
 ```
 
 
