@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>定时执行脚本 | 无为徐生</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/icon.png">
+    <meta name="description" content="生活随笔-编程笔记-书法练习轨迹">
+    
+    <link rel="preload" href="/assets/css/0.styles.37b23b1b.css" as="style"><link rel="preload" href="/assets/js/app.24d6bad3.js" as="script"><link rel="preload" href="/assets/js/4.abfc4c43.js" as="script"><link rel="preload" href="/assets/js/3.8b48aec2.js" as="script"><link rel="preload" href="/assets/js/8.db36f4aa.js" as="script"><link rel="preload" href="/assets/js/95.57958c95.js" as="script"><link rel="prefetch" href="/assets/js/10.7b7b104e.js"><link rel="prefetch" href="/assets/js/11.dc04354b.js"><link rel="prefetch" href="/assets/js/12.731afb68.js"><link rel="prefetch" href="/assets/js/13.a5115b30.js"><link rel="prefetch" href="/assets/js/14.0e605ab7.js"><link rel="prefetch" href="/assets/js/15.87ce3d0b.js"><link rel="prefetch" href="/assets/js/16.45959706.js"><link rel="prefetch" href="/assets/js/17.70238afb.js"><link rel="prefetch" href="/assets/js/18.8f24d1ff.js"><link rel="prefetch" href="/assets/js/19.2fcf845c.js"><link rel="prefetch" href="/assets/js/20.4c3f3f18.js"><link rel="prefetch" href="/assets/js/21.0a4e97bd.js"><link rel="prefetch" href="/assets/js/22.b44d6139.js"><link rel="prefetch" href="/assets/js/23.37ee8404.js"><link rel="prefetch" href="/assets/js/24.6e7f1e44.js"><link rel="prefetch" href="/assets/js/25.995c4b09.js"><link rel="prefetch" href="/assets/js/26.b1028719.js"><link rel="prefetch" href="/assets/js/27.6c48dcaa.js"><link rel="prefetch" href="/assets/js/28.6b712172.js"><link rel="prefetch" href="/assets/js/29.3b81dc12.js"><link rel="prefetch" href="/assets/js/30.96aa1d93.js"><link rel="prefetch" href="/assets/js/31.276bc5e5.js"><link rel="prefetch" href="/assets/js/32.bd7990ae.js"><link rel="prefetch" href="/assets/js/33.6094001c.js"><link rel="prefetch" href="/assets/js/34.46811edc.js"><link rel="prefetch" href="/assets/js/35.60fc87c0.js"><link rel="prefetch" href="/assets/js/36.4796722c.js"><link rel="prefetch" href="/assets/js/37.934ffde4.js"><link rel="prefetch" href="/assets/js/38.66e7410e.js"><link rel="prefetch" href="/assets/js/39.6a1217de.js"><link rel="prefetch" href="/assets/js/40.ffcba7c1.js"><link rel="prefetch" href="/assets/js/41.aa90f9a0.js"><link rel="prefetch" href="/assets/js/42.0f0dd00f.js"><link rel="prefetch" href="/assets/js/43.7301b0f7.js"><link rel="prefetch" href="/assets/js/44.5bc8eb50.js"><link rel="prefetch" href="/assets/js/45.b7f6429f.js"><link rel="prefetch" href="/assets/js/46.24b68cf1.js"><link rel="prefetch" href="/assets/js/47.82298a8b.js"><link rel="prefetch" href="/assets/js/48.edea9f12.js"><link rel="prefetch" href="/assets/js/49.b36c8c3c.js"><link rel="prefetch" href="/assets/js/5.4fee1a3d.js"><link rel="prefetch" href="/assets/js/50.19e90b0d.js"><link rel="prefetch" href="/assets/js/51.68376a29.js"><link rel="prefetch" href="/assets/js/52.f695de65.js"><link rel="prefetch" href="/assets/js/53.b81545fa.js"><link rel="prefetch" href="/assets/js/54.8a19f9eb.js"><link rel="prefetch" href="/assets/js/55.b9f5aa41.js"><link rel="prefetch" href="/assets/js/56.33538012.js"><link rel="prefetch" href="/assets/js/57.ca0f3ae1.js"><link rel="prefetch" href="/assets/js/58.aa9fea6f.js"><link rel="prefetch" href="/assets/js/59.a4883f77.js"><link rel="prefetch" href="/assets/js/6.d41fed72.js"><link rel="prefetch" href="/assets/js/60.5914cd20.js"><link rel="prefetch" href="/assets/js/61.107d69a0.js"><link rel="prefetch" href="/assets/js/62.cc94932c.js"><link rel="prefetch" href="/assets/js/63.3ebd47d0.js"><link rel="prefetch" href="/assets/js/64.d7740d03.js"><link rel="prefetch" href="/assets/js/65.d6f054be.js"><link rel="prefetch" href="/assets/js/66.967ebaae.js"><link rel="prefetch" href="/assets/js/67.e07b6583.js"><link rel="prefetch" href="/assets/js/68.56b35c68.js"><link rel="prefetch" href="/assets/js/69.c27a666c.js"><link rel="prefetch" href="/assets/js/7.25337456.js"><link rel="prefetch" href="/assets/js/70.6075ca6e.js"><link rel="prefetch" href="/assets/js/71.31314dbf.js"><link rel="prefetch" href="/assets/js/72.4f60c02b.js"><link rel="prefetch" href="/assets/js/73.f595a544.js"><link rel="prefetch" href="/assets/js/74.c94c4cd0.js"><link rel="prefetch" href="/assets/js/75.692863c5.js"><link rel="prefetch" href="/assets/js/76.e9426628.js"><link rel="prefetch" href="/assets/js/77.60b24b06.js"><link rel="prefetch" href="/assets/js/78.88cc7daa.js"><link rel="prefetch" href="/assets/js/79.43f251e3.js"><link rel="prefetch" href="/assets/js/80.9d1dec16.js"><link rel="prefetch" href="/assets/js/81.a0a519d1.js"><link rel="prefetch" href="/assets/js/82.b472da96.js"><link rel="prefetch" href="/assets/js/83.4c3736c3.js"><link rel="prefetch" href="/assets/js/84.ac8a24d9.js"><link rel="prefetch" href="/assets/js/85.72443c0b.js"><link rel="prefetch" href="/assets/js/86.07cf24dc.js"><link rel="prefetch" href="/assets/js/87.e1450c8a.js"><link rel="prefetch" href="/assets/js/88.7cf06731.js"><link rel="prefetch" href="/assets/js/89.7bbb52e5.js"><link rel="prefetch" href="/assets/js/9.a7973586.js"><link rel="prefetch" href="/assets/js/90.06e69505.js"><link rel="prefetch" href="/assets/js/91.e5f460b1.js"><link rel="prefetch" href="/assets/js/92.9b45ee13.js"><link rel="prefetch" href="/assets/js/93.ec5f6d45.js"><link rel="prefetch" href="/assets/js/94.c3ab22bc.js"><link rel="prefetch" href="/assets/js/96.8c764162.js"><link rel="prefetch" href="/assets/js/97.48d824e7.js"><link rel="prefetch" href="/assets/js/98.5e627897.js"><link rel="prefetch" href="/assets/js/99.fa92260a.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.660e476c.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.37b23b1b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">无为徐生</span></a> <div class="links"><form id="search-form" role="search" class="algolia-search-wrapper search-box"><input id="algolia-search-input" class="search-query"></form> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/目录.html" class="nav-link">
+  目录
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="生活" class="dropdown-title"><span class="title">生活</span> <span class="arrow down"></span></button> <button type="button" aria-label="生活" class="mobile-dropdown-title"><span class="title">生活</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/生活/随笔/日常Note.html" class="nav-link">
+  日常Note
+</a></li><li class="dropdown-item"><!----> <a href="/生活/随笔/驾考记事.html" class="nav-link">
+  驾考记事
+</a></li><li class="dropdown-item"><!----> <a href="/生活/随笔/健身与学习.html" class="nav-link">
+  健身与学习
+</a></li><li class="dropdown-item"><!----> <a href="/生活/随笔/吉他练习笔记.html" class="nav-link">
+  吉他练习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/生活/文档/如何练好书法.html" class="nav-link">
+  如何练好书法
+</a></li><li class="dropdown-item"><!----> <a href="/生活/随笔/我的原神旅行观测记录.html" class="nav-link">
+  我的原神旅行观测记录
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程" class="dropdown-title"><span class="title">编程</span> <span class="arrow down"></span></button> <button type="button" aria-label="编程" class="mobile-dropdown-title"><span class="title">编程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/编程/java/javaNote.html" class="nav-link">
+  javaNote
+</a></li><li class="dropdown-item"><!----> <a href="/编程/java/排序算法.html" class="nav-link">
+  排序算法
+</a></li><li class="dropdown-item"><!----> <a href="/编程/运维/gitNote.html" class="nav-link">
+  gitNote
+</a></li><li class="dropdown-item"><!----> <a href="/编程/运维/linuxNote-x.html" class="nav-link">
+  linuxNote
+</a></li><li class="dropdown-item"><!----> <a href="/编程/运维/vuepress构建项目.html" class="nav-link">
+  vuepress构建项目
+</a></li><li class="dropdown-item"><!----> <a href="/编程/数据库/mysqlNote.html" class="nav-link">
+  mysqlNote
+</a></li><li class="dropdown-item"><!----> <a href="/编程/数据库/oracleNote.html" class="nav-link">
+  oracleNote
+</a></li><li class="dropdown-item"><!----> <a href="/编程/资料/javaScript笔记.html" class="nav-link">
+  javaScript笔记
+</a></li><li class="dropdown-item"><!----> <a href="/编程/资料/工具网站readMe.html" class="nav-link">
+  工具网站readMe
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="书法" class="dropdown-title"><span class="title">书法</span> <span class="arrow down"></span></button> <button type="button" aria-label="书法" class="mobile-dropdown-title"><span class="title">书法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/书法/书法/赤壁赋.html" class="nav-link">
+  赤壁赋
+</a></li><li class="dropdown-item"><!----> <a href="/书法/书法/多宝塔碑.html" class="nav-link">
+  多宝塔碑
+</a></li><li class="dropdown-item"><!----> <a href="/书法/练习/徐书法.html" class="nav-link">
+  徐书法
+</a></li><li class="dropdown-item"><!----> <a href="/书法/练习/无为徐生.html" class="nav-link">
+  无为徐生
+</a></li><li class="dropdown-item"><!----> <a href="/书法/练习/古文诗词.html" class="nav-link">
+  古文诗词
+</a></li><li class="dropdown-item"><!----> <a href="/书法/练习/书法练习轨迹ReadMe.html" class="nav-link">
+  书法练习轨迹
+</a></li><li class="dropdown-item"><!----> <a href="/书法/轨迹/有感之杂说.html" class="nav-link">
+  有感之杂说
+</a></li></ul></div></div><div class="nav-item"><a href="/关于我.html" class="nav-link">
+  关于我
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/目录.html" class="nav-link">
+  目录
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="生活" class="dropdown-title"><span class="title">生活</span> <span class="arrow down"></span></button> <button type="button" aria-label="生活" class="mobile-dropdown-title"><span class="title">生活</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/生活/随笔/日常Note.html" class="nav-link">
+  日常Note
+</a></li><li class="dropdown-item"><!----> <a href="/生活/随笔/驾考记事.html" class="nav-link">
+  驾考记事
+</a></li><li class="dropdown-item"><!----> <a href="/生活/随笔/健身与学习.html" class="nav-link">
+  健身与学习
+</a></li><li class="dropdown-item"><!----> <a href="/生活/随笔/吉他练习笔记.html" class="nav-link">
+  吉他练习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/生活/文档/如何练好书法.html" class="nav-link">
+  如何练好书法
+</a></li><li class="dropdown-item"><!----> <a href="/生活/随笔/我的原神旅行观测记录.html" class="nav-link">
+  我的原神旅行观测记录
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程" class="dropdown-title"><span class="title">编程</span> <span class="arrow down"></span></button> <button type="button" aria-label="编程" class="mobile-dropdown-title"><span class="title">编程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/编程/java/javaNote.html" class="nav-link">
+  javaNote
+</a></li><li class="dropdown-item"><!----> <a href="/编程/java/排序算法.html" class="nav-link">
+  排序算法
+</a></li><li class="dropdown-item"><!----> <a href="/编程/运维/gitNote.html" class="nav-link">
+  gitNote
+</a></li><li class="dropdown-item"><!----> <a href="/编程/运维/linuxNote-x.html" class="nav-link">
+  linuxNote
+</a></li><li class="dropdown-item"><!----> <a href="/编程/运维/vuepress构建项目.html" class="nav-link">
+  vuepress构建项目
+</a></li><li class="dropdown-item"><!----> <a href="/编程/数据库/mysqlNote.html" class="nav-link">
+  mysqlNote
+</a></li><li class="dropdown-item"><!----> <a href="/编程/数据库/oracleNote.html" class="nav-link">
+  oracleNote
+</a></li><li class="dropdown-item"><!----> <a href="/编程/资料/javaScript笔记.html" class="nav-link">
+  javaScript笔记
+</a></li><li class="dropdown-item"><!----> <a href="/编程/资料/工具网站readMe.html" class="nav-link">
+  工具网站readMe
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="书法" class="dropdown-title"><span class="title">书法</span> <span class="arrow down"></span></button> <button type="button" aria-label="书法" class="mobile-dropdown-title"><span class="title">书法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/书法/书法/赤壁赋.html" class="nav-link">
+  赤壁赋
+</a></li><li class="dropdown-item"><!----> <a href="/书法/书法/多宝塔碑.html" class="nav-link">
+  多宝塔碑
+</a></li><li class="dropdown-item"><!----> <a href="/书法/练习/徐书法.html" class="nav-link">
+  徐书法
+</a></li><li class="dropdown-item"><!----> <a href="/书法/练习/无为徐生.html" class="nav-link">
+  无为徐生
+</a></li><li class="dropdown-item"><!----> <a href="/书法/练习/古文诗词.html" class="nav-link">
+  古文诗词
+</a></li><li class="dropdown-item"><!----> <a href="/书法/练习/书法练习轨迹ReadMe.html" class="nav-link">
+  书法练习轨迹
+</a></li><li class="dropdown-item"><!----> <a href="/书法/轨迹/有感之杂说.html" class="nav-link">
+  有感之杂说
+</a></li></ul></div></div><div class="nav-item"><a href="/关于我.html" class="nav-link">
+  关于我
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>java</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>运维</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/编程/运维/docker.html" class="sidebar-link">docker</a></li><li><a href="/编程/运维/gitNote.html" class="sidebar-link">gitNote</a></li><li><a href="/编程/运维/shell语法.html" class="sidebar-link">shell语法</a></li><li><a href="/编程/运维/linuxNote-x.html" class="sidebar-link">linuxNote</a></li><li><a href="/编程/运维/nginx笔记.html" class="sidebar-link">nginx笔记</a></li><li><a href="/编程/运维/定时执行脚本.html" class="active sidebar-link">定时执行脚本</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/编程/运维/定时执行脚本.html#定时任务" class="sidebar-link">定时任务</a></li><li class="sidebar-sub-header"><a href="/编程/运维/定时执行脚本.html#用例" class="sidebar-link">用例</a></li><li class="sidebar-sub-header"><a href="/编程/运维/定时执行脚本.html#报错" class="sidebar-link">报错</a></li></ul></li><li><a href="/编程/运维/gitbook部署博客.html" class="sidebar-link">gitbook部署博客</a></li><li><a href="/编程/运维/vuepress构建项目.html" class="sidebar-link">vuepress构建项目</a></li><li><a href="/编程/运维/批量推送布署徐书法项目.html" class="sidebar-link">批量推送布署徐书法项目</a></li><li><a href="/编程/运维/markdown静态博客搭建综述.html" class="sidebar-link">markdown静态博客搭建综述</a></li><li><a href="/编程/运维/gitlab、github绑定自定义域名.html" class="sidebar-link">gitlab、github绑定自定义域名</a></li><li><a href="/编程/运维/git平台docsify布署markdown文件.html" class="sidebar-link">git平台docsify布署markdown文件</a></li><li><a href="/编程/运维/gitlab、github、gitee布署mkdocs主题仓库.html" class="sidebar-link">gitlab、github、gitee布署mkdocs主题仓库</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>数据库</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>资料</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="u-valine u-valine-wrap" data-v-23bb508a><span data-flag-title="blog.xushufa.cn" class="leancloud-visitors" data-v-23bb508a><span class="stat update-time" data-v-23bb508a><img src="/update-time.png" class="icon" data-v-23bb508a>2022-06-17 14:26:58
+    </span> <span class="stat read-count" data-v-23bb508a><img src="/read-count.png" class="icon" data-v-23bb508a> <span class="leancloud-visitors-count" data-v-23bb508a></span></span></span></div> <div class="theme-default-content content__default"><h1 id="定时执行脚本"><a href="#定时执行脚本" class="header-anchor">#</a> 定时执行脚本</h1> <h2 id="定时任务"><a href="#定时任务" class="header-anchor">#</a> 定时任务</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code>#打开定时任务
+crontab <span class="token operator">-</span>e
+
+#添加定时任务
+<span class="token number">00</span> <span class="token number">00</span> <span class="token operator">*</span> <span class="token operator">*</span> <span class="token operator">*</span> <span class="token operator">/</span>bin<span class="token operator">/</span>sh  <span class="token operator">/</span>usr<span class="token operator">/</span>local<span class="token operator">/</span>nginx<span class="token operator">/</span>sbin<span class="token operator">/</span>cut_nginx_logs<span class="token punctuation">.</span>sh
+#<span class="token string">&quot;:wq&quot;</span>保存并退出
+
+#十分钟执行一次
+<span class="token operator">*</span><span class="token operator">/</span><span class="token number">10</span> <span class="token operator">*</span> <span class="token operator">*</span> <span class="token operator">*</span> <span class="token operator">*</span> <span class="token operator">/</span>bin<span class="token operator">/</span>bash <span class="token operator">/</span>home<span class="token operator">/</span>share<span class="token operator">/</span>timerSearch<span class="token operator">/</span>timerSearchDB<span class="token punctuation">.</span>sh
+
+#查看定时任务<span class="token punctuation">,</span>就会看到你添加的内容了
+crontab <span class="token operator">-</span>l
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><div class="language-sh line-numbers-mode"><pre class="language-sh"><code>说明：
+
+分钟   小时   日   月   星期   命令
+*        *      *    *     *       *
+
+第1列表示分钟1～59 每分钟用*或者 */1表示
+第2列表示小时1～23（0表示0点）
+第3列表示日期1～31
+第4列 表示月份1～12
+第5列标识号星期0～6（0表示星期天）
+第6列要运行的命令
+
+https://blog.csdn.net/sukangshen/article/details/78900147
+https://blog.csdn.net/fangyuying128825/article/details/71600969
+http://www.cnblogs.com/peida/archive/2013/01/08/2850483.html
+
+/etc/crontab
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><h2 id="用例"><a href="#用例" class="header-anchor">#</a> 用例</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>功能：mysql 每天定时备份， 并删除7天以前的备份
+
+#!/bin/bash
+docker_name = mysql57
+data_dir=&quot;/path/to/save/data/&quot;
+docker exec-it ${docker_name} mysqldump -uroot -ppasswd --all-databases &gt; &quot;$data_dir/data_`date +%Y%m%d`.sql&quot;
+if [ $? -ne 0 ];then
+    # 任务失败，发送邮件
+    echo -e &quot;邮件正文&quot; | mail -s '标题' 123456@gmail.com
+    exit -1
+fi
+find $data_dir -mtime +7 -name 'data_[1-9].sql' -exec rm -rf {} \;
+
+
+参考：https://www.jianshu.com/p/be1e581acb8e
+
+	
+0 2 * * * sh /absolute/path/to/mysql_dumps.sh &gt; /absolute/path/to/mysql_dumps.log 2&gt;&amp;1
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><hr> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code>定时查询docker的mysql数据库并保存
+<span class="token comment">#!/bin/bash</span>
+<span class="token comment">#file=/home/share/timerSearch/record.txt</span>
+<span class="token comment">#crontab -uroot -e</span>
+<span class="token comment">#*/1 * * * * /bin/bash /home/share/timerSearch/timerSearchDB.sh &gt;&gt; /home/share/timerSearch/record.txt 2&gt;&amp;1</span>
+echo <span class="token string">&quot;===============begin=========================&quot;</span> 
+echo <span class="token string">&quot;定时查询脚本启动了。。。&quot;</span> 
+<span class="token keyword">date</span> <span class="token string">&quot;+%Y-%m-%d %H:%M:%S&quot;</span> 
+
+docker_name<span class="token operator">=</span>mobile_ucc_db_1
+<span class="token keyword">sql</span><span class="token operator">=</span><span class="token string">&quot;use UPLUS;select id,loginName,name,password,idcard,field29 from T_USER where loginName='admin'\G;&quot;</span>
+<span class="token comment">#docker exec -it ${docker_name} mysql -uroot -pweb123 -e $sql  &gt;&gt; $file</span>
+docker <span class="token keyword">exec</span> <span class="token operator">-</span>i mobile_db_1 mysql <span class="token operator">-</span>uroot <span class="token operator">-</span>pweb123 <span class="token operator">-</span>e <span class="token string">&quot;select now();use UCCPLUS;select id,loginName,name,password,idcard,field29 from T_USER where loginName='admin'\G;&quot;</span>  <span class="token operator">&gt;&gt;</span> <span class="token operator">/</span>home<span class="token operator">/</span><span class="token keyword">share</span><span class="token operator">/</span>timerSearch<span class="token operator">/</span>recordDB<span class="token punctuation">.</span>txt
+
+echo <span class="token string">&quot;&quot;</span> 
+echo <span class="token string">&quot;&quot;</span> 
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h2 id="报错"><a href="#报错" class="header-anchor">#</a> 报错</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code>报错 <span class="token operator">/</span>bin<span class="token operator">/</span>sh<span class="token operator">^</span><span class="token constant">M</span><span class="token operator">:</span> bad interpreter<span class="token operator">:</span> No such file or directory   临时文件夹
+	原因：这是不同系统编码格式引起的：在windows系统中编辑的<span class="token punctuation">.</span>sh文件可能有不可见字符，所以在Linux系统下执行会报以上异常信息。
+	解决：
+	<span class="token number">1</span>）在windows下转换：
+	利用一些编辑器如UltraEdit或EditPlus等工具先将脚本编码转换，再放到Linux中执行。转换方式如下（UltraEdit）：File<span class="token operator">--</span><span class="token operator">&gt;</span>Conversions<span class="token operator">--</span><span class="token operator">&gt;</span><span class="token constant">DOS</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token constant">UNIX</span>即可。
+	<span class="token number">2</span>）在linux中编写改脚本。
+
+	
+报错the input device is not a <span class="token constant">TTY</span>
+	<span class="token literal-property property">https</span><span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>blog<span class="token punctuation">.</span>csdn<span class="token punctuation">.</span>net<span class="token operator">/</span>u011328417<span class="token operator">/</span>article<span class="token operator">/</span>details<span class="token operator">/</span><span class="token number">77177904</span>
+	去掉命令中去掉t 错误解决
+
+	命令改为：docker exec <span class="token operator">-</span>i 。。。。。
+
+	
+	
+不执行sql原因可能是环境变量问题：
+	<span class="token number">1</span>、写成绝对路径
+	<span class="token number">2</span>、脚本添加环境变量
+	#<span class="token operator">!</span><span class="token operator">/</span>bin<span class="token operator">/</span>bash
+	<span class="token punctuation">.</span> <span class="token operator">/</span>etc<span class="token operator">/</span>profile
+	<span class="token punctuation">.</span> <span class="token operator">~</span><span class="token operator">/</span><span class="token punctuation">.</span>bash_profile
+
+	<span class="token literal-property property">https</span><span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>blog<span class="token punctuation">.</span>csdn<span class="token punctuation">.</span>net<span class="token operator">/</span>cy309173854<span class="token operator">/</span>article<span class="token operator">/</span>details<span class="token operator">/</span><span class="token number">53186516</span>
+	
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token operator">/</span>bin<span class="token operator">/</span>sh<span class="token operator">^</span><span class="token class-name">M</span><span class="token operator">:</span> bad interpreter<span class="token operator">:</span>没有那个文件或目录解决
+因为操作系统是windows，我在windows下编辑的脚本，所以有可能有不可见字符。
+脚本文件是DOS格式的<span class="token punctuation">,</span> 即每一行的行尾以\n\r来标识<span class="token punctuation">,</span> 其ASCII码分别是<span class="token number">0x0D</span><span class="token punctuation">,</span> <span class="token number">0x0A</span><span class="token punctuation">.</span>
+
+vim filename
+然后用命令
+<span class="token operator">:</span>set ff<span class="token operator">?</span> #可以看到dos或unix的字样<span class="token punctuation">.</span> 如果的确是dos格式的。
+ 
+然后用
+<span class="token operator">:</span>set ff<span class="token operator">=</span>unix #把它强制为unix格式的<span class="token punctuation">,</span> 然后存盘退出。
+再次运行脚本。
+	
+https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>blog<span class="token punctuation">.</span>csdn<span class="token punctuation">.</span>net<span class="token operator">/</span>ywb201314<span class="token operator">/</span>article<span class="token operator">/</span>details<span class="token operator">/</span><span class="token number">51909976</span>
+
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div></div> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/编程/运维/nginx笔记.html" class="prev">
+        nginx笔记
+      </a></span> <span class="next"><a href="/编程/运维/gitbook部署博客.html">
+        gitbook部署博客
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.24d6bad3.js" defer></script><script src="/assets/js/4.abfc4c43.js" defer></script><script src="/assets/js/3.8b48aec2.js" defer></script><script src="/assets/js/8.db36f4aa.js" defer></script><script src="/assets/js/95.57958c95.js" defer></script>
+  </body>
+</html>
