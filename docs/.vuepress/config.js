@@ -237,7 +237,7 @@ module.exports = {
   locales: {
     '/': {
       lang: 'zh-CN',
-	  title: '无为徐生',
+	  title: '书法练习',
       description: '生活随笔-编程笔记-书法练习轨迹',
     }
   },
