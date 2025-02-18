@@ -15,6 +15,6 @@ features:
 ---
 
 ::: slot footer
-Copyright © 2022 · xushufa.cn · 无为徐生 <br/>  [浙ICP备2022008289号-1]( http://beian.miit.gov.cn/ ) <img src="/ba.png" width="20"> [浙公网安备 33011002016354号]( http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33011002016354 ) 
+Copyright © 2022 · 无为徐生 <br/> 
 :::
 
