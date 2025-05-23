@@ -252,7 +252,18 @@ basketList.parallelStream().collect(Collectors.groupingBy(item -> item.getAddrTe
 				}
 		);
 		
+// map computeIfAbsent   如果不存在这个 key，则添加到 Map 中
+Map<String,BigDecimal> map = new HashMap<>();
+String key = String.format("%s_%s", salaryDriverDAO.getRegion(), deliveryMonth);	
+map.computeIfAbsent(key, k -> BigDecimal.ZERO);
+map.put(key, map.get(key).add(salaryDriverDAO.getExpectIncomeAmount()));
 
+Map<Integer, List<DamagedProduct>> standardMap = new LinkedHashMap<>();
+standardMap.computeIfAbsent(standardType, k -> new ArrayList<>()).add(damagedProduct);
+
+// summarizingDouble json 对象列表数字求和
+double catePercentageAmount = dayList.stream().map(DeliverySalaryDriverDAO::getCatePlan).collect(Collectors.summarizingDouble(e ->
+                            e.getBigDecimal("catePercentageAmount").doubleValue())).getSum();			 
 ```
 
 ---
@@ -296,11 +307,11 @@ public class User{
 
 public static class User {
         private String name;
-        private List<String> relativeUsers;
+        private List<String> relativeUserList;
 }
-
+// 获取list中的list字段
 List<String> strings = users.stream()
-  .flatMap(user -> user.getRelativeUsers().stream())
+  .flatMap(user -> user.getRelativeUserList().stream())
   .collect(Collectors.toList());
 	
 ```
@@ -544,10 +555,14 @@ Keymap  Eclipse
 2、调整字体
 font  - Size
 
-3、配置 maven  （Setting For New Projects）
+3、配置 maven
 Maven home directory:   D:/ProgramFiles/apache-maven-3.6.0
 User setting file:      D:\ProgramFiles\apache-maven-3.6.0\conf\settings.xml
 Local repository:       D:\ProgramFiles\apache-maven-localRepository
+
+新项目配置maven
+Settings for New Projects...
+New Projects Setup
 
 4、配置Git命令行
 Terminal - Shell path
@@ -602,7 +617,7 @@ Ctrl+h          全局关键词搜索
 Ctrl+f          当前文件查找、替换
 Ctrl+shift+r    全局文件查找
 Ctrl+shift+f    整理代码格式
-Ctrl+shift+x    大小写
+Ctrl+shift+u    大小写
 Ctrl+shift+o    整理导入包
 Alt+insert      快速生成get和set方法、构造方法
 Alt+shift+r     批量重命名
@@ -729,6 +744,15 @@ Settings--Proxy
 
 ```
 
+```
+导出所有数据，一键导出集合、接口和环境变量
+1、浏览器登录postman，进入 https://web.postman.co/me/export  页面
+2、点击 Export Data
+3、刷新页面，成功后会发生邮件，有下载链接
+
+
+```
+
 ---
 
 ## 4、springboot项目打包布署
@@ -798,11 +822,12 @@ maven常用打包命令
 
 - 生活随笔-编程笔记-书法练习轨迹
 
-| 徐书法 | 地址        |  备注          |
+| 博客   | 地址        |  备注          |
 | -----  | ----------- |  ------------- |
-| 1      | [xushufa]( https://xushufa.cn )                  	    | `vuepress-theme-reco`构建的博客网站。|
-| 2      | [vuepress-blog]( https://vuepress-blog.xushufa.cn )  	| `vuepress`构建的博客网站。           |
-| 3      | [mkdocs-blog]( https://xuyq123.gitlab.io/mkdocs-blog )   | `mkdocs`构建的博客网站。             |
+| 1      | [reco-blog]( https://scott180.github.io/reco-blog )          | `vuepress-theme-reco`构建的博客网站。|
+| 2      | [vuepress-blog]( https://scott180.github.io/vuepress-blog )  | `vuepress`构建的博客网站。           |
+| 3      | [mkdocs-blog]( https://xuyq123.gitlab.io/mkdocs-blog )   	| `mkdocs`构建的博客网站。             |
 
 ***
+
 

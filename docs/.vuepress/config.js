@@ -79,6 +79,7 @@ module.exports = {
                 {title:'驾考记事',path:'随笔/驾考记事'},
                 {title:'健身与学习',path:'随笔/健身与学习'},
                 {title:'吉他练习笔记',path:'随笔/吉他练习笔记'},
+                {title:'二手车购买攻略',path:'随笔/二手车购买攻略'},
                 {title:'二十四式太极拳',path:'随笔/二十四式太极拳'},
                 {title:'短期远行必备物品',path:'随笔/短期远行必备物品'},
                 {title:'我的原神旅行观测记录',path:'随笔/我的原神旅行观测记录'},
@@ -91,7 +92,9 @@ module.exports = {
 			  collapsable: true, // 可选的, 默认值是 true,
 			  sidebarDepth: 2,   // 可选的, 默认值是 1
 			  children: [
+				{title:'古文诗词',path:'文档/古文诗词'},
 				{title:'如何练好书法',path:'文档/如何练好书法'},
+				{title:'幽默话术100句',path:'文档/幽默话术100句'},
 				{title:'三千个脑筋急转弯',path:'文档/三千个脑筋急转弯'},
 				{title:'文言文翻译网络流行语',path:'文档/文言文翻译网络流行语'},
 				{title:'安徽电信免费流量获取方法',path:'文档/安徽电信免费流量获取方法'},
@@ -154,6 +157,7 @@ module.exports = {
 				{title:'mongo',path:'数据库/mongo'},
 				{title:'数据库隔离级别',path:'数据库/数据库隔离级别'},
 				{title:'mysql开启log-bin日志',path:'数据库/mysql开启log-bin日志'},
+				{title:'mysql之explan索引优化说明',path:'数据库/mysql之explan索引优化说明'},
 			  ]
 			},
 			{

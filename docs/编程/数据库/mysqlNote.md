@@ -6,7 +6,7 @@
 
 ```js
 压缩包，免安装文件，安装mysql。参考：
-http://xushufa.cn
+https://scott180.github.io/reco-blog
 http://blog.csdn.net/wengengeng/article/details/52013650
 https://www.cnblogs.com/jyjia/archive/2019/03/07/10490013.html
 
@@ -898,7 +898,11 @@ SELECT * INTO 表2 FROM 表1
 
 ```sql
 --sql将毫秒数字转换为日期
-SELECT FROM_UNIXTIME(operation_time/1000,"%Y-%m-%d %H:%i:%s") operationDate FROM ins_purchase
+SELECT FROM_UNIXTIME(operation_time/1000,"%Y-%m-%d %H:%i:%s") operationDate FROM ins_purchase;
+
+
+---时间格式化
+select date_format(create_time, "%Y-%m-%d %H:%i:%s") from table;
 
 ```
 
@@ -910,6 +914,12 @@ timediff(date_format(create_time, '%H:%i:%s'),'03:00:00') t2,
 (HOUR(timediff(date_format(create_time, '%H:%i:%s'),'03:00:00')) + ROUND(MINUTE(timediff(date_format(create_time, '%H:%i:%s'),'03:00:00'))/60) )
  t3 FROM `ins_car_use_log` where person_liable like '%林%'
  order by create_time desc limit 100;
+ 
+ 
+--时间大于零点零五则是当天，零点到零点零五是昨天
+select CASE  WHEN TIME(b.add_time) > '00:05:00' THEN b.add_time  
+       ELSE DATE_SUB(b.add_time, INTERVAL 1 DAY) 
+   END AS date_of_day from ins_test_order b
 
 ```
 
@@ -919,10 +929,88 @@ select DATE_ADD( now(), INTERVAL -2 DAY ) from dual
 
 SELECT id,product_id productId,sales  FROM ins_period_sales where create_time > DATE_ADD( now(), INTERVAL -2 DAY ) 
 
+
+-- TIMESTAMPDIFF函数来计算两个时间之间的小时数差异
+select  FLOOR((UNIX_TIMESTAMP('2024-05-07 00:00:00')- UNIX_TIMESTAMP('2024-05-06 17:46:00'))/60/60)  from dual
+
+-- HOUR来计算两个时间之间的小时数差异
+SELECT TIMESTAMPDIFF(HOUR, '2024-05-07 00:00:00','2024-05-06 17:46:00')
+
 ```
 
 
-### 3.2、指定排序
+### 3.2、构造每一个小时为一行数据
+
+```sql
+
+-- 计算相隔几天的两个时间相减得到的差值，每一个小时为一行数据。
+
+
+-- 创建一个数字表 
+CREATE TABLE numbers (n INT PRIMARY KEY);  
+INSERT INTO `numbers` (`n`) VALUES (0),(1),(2),(3),(4),(5),(6),(7),(8),(9),(10);
+
+
+-- 设置变量
+SET @sorting_start_time = '2024-05-06 17:46:00'; 
+SET @sorting_end_time = '2024-05-07 23:00:00';  
+
+-- 查看变量
+-- select @sorting_start_time
+ 
+
+-- 每一个小时为一行数据
+
+SELECT  
+    DATE_ADD(@sorting_start_time, INTERVAL n HOUR) AS hour_time  
+FROM numbers n  
+WHERE n <= TIMESTAMPDIFF(HOUR, @sorting_start_time, @sorting_end_time)  
+ORDER BY hour_time
+
+2024-05-06 17:46:00
+2024-05-06 18:46:00
+2024-05-06 19:46:00
+2024-05-06 20:46:00
+2024-05-06 21:46:00
+2024-05-06 22:46:00
+
+
+-- 每一个小时为一行数据，日期与小时分开、小时段
+
+select sorting_work_date,
+CONCAT(case when current_hour_val<=9 then ( CONCAT("0" , current_hour_val,':',begin_min_val) )  
+			else ( CONCAT("" , current_hour_val,':',begin_min_val) ) end,'-',
+ case when current_hour_val<=8 then ( CONCAT("0" , current_hour_val+1,':',begin_min_val) ) 
+			when current_hour_val=23 then ( CONCAT("00:",begin_min_val) )  
+else ( CONCAT("" , current_hour_val+1,':',begin_min_val) ) end,'') as time_slot
+ from (
+
+select substring(hour_time,1,10) as sorting_work_date,
+CAST(substring(hour_time,12,2) AS SIGNED) AS current_hour_val,
+substring(hour_time,15,2) as begin_min_val
+from (
+SELECT  
+    DATE_ADD(@sorting_start_time, INTERVAL n HOUR) AS hour_time  
+FROM numbers n  
+WHERE n <= TIMESTAMPDIFF(HOUR, @sorting_start_time, @sorting_end_time)  
+ORDER BY hour_time
+) a
+
+) b
+
+
+2024-05-06	17:46-18:46
+2024-05-06	18:46-19:46
+2024-05-06	19:46-20:46
+2024-05-06	20:46-21:46
+2024-05-06	21:46-22:46
+2024-05-06	22:46-23:46
+
+
+```
+
+
+### 3.3、指定排序
 
 ```sql
 -- 中文排序 
@@ -934,7 +1022,7 @@ SELECT id,name FROM `T_USER` ORDER BY convert(name using gbk)  ASC limit 10,100;
 SELECT id,name FROM `T_USER` ORDER BY FIELD( status, 0,2,1,3 ) ASC;
 ```
 
-### 3.3、截取字符串
+### 3.4、截取字符串
 
 ```sql
 -- SUBSTRING  从指定角标开始截取
@@ -977,7 +1065,7 @@ MID(str, pos, len)
 ```
 
 
-### 3.4、分组取最值
+### 3.5、分组取最值
 
 ```sql
 -- 分组取最值
@@ -990,7 +1078,7 @@ Insert into fd_supplier VALUES (null,#{supplier_id},#{s_code}) on duplicate key 
 ```
 
 
-### 3.5、修改root密码
+### 3.6、修改root密码
 
 ```js
 	
@@ -1012,7 +1100,7 @@ mysql> exit;
 ```
 
 
-### 3.6、死锁Deadlock
+### 3.7、死锁Deadlock
 
 ```js
 Mysql报Deadlock found when trying to get lock; try restarting transaction问题解决!!
@@ -1063,12 +1151,14 @@ https://www.w3cschool.cn/article/3739209.html
 ```
 
 
-### 3.7、文档
+### 3.8、文档
 
 - [linux笔记]( https://gitlab.com/xuyq123/mynotes/-/blob/master/%E8%BF%90%E7%BB%B4/linuxNote-x.md )
 
-- [数据库隔离级别]( https://xushufa.cn/docs/bian-cheng/shu-ju-ku/shu-ju-ku-ge-chi-ji-bie.html )
+- [数据库隔离级别]( https://scott180.github.io/reco-blog/docs/bian-cheng/shu-ju-ku/shu-ju-ku-ge-chi-ji-bie.html )
 
-- [mysql开启log-bin日志]( https://xushufa.cn/docs/bian-cheng/shu-ju-ku/mysqlkai-qi-log-binri-zhi.html )
+- [mysql开启log-bin日志]( https://scott180.github.io/reco-blog/docs/bian-cheng/shu-ju-ku/mysqlkai-qi-log-binri-zhi.html )
+
+- [mysql之explan索引优化说明]( https://gitlab.com/xuyq123/mynotes/-/blob/master/数据库/mysql之explan索引优化说明.md )
 
 

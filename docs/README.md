@@ -4,7 +4,7 @@ lang: zh-CN
 heroText: 个人博客
 heroImage: /logo.jpg
 actionText: 开始 →
-actionLink: /书法/练习/古文诗词
+actionLink: /生活/文档/古文诗词
 features:
 - title: 生活
   details: 随笔  日常	原神
