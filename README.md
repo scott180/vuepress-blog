@@ -7,7 +7,7 @@
 
 | 博客   | 地址        |  备注          |
 | -----  | ----------- |  ------------- |
-| 1      | [reco-blog]( https://scott180.github.io/vuepress-blog )      | `vuepress-theme-reco`构建的博客网站。|
+| 1      | [reco-blog]( https://scott180.github.io/reco-blog )          | `vuepress-theme-reco`构建的博客网站。|
 | 2      | [vuepress-blog]( https://scott180.github.io/vuepress-blog )  | `vuepress`构建的博客网站。           |
 | 3      | [mkdocs-blog]( https://xuyq123.gitlab.io/mkdocs-blog )   	| `mkdocs`构建的博客网站。             |
 
