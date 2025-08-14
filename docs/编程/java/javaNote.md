@@ -42,6 +42,32 @@ CyclicBarrier
 ```
 
 ```java
+
+//异步调用,设置子线程共享
+ ServletRequestAttributes servletRequestAttributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
+ CompletableFuture<String> future = CompletableFuture.supplyAsync(() -> {
+     RequestContextHolder.setRequestAttributes(servletRequestAttributes, true);//设置子线程共享
+     log.info("combinationThread_{}", id);
+    
+     return null;
+ });
+
+ 
+ ServletRequestAttributes servletRequestAttributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
+ CompletableFuture<String> future = CompletableFuture.supplyAsync(() -> {
+     RequestContextHolder.setRequestAttributes(servletRequestAttributes, false);//是否支持子线程继承上下文
+     try {
+         Thread.sleep(2000L);
+     } catch (InterruptedException e) {
+         e.printStackTrace();
+     }
+     logger.info("uploadCreatePurchase_receiptByWarehouse_{}",JSON.toJSON(receiptByWarehouseSubmitRO));
+     return null;
+ }); 
+				
+```
+
+```java
 @MapKey("operatorId")
 List<Map<Integer, String>> queryOperatorList();
 
@@ -328,7 +354,7 @@ Java 8 Stream peek 与 map的区别
 
 ### 1.3、通用工具
 
-> 深度复制、正则分割中文和数字、特殊字符检测、sql注入检测
+> 深度复制、正则分割中文和数字、特殊字符检测、sql注入检测、时间转化
 
 ```java
 <dependency>
@@ -396,6 +422,62 @@ public static List spitRegion(String region) {
         Matcher matcher = pattern.matcher(str.toString().toLowerCase());
         return matcher.find();
     }
+```
+
+---
+
+```java
+
+public static final DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+public static final DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+
+    /**
+     * 线程安全日期转字符串
+     * @param date
+     * @return
+     */
+    public static String formatterDate(Date date) {
+        LocalDateTime localDateTime = date.toInstant()
+                .atZone(ZoneId.systemDefault())
+                .toLocalDateTime();
+        return localDateTime.format(dateFormatter);
+    }
+
+    /**
+     * 线程安全时间转字符串
+     * @param date
+     * @return
+     */
+    public static String formatterTime(Date date) {
+        LocalDateTime localDateTime = date.toInstant()
+                .atZone(ZoneId.systemDefault())
+                .toLocalDateTime();
+        return localDateTime.format(dateTimeFormatter);
+    }
+
+    /**
+     * 线程安全字符串转日期
+     * @param dateString
+     * @return
+     */
+    public static Date formatterString2Time(String dateString) {
+        LocalDate localDate = LocalDate.parse(dateString, dateFormatter);
+        return Date.from(localDate.atStartOfDay(ZoneId.systemDefault()).toInstant());
+    }
+
+    /**
+     * 线程安全字符串转时间
+     * @param dateString
+     * @return
+     */
+    public static Date formatterString2Date(String dateString) {
+        // 解析字符串到LocalDateTime
+        LocalDateTime localDateTime = LocalDateTime.parse(dateString, dateTimeFormatter);
+
+        // 将LocalDateTime转换为Date
+        return Date.from(localDateTime.atZone(ZoneId.systemDefault()).toInstant());
+    }
+
 ```
 
 
@@ -736,6 +818,21 @@ tests["success"] = jsonData.code === 200;
 postman.setGlobalVariable("authorityToken", jsonData.data.token);
  
 
+
+pm.environment.set("variable_key", value)：设置环境变量；
+pm.collectionVariables.set("variable_key", value)：设置集合变量；
+pm.variables.set("variable_key", value)：通用方式，自动识别作用域；
+pm.globals.set("variable_key", value)：设置全局变量。
+
+
+const response = pm.response.json();
+console.log(response);
+if (response.code===0) {
+    pm.globals.set("authorityToken", response.data.token);
+}
+
+
+
 postman 出现Error: connect ECONNREFUSED 127.0.0.1:端口
 https://blog.csdn.net/weixin_45993202/article/details/109072188
 
@@ -750,6 +847,30 @@ Settings--Proxy
 2、点击 Export Data
 3、刷新页面，成功后会发生邮件，有下载链接
 
+
+
+```
+
+<br>
+
+```c
+Insomnia  一款非常实用的开源 API 调试工具
+
+官网
+https://insomnia.rest/download
+https://github.com/Kong/insomnia/
+
+下载
+https://www.newbe.pro/Mirrors/Mirrors-insomnia  
+Insomnia.Core-11.4.0.exe
+
+账号
+https://app.insomnia.rest/app/settings/account
+
+
+
+Reqable 高性能+免费+抓包一体化
+https://reqable.com/zh-CN/
 
 ```
 
@@ -829,4 +950,5 @@ maven常用打包命令
 | 3      | [mkdocs-blog]( https://xuyq123.gitlab.io/mkdocs-blog )   	| `mkdocs`构建的博客网站。             |
 
 ***
+
 
