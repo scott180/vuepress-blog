@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>nginx笔记 | 无为徐生</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/vuepress-blog/icon.png">
+    <meta name="description" content="生活随笔-编程笔记-书法练习轨迹">
+    
+    <link rel="preload" href="/vuepress-blog/assets/css/0.styles.c5cb1392.css" as="style"><link rel="preload" href="/vuepress-blog/assets/js/app.ee30669a.js" as="script"><link rel="preload" href="/vuepress-blog/assets/js/3.9cedbe4c.js" as="script"><link rel="preload" href="/vuepress-blog/assets/js/2.5f0b3217.js" as="script"><link rel="preload" href="/vuepress-blog/assets/js/20.e7530fec.js" as="script"><link rel="preload" href="/vuepress-blog/assets/js/112.32fe761a.js" as="script"><link rel="prefetch" href="/vuepress-blog/assets/js/1.33058bb1.js"><link rel="prefetch" href="/vuepress-blog/assets/js/100.65184365.js"><link rel="prefetch" href="/vuepress-blog/assets/js/101.fcc33696.js"><link rel="prefetch" href="/vuepress-blog/assets/js/102.47bf3bc1.js"><link rel="prefetch" href="/vuepress-blog/assets/js/103.05dfabff.js"><link rel="prefetch" href="/vuepress-blog/assets/js/104.28c33818.js"><link rel="prefetch" href="/vuepress-blog/assets/js/105.dd8695ad.js"><link rel="prefetch" href="/vuepress-blog/assets/js/106.bb05e9a6.js"><link rel="prefetch" href="/vuepress-blog/assets/js/107.aafd6cae.js"><link rel="prefetch" href="/vuepress-blog/assets/js/108.05ac5505.js"><link rel="prefetch" href="/vuepress-blog/assets/js/109.00141c24.js"><link rel="prefetch" href="/vuepress-blog/assets/js/11.3e329a3b.js"><link rel="prefetch" href="/vuepress-blog/assets/js/110.3a152484.js"><link rel="prefetch" href="/vuepress-blog/assets/js/111.9b496f8b.js"><link rel="prefetch" href="/vuepress-blog/assets/js/113.651cb2aa.js"><link rel="prefetch" href="/vuepress-blog/assets/js/114.b6f94d18.js"><link rel="prefetch" href="/vuepress-blog/assets/js/115.eaea7ce5.js"><link rel="prefetch" href="/vuepress-blog/assets/js/116.cf32ae07.js"><link rel="prefetch" href="/vuepress-blog/assets/js/117.6b2d0b64.js"><link rel="prefetch" href="/vuepress-blog/assets/js/118.e57400b1.js"><link rel="prefetch" href="/vuepress-blog/assets/js/119.9e80f096.js"><link rel="prefetch" href="/vuepress-blog/assets/js/12.073f8190.js"><link rel="prefetch" href="/vuepress-blog/assets/js/120.9350d7b7.js"><link rel="prefetch" href="/vuepress-blog/assets/js/13.4555a927.js"><link rel="prefetch" href="/vuepress-blog/assets/js/14.8933d101.js"><link rel="prefetch" href="/vuepress-blog/assets/js/15.68fdb506.js"><link rel="prefetch" href="/vuepress-blog/assets/js/16.b7f61fa2.js"><link rel="prefetch" href="/vuepress-blog/assets/js/17.d075425b.js"><link rel="prefetch" href="/vuepress-blog/assets/js/18.36cedba5.js"><link rel="prefetch" href="/vuepress-blog/assets/js/19.819534ac.js"><link rel="prefetch" href="/vuepress-blog/assets/js/21.c16b052c.js"><link rel="prefetch" href="/vuepress-blog/assets/js/22.ab6c7ca6.js"><link rel="prefetch" href="/vuepress-blog/assets/js/23.ebc8b624.js"><link rel="prefetch" href="/vuepress-blog/assets/js/24.367c574d.js"><link rel="prefetch" href="/vuepress-blog/assets/js/25.13c60cf0.js"><link rel="prefetch" href="/vuepress-blog/assets/js/26.4bd12aca.js"><link rel="prefetch" href="/vuepress-blog/assets/js/27.9b83a65c.js"><link rel="prefetch" href="/vuepress-blog/assets/js/28.f82d2d05.js"><link rel="prefetch" href="/vuepress-blog/assets/js/29.3ca6118f.js"><link rel="prefetch" href="/vuepress-blog/assets/js/30.ba405f3e.js"><link rel="prefetch" href="/vuepress-blog/assets/js/31.f868abc0.js"><link rel="prefetch" href="/vuepress-blog/assets/js/32.26a06c3e.js"><link rel="prefetch" href="/vuepress-blog/assets/js/33.cba55c46.js"><link rel="prefetch" href="/vuepress-blog/assets/js/34.fdfd39f4.js"><link rel="prefetch" href="/vuepress-blog/assets/js/35.429b7fa2.js"><link rel="prefetch" href="/vuepress-blog/assets/js/36.69ecd097.js"><link rel="prefetch" href="/vuepress-blog/assets/js/37.78c4990e.js"><link rel="prefetch" href="/vuepress-blog/assets/js/38.32005d38.js"><link rel="prefetch" href="/vuepress-blog/assets/js/39.b308c0c9.js"><link rel="prefetch" href="/vuepress-blog/assets/js/4.a2c6ee7d.js"><link rel="prefetch" href="/vuepress-blog/assets/js/40.eba3b538.js"><link rel="prefetch" href="/vuepress-blog/assets/js/41.5476ea14.js"><link rel="prefetch" href="/vuepress-blog/assets/js/42.6e443398.js"><link rel="prefetch" href="/vuepress-blog/assets/js/43.387f8c61.js"><link rel="prefetch" href="/vuepress-blog/assets/js/44.524578d9.js"><link rel="prefetch" href="/vuepress-blog/assets/js/45.e64569e3.js"><link rel="prefetch" href="/vuepress-blog/assets/js/46.e3d9da8b.js"><link rel="prefetch" href="/vuepress-blog/assets/js/47.00f8ed4e.js"><link rel="prefetch" href="/vuepress-blog/assets/js/48.bd1dce8a.js"><link rel="prefetch" href="/vuepress-blog/assets/js/49.cd5a3549.js"><link rel="prefetch" href="/vuepress-blog/assets/js/5.18460ae1.js"><link rel="prefetch" href="/vuepress-blog/assets/js/50.bf507ac1.js"><link rel="prefetch" href="/vuepress-blog/assets/js/51.92430a99.js"><link rel="prefetch" href="/vuepress-blog/assets/js/52.003fef9a.js"><link rel="prefetch" href="/vuepress-blog/assets/js/53.6f0f04eb.js"><link rel="prefetch" href="/vuepress-blog/assets/js/54.d51e9bcd.js"><link rel="prefetch" href="/vuepress-blog/assets/js/55.6b6fa295.js"><link rel="prefetch" href="/vuepress-blog/assets/js/56.dc38dad8.js"><link rel="prefetch" href="/vuepress-blog/assets/js/57.204d377f.js"><link rel="prefetch" href="/vuepress-blog/assets/js/58.db391d6e.js"><link rel="prefetch" href="/vuepress-blog/assets/js/59.7262f2a9.js"><link rel="prefetch" href="/vuepress-blog/assets/js/6.cfba504c.js"><link rel="prefetch" href="/vuepress-blog/assets/js/60.5a197bfd.js"><link rel="prefetch" href="/vuepress-blog/assets/js/61.cdb87900.js"><link rel="prefetch" href="/vuepress-blog/assets/js/62.3ac97494.js"><link rel="prefetch" href="/vuepress-blog/assets/js/63.de0482f5.js"><link rel="prefetch" href="/vuepress-blog/assets/js/64.81652d23.js"><link rel="prefetch" href="/vuepress-blog/assets/js/65.c1ac50bd.js"><link rel="prefetch" href="/vuepress-blog/assets/js/66.2a3ea3a1.js"><link rel="prefetch" href="/vuepress-blog/assets/js/67.63517021.js"><link rel="prefetch" href="/vuepress-blog/assets/js/68.a5deaad9.js"><link rel="prefetch" href="/vuepress-blog/assets/js/69.c330a2a3.js"><link rel="prefetch" href="/vuepress-blog/assets/js/7.0d30306c.js"><link rel="prefetch" href="/vuepress-blog/assets/js/70.a28250a4.js"><link rel="prefetch" href="/vuepress-blog/assets/js/71.b30a94a5.js"><link rel="prefetch" href="/vuepress-blog/assets/js/72.5611cc88.js"><link rel="prefetch" href="/vuepress-blog/assets/js/73.582ac0fc.js"><link rel="prefetch" href="/vuepress-blog/assets/js/74.eba8904a.js"><link rel="prefetch" href="/vuepress-blog/assets/js/75.fb571ab9.js"><link rel="prefetch" href="/vuepress-blog/assets/js/76.616e4d46.js"><link rel="prefetch" href="/vuepress-blog/assets/js/77.14234037.js"><link rel="prefetch" href="/vuepress-blog/assets/js/78.868c70f1.js"><link rel="prefetch" href="/vuepress-blog/assets/js/79.881cb03a.js"><link rel="prefetch" href="/vuepress-blog/assets/js/8.39e6fd7c.js"><link rel="prefetch" href="/vuepress-blog/assets/js/80.6fd51105.js"><link rel="prefetch" href="/vuepress-blog/assets/js/81.c2c2496d.js"><link rel="prefetch" href="/vuepress-blog/assets/js/82.6c62c80e.js"><link rel="prefetch" href="/vuepress-blog/assets/js/83.6fafbcfd.js"><link rel="prefetch" href="/vuepress-blog/assets/js/84.4c2c33bc.js"><link rel="prefetch" href="/vuepress-blog/assets/js/85.71589b9d.js"><link rel="prefetch" href="/vuepress-blog/assets/js/86.8139f2e2.js"><link rel="prefetch" href="/vuepress-blog/assets/js/87.a6cc83ea.js"><link rel="prefetch" href="/vuepress-blog/assets/js/88.bd999522.js"><link rel="prefetch" href="/vuepress-blog/assets/js/89.c7ca9aaa.js"><link rel="prefetch" href="/vuepress-blog/assets/js/90.5fffec1d.js"><link rel="prefetch" href="/vuepress-blog/assets/js/91.7124c37b.js"><link rel="prefetch" href="/vuepress-blog/assets/js/92.6a49dd40.js"><link rel="prefetch" href="/vuepress-blog/assets/js/93.347d6258.js"><link rel="prefetch" href="/vuepress-blog/assets/js/94.0c161e53.js"><link rel="prefetch" href="/vuepress-blog/assets/js/95.fab08c7e.js"><link rel="prefetch" href="/vuepress-blog/assets/js/96.2ce5b245.js"><link rel="prefetch" href="/vuepress-blog/assets/js/97.904f9620.js"><link rel="prefetch" href="/vuepress-blog/assets/js/98.8ef175c6.js"><link rel="prefetch" href="/vuepress-blog/assets/js/99.7dc7dfbb.js"><link rel="prefetch" href="/vuepress-blog/assets/js/vendors~docsearch.8ec7876f.js">
+    <link rel="stylesheet" href="/vuepress-blog/assets/css/0.styles.c5cb1392.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vuepress-blog/" class="home-link router-link-active"><!----> <span class="site-name">无为徐生</span></a> <div class="links"><form id="search-form" role="search" class="algolia-search-wrapper search-box"><input id="algolia-search-input" class="search-query"></form> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vuepress-blog/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/vuepress-blog/目录.html" class="nav-link">
+  目录
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="生活" class="dropdown-title"><span class="title">生活</span> <span class="arrow down"></span></button> <button type="button" aria-label="生活" class="mobile-dropdown-title"><span class="title">生活</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-blog/生活/随笔/日常Note.html" class="nav-link">
+  日常Note
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/生活/随笔/诗文浅作.html" class="nav-link">
+  诗文浅作
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/生活/随笔/驾考记事.html" class="nav-link">
+  驾考记事
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/生活/随笔/健身与学习.html" class="nav-link">
+  健身与学习
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/生活/文档/如何练好书法.html" class="nav-link">
+  如何练好书法
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/生活/随笔/我的原神旅行观测记录.html" class="nav-link">
+  我的原神旅行观测记录
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程" class="dropdown-title"><span class="title">编程</span> <span class="arrow down"></span></button> <button type="button" aria-label="编程" class="mobile-dropdown-title"><span class="title">编程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-blog/编程/java/javaNote.html" class="nav-link">
+  javaNote
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/编程/java/排序算法.html" class="nav-link">
+  排序算法
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/编程/运维/gitNote.html" class="nav-link">
+  gitNote
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/编程/运维/linuxNote-x.html" class="nav-link">
+  linuxNote
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/编程/运维/vuepress构建项目.html" class="nav-link">
+  vuepress构建项目
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/编程/数据库/mysqlNote.html" class="nav-link">
+  mysqlNote
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/编程/数据库/oracleNote.html" class="nav-link">
+  oracleNote
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/编程/资料/javaScript笔记.html" class="nav-link">
+  javaScript笔记
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/编程/资料/工具网站readMe.html" class="nav-link">
+  工具网站readMe
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="书法" class="dropdown-title"><span class="title">书法</span> <span class="arrow down"></span></button> <button type="button" aria-label="书法" class="mobile-dropdown-title"><span class="title">书法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-blog/书法/书法/赤壁赋.html" class="nav-link">
+  赤壁赋
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/书法/书法/多宝塔碑.html" class="nav-link">
+  多宝塔碑
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/书法/练习/徐书法.html" class="nav-link">
+  徐书法
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/书法/练习/无为徐生.html" class="nav-link">
+  无为徐生
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/书法/练习/古文诗词.html" class="nav-link">
+  古文诗词
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/书法/练习/书法练习轨迹ReadMe.html" class="nav-link">
+  书法练习轨迹
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/书法/轨迹/有感之杂说.html" class="nav-link">
+  有感之杂说
+</a></li></ul></div></div><div class="nav-item"><a href="/vuepress-blog/关于我.html" class="nav-link">
+  关于我
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/vuepress-blog/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/vuepress-blog/目录.html" class="nav-link">
+  目录
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="生活" class="dropdown-title"><span class="title">生活</span> <span class="arrow down"></span></button> <button type="button" aria-label="生活" class="mobile-dropdown-title"><span class="title">生活</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-blog/生活/随笔/日常Note.html" class="nav-link">
+  日常Note
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/生活/随笔/诗文浅作.html" class="nav-link">
+  诗文浅作
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/生活/随笔/驾考记事.html" class="nav-link">
+  驾考记事
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/生活/随笔/健身与学习.html" class="nav-link">
+  健身与学习
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/生活/文档/如何练好书法.html" class="nav-link">
+  如何练好书法
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/生活/随笔/我的原神旅行观测记录.html" class="nav-link">
+  我的原神旅行观测记录
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程" class="dropdown-title"><span class="title">编程</span> <span class="arrow down"></span></button> <button type="button" aria-label="编程" class="mobile-dropdown-title"><span class="title">编程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-blog/编程/java/javaNote.html" class="nav-link">
+  javaNote
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/编程/java/排序算法.html" class="nav-link">
+  排序算法
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/编程/运维/gitNote.html" class="nav-link">
+  gitNote
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/编程/运维/linuxNote-x.html" class="nav-link">
+  linuxNote
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/编程/运维/vuepress构建项目.html" class="nav-link">
+  vuepress构建项目
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/编程/数据库/mysqlNote.html" class="nav-link">
+  mysqlNote
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/编程/数据库/oracleNote.html" class="nav-link">
+  oracleNote
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/编程/资料/javaScript笔记.html" class="nav-link">
+  javaScript笔记
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/编程/资料/工具网站readMe.html" class="nav-link">
+  工具网站readMe
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="书法" class="dropdown-title"><span class="title">书法</span> <span class="arrow down"></span></button> <button type="button" aria-label="书法" class="mobile-dropdown-title"><span class="title">书法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-blog/书法/书法/赤壁赋.html" class="nav-link">
+  赤壁赋
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/书法/书法/多宝塔碑.html" class="nav-link">
+  多宝塔碑
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/书法/练习/徐书法.html" class="nav-link">
+  徐书法
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/书法/练习/无为徐生.html" class="nav-link">
+  无为徐生
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/书法/练习/古文诗词.html" class="nav-link">
+  古文诗词
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/书法/练习/书法练习轨迹ReadMe.html" class="nav-link">
+  书法练习轨迹
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/书法/轨迹/有感之杂说.html" class="nav-link">
+  有感之杂说
+</a></li></ul></div></div><div class="nav-item"><a href="/vuepress-blog/关于我.html" class="nav-link">
+  关于我
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>java</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>运维</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/vuepress-blog/编程/运维/docker.html" class="sidebar-link">docker</a></li><li><a href="/vuepress-blog/编程/运维/gitNote.html" class="sidebar-link">gitNote</a></li><li><a href="/vuepress-blog/编程/运维/shell语法.html" class="sidebar-link">shell语法</a></li><li><a href="/vuepress-blog/编程/运维/linuxNote-x.html" class="sidebar-link">linuxNote</a></li><li><a href="/vuepress-blog/编程/运维/nginx笔记.html" class="active sidebar-link">nginx笔记</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vuepress-blog/编程/运维/nginx笔记.html#一、安装" class="sidebar-link">一、安装</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vuepress-blog/编程/运维/nginx笔记.html#_1-1、本地安装nginx" class="sidebar-link">1.1、本地安装nginx</a></li><li class="sidebar-sub-header"><a href="/vuepress-blog/编程/运维/nginx笔记.html#_1-2、常用命令" class="sidebar-link">1.2、常用命令</a></li></ul></li><li class="sidebar-sub-header"><a href="/vuepress-blog/编程/运维/nginx笔记.html#二、配置" class="sidebar-link">二、配置</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vuepress-blog/编程/运维/nginx笔记.html#_2-1、基础配置" class="sidebar-link">2.1、基础配置</a></li><li class="sidebar-sub-header"><a href="/vuepress-blog/编程/运维/nginx笔记.html#_2-2、日志按天保存" class="sidebar-link">2.2、日志按天保存</a></li></ul></li></ul></li><li><a href="/vuepress-blog/编程/运维/定时执行脚本.html" class="sidebar-link">定时执行脚本</a></li><li><a href="/vuepress-blog/编程/运维/gitbook部署博客.html" class="sidebar-link">gitbook部署博客</a></li><li><a href="/vuepress-blog/编程/运维/vuepress构建项目.html" class="sidebar-link">vuepress构建项目</a></li><li><a href="/vuepress-blog/编程/运维/批量推送布署徐书法项目.html" class="sidebar-link">批量推送布署徐书法项目</a></li><li><a href="/vuepress-blog/编程/运维/markdown静态博客搭建综述.html" class="sidebar-link">markdown静态博客搭建综述</a></li><li><a href="/vuepress-blog/编程/运维/gitlab、github绑定自定义域名.html" class="sidebar-link">gitlab、github绑定自定义域名</a></li><li><a href="/vuepress-blog/编程/运维/git平台docsify布署markdown文件.html" class="sidebar-link">git平台docsify布署markdown文件</a></li><li><a href="/vuepress-blog/编程/运维/gitlab、github、gitee布署mkdocs主题仓库.html" class="sidebar-link">gitlab、github、gitee布署mkdocs主题仓库</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>数据库</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>资料</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="u-valine u-valine-wrap" data-v-91d000da><span data-flag-title="scott180.github.io/vuepress-blog" class="leancloud-visitors" data-v-91d000da><span class="stat update-time" data-v-91d000da><img src="/update-time.png" class="icon" data-v-91d000da>2023-07-10 14:55:04
+    </span> <span class="stat read-count" data-v-91d000da><img src="/read-count.png" class="icon" data-v-91d000da> <span class="leancloud-visitors-count" data-v-91d000da></span></span></span></div> <div class="theme-default-content content__default"><h1 id="nginx笔记"><a href="#nginx笔记" class="header-anchor">#</a> nginx笔记</h1> <h2 id="一、安装"><a href="#一、安装" class="header-anchor">#</a> 一、安装</h2> <h3 id="_1-1、本地安装nginx"><a href="#_1-1、本地安装nginx" class="header-anchor">#</a> 1.1、本地安装nginx</h3> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code>本地安装nginx 参考
+https://nginx.org/en/download.html
+https://blog.csdn.net/mao0523/article/details/122448599
+
+
+C:<span class="token punctuation">\</span>Users<span class="token punctuation">\</span>Administrator<span class="token operator">&gt;</span>e:
+
+E:<span class="token punctuation">\</span><span class="token operator">&gt;</span>cd ProgramFiles<span class="token punctuation">\</span>nginx-1.16.1
+
+// 启动
+E:<span class="token punctuation">\</span>ProgramFiles<span class="token punctuation">\</span>nginx-1.16.<span class="token operator"><span class="token file-descriptor important">1</span>&gt;</span>start nginx
+
+// 刷新
+E:<span class="token punctuation">\</span>ProgramFiles<span class="token punctuation">\</span>nginx-1.16.<span class="token operator"><span class="token file-descriptor important">1</span>&gt;</span>nginx <span class="token parameter variable">-s</span> reload
+
+// 停止
+E:<span class="token punctuation">\</span>ProgramFiles<span class="token punctuation">\</span>nginx-1.16.<span class="token operator"><span class="token file-descriptor important">1</span>&gt;</span>nginx <span class="token parameter variable">-s</span> stop
+
+E:<span class="token punctuation">\</span>ProgramFiles<span class="token punctuation">\</span>nginx-1.16.<span class="token operator"><span class="token file-descriptor important">1</span>&gt;</span>
+
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>报错 403 Forbidden
+https://www.toutiao.com/article/6613280321607565832/
+
+方法1、缺少index.html页面
+方法2、将第一行的user www-data改为user root
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><hr> <h3 id="_1-2、常用命令"><a href="#_1-2、常用命令" class="header-anchor">#</a> 1.2、常用命令</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>
+启动
+sudo /usr/local/lighthouse/softwares/nginx/sbin/nginx
+或
+$ sudo systemctl start nginx #systemd
+OR
+$ sudo service nginx start   #sysvinit
+
+
+重载 Nginx 服务
+sudo /usr/local/lighthouse/softwares/nginx/sbin/nginx -s reload
+$ sudo systemctl reload nginx #systemd
+或
+$ sudo service nginx reload   #sysvinit
+
+
+停止
+sudo /usr/local/lighthouse/softwares/nginx/sbin/nginx -s stop
+$ sudo systemctl stop nginx #systemd
+OR
+$ sudo service nginx stop   #sysvinit
+
+
+开机自启动
+$ sudo systemctl enable nginx #systemd
+或
+$ sudo service nginx enable   #sysv init
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>
+查询状态
+sudo /usr/local/lighthouse/softwares/nginx/sbin/nginx -t
+ps -ef | grep nginx
+
+$ sudo systemctl status nginx #systemd
+或
+$ sudo service nginx status   #sysvinit
+
+
+
+端口在使用
+nginx: [emerg] bind() to 0.0.0.0:80 failed (98: Address already in use)
+killall -9 nginx
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>docsify 使用nginx布署在私有服务器
+// 安装docsify
+npm i docsify-cli -g  
+ 
+docsify --version
+docsify serve
+
+注意问题：
+
+将第一行的user www-data;,不管你那里是什么，统一改为user root，否则后面会出现403 forbidden.
+
+
+server {
+	listen 8080;
+	server_name localhost;
+
+	location / {
+			root /home/lighthouse/shufaguiji/;
+			index index.html;
+	}
+
+	error_page   500 502 503 504  /50x.html;
+	location = /50x.html {
+		root   html;
+	}
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div><hr> <h2 id="二、配置"><a href="#二、配置" class="header-anchor">#</a> 二、配置</h2> <h3 id="_2-1、基础配置"><a href="#_2-1、基础配置" class="header-anchor">#</a> 2.1、基础配置</h3> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code>    <span class="token comment"># 监听端口、缓存</span>
+	server <span class="token punctuation">{</span>
+		listen <span class="token number">8081</span><span class="token punctuation">;</span>
+		server_name localhost<span class="token punctuation">;</span>
+		root /home/lighthouse/vuepress-calligraphy<span class="token punctuation">;</span>
+		
+		location ~* <span class="token punctuation">\</span>.<span class="token punctuation">(</span>css<span class="token operator">|</span>js<span class="token operator">|</span>png<span class="token operator">|</span>jpg<span class="token operator">|</span>jpeg<span class="token operator">|</span>gif<span class="token operator">|</span>gz<span class="token operator">|</span>svg<span class="token operator">|</span>mp4<span class="token operator">|</span>ogg<span class="token operator">|</span>ogv<span class="token operator">|</span>webm<span class="token operator">|</span>htc<span class="token operator">|</span>xml<span class="token operator">|</span>woff<span class="token punctuation">)</span>$
+		<span class="token punctuation">{</span>
+			add_header Cache-Control no-cache<span class="token punctuation">;</span>
+			add_header Pragma no-cache<span class="token punctuation">;</span> 
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+
+
+	<span class="token comment"># xushufa.cn   /home/lighthouse/vuepress-calligraphy</span>
+	server <span class="token punctuation">{</span>
+        listen <span class="token number">80</span><span class="token punctuation">;</span>
+        server_name xushufa.cn<span class="token punctuation">;</span>
+		root /home/lighthouse/vuepress-calligraphy<span class="token punctuation">;</span>
+	    
+		<span class="token comment">#把http的域名请求转成https</span>
+		<span class="token builtin class-name">return</span> <span class="token number">301</span> https://<span class="token variable">$host</span><span class="token variable">$request_uri</span><span class="token punctuation">;</span> 
+  		
+		location ~* <span class="token punctuation">\</span>.<span class="token punctuation">(</span>css<span class="token operator">|</span>js<span class="token operator">|</span>png<span class="token operator">|</span>jpg<span class="token operator">|</span>jpeg<span class="token operator">|</span>gif<span class="token operator">|</span>gz<span class="token operator">|</span>svg<span class="token operator">|</span>mp4<span class="token operator">|</span>ogg<span class="token operator">|</span>ogv<span class="token operator">|</span>webm<span class="token operator">|</span>htc<span class="token operator">|</span>xml<span class="token operator">|</span>woff<span class="token punctuation">)</span>$
+        <span class="token punctuation">{</span>
+			add_header Cache-Control no-cache<span class="token punctuation">;</span>
+			add_header Pragma no-cache<span class="token punctuation">;</span> 
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+	
+	server <span class="token punctuation">{</span>
+        <span class="token comment">#SSL 访问端口号为 443</span>
+        listen <span class="token number">443</span> ssl<span class="token punctuation">;</span> 
+        <span class="token comment">#填写绑定证书的域名</span>
+        server_name xushufa.cn<span class="token punctuation">;</span> 
+        <span class="token comment">#证书文件名称</span>
+        ssl_certificate /usr/local/lighthouse/softwares/nginx/conf/xushufa.cn_nginx/xushufa.cn_bundle.crt<span class="token punctuation">;</span> 
+        <span class="token comment">#私钥文件名称</span>
+        ssl_certificate_key /usr/local/lighthouse/softwares/nginx/conf/xushufa.cn_nginx/xushufa.cn.key<span class="token punctuation">;</span> 
+        ssl_session_timeout 5m<span class="token punctuation">;</span>
+        <span class="token comment">#请按照以下协议配置</span>
+        ssl_protocols TLSv1.2 TLSv1.3<span class="token punctuation">;</span> 
+        <span class="token comment">#请按照以下套件配置，配置加密套件，写法遵循 openssl 标准。</span>
+        ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:HIGH:<span class="token operator">!</span>aNULL:<span class="token operator">!</span>MD5:<span class="token operator">!</span>RC4:<span class="token operator">!</span>DHE<span class="token punctuation">;</span> 
+        ssl_prefer_server_ciphers on<span class="token punctuation">;</span>
+		
+        root /home/lighthouse/vuepress-calligraphy<span class="token punctuation">;</span>
+	      		
+		location ~* <span class="token punctuation">\</span>.<span class="token punctuation">(</span>css<span class="token operator">|</span>js<span class="token operator">|</span>png<span class="token operator">|</span>jpg<span class="token operator">|</span>jpeg<span class="token operator">|</span>gif<span class="token operator">|</span>gz<span class="token operator">|</span>svg<span class="token operator">|</span>mp4<span class="token operator">|</span>ogg<span class="token operator">|</span>ogv<span class="token operator">|</span>webm<span class="token operator">|</span>htc<span class="token operator">|</span>xml<span class="token operator">|</span>woff<span class="token punctuation">)</span>$
+        <span class="token punctuation">{</span>
+			add_header Cache-Control no-cache<span class="token punctuation">;</span>
+			add_header Pragma no-cache<span class="token punctuation">;</span> 
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br></div></div><hr> <blockquote><p>日志格式化</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>日志格式化参考  https://blog.csdn.net/weixin_48981270/article/details/117720037
+
+log_format json '{&quot;timestamp&quot;:&quot;$time_iso8601&quot;,'
+			'&quot;host&quot;: &quot;$server_addr&quot;,'
+			'&quot;client&quot;: &quot;$remote_addr&quot;,'
+			'&quot;size&quot;: $body_bytes_sent,'
+			'&quot;responsetime&quot;: $request_time,'
+			'&quot;domain&quot;: &quot;$host&quot;,'
+			'&quot;url&quot;:&quot;$request_uri&quot;,'
+			'&quot;referer&quot;: &quot;$http_referer&quot;,'
+			'&quot;agent&quot;: &quot;$http_user_agent&quot;,'
+			'&quot;status&quot;: &quot;$status&quot;,'
+			'&quot;x_forwarded_for&quot;: &quot;$http_x_forwarded_for&quot;}';
+
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><hr> <h3 id="_2-2、日志按天保存"><a href="#_2-2、日志按天保存" class="header-anchor">#</a> 2.2、日志按天保存</h3> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token shebang important">#!/bin/bash</span>
+<span class="token comment"># 日志按天保存</span>
+<span class="token comment"># 测试 /bin/sh /usr/local/lighthouse/softwares/nginx/sbin/cut_nginx_logs.sh</span>
+
+<span class="token comment">#access.log日志存放路径</span>
+<span class="token assign-left variable">log_dir</span><span class="token operator">=</span><span class="token string">&quot;/usr/local/lighthouse/softwares/nginx/logs/&quot;</span>
+<span class="token assign-left variable">log_name</span><span class="token operator">=</span><span class="token string">&quot;access&quot;</span>
+
+<span class="token assign-left variable">name_current_log</span><span class="token operator">=</span><span class="token variable">${log_dir}</span><span class="token variable">${log_name}</span>.log
+<span class="token assign-left variable">name_yesterday_log</span><span class="token operator">=</span><span class="token variable">${log_dir}</span><span class="token variable">${log_name}</span>-<span class="token variable"><span class="token variable">$(</span><span class="token function">date</span> <span class="token parameter variable">-d</span> <span class="token string">&quot;yesterday&quot;</span> +<span class="token string">&quot;%Y-%m-%d&quot;</span><span class="token variable">)</span></span>.log
+	
+<span class="token comment">#复制新日志</span>
+<span class="token function">cp</span> <span class="token variable">$name_current_log</span> <span class="token variable">$name_yesterday_log</span>
+
+<span class="token comment">#清空原日志</span>
+<span class="token function">cat</span> /dev/null <span class="token operator">&gt;</span> <span class="token variable">$name_current_log</span>
+
+<span class="token comment">#nginx的sbin存放路径</span>
+<span class="token assign-left variable">nginx_sbin</span><span class="token operator">=</span><span class="token string">&quot;/usr/local/lighthouse/softwares/nginx/sbin/nginx&quot;</span>   
+
+<span class="token builtin class-name">echo</span> <span class="token variable">$name_yesterday_log</span>
+
+<span class="token comment">#restart nginx</span>
+<span class="token variable">$nginx_sbin</span> <span class="token parameter variable">-s</span> reload
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>/bin/sh^M: bad interpreter:没有那个文件或目录解决
+因为操作系统是windows，我在windows下编辑的脚本，所以有可能有不可见字符。
+脚本文件是DOS格式的, 即每一行的行尾以\n\r来标识, 其ASCII码分别是0x0D, 0x0A.
+
+vim filename
+然后用命令
+:set ff? #可以看到dos或unix的字样. 如果的确是dos格式的。
+ 
+然后用
+:set ff=unix #把它强制为unix格式的, 然后存盘退出。
+再次运行脚本。
+	
+https://blog.csdn.net/ywb201314/article/details/51909976
+
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><hr> <div class="language-c line-numbers-mode"><pre class="language-c"><code>#打开定时任务
+crontab <span class="token operator">-</span>e
+
+#添加定时任务
+<span class="token number">00</span> <span class="token number">00</span> <span class="token operator">*</span> <span class="token operator">*</span> <span class="token operator">*</span> <span class="token operator">/</span>bin<span class="token operator">/</span>sh  <span class="token operator">/</span>usr<span class="token operator">/</span>local<span class="token operator">/</span>lighthouse<span class="token operator">/</span>softwares<span class="token operator">/</span>nginx<span class="token operator">/</span>sbin<span class="token operator">/</span>cut_nginx_logs<span class="token punctuation">.</span>sh
+#<span class="token string">&quot;:wq&quot;</span>保存并退出
+
+#查看定时任务<span class="token punctuation">,</span>就会看到你添加的内容了
+crontab <span class="token operator">-</span>l
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><hr> <div class="language- line-numbers-mode"><pre class="language-text"><code>
+crontab说明：
+
+分钟   小时   日   月   星期   命令
+*        *      *    *     *       *
+
+第1列表示分钟1～59 每分钟用*或者 */1表示
+第2列表示小时1～23（0表示0点）
+第3列表示日期1～31
+第4列 表示月份1～12
+第5列标识号星期0～6（0表示星期天）
+第6列要运行的命令
+
+https://blog.csdn.net/sukangshen/article/details/78900147
+https://blog.csdn.net/fangyuying128825/article/details/71600969
+http://www.cnblogs.com/peida/archive/2013/01/08/2850483.html
+
+/etc/crontab
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div></div> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/vuepress-blog/编程/运维/linuxNote-x.html" class="prev">
+        linuxNote
+      </a></span> <span class="next"><a href="/vuepress-blog/编程/运维/定时执行脚本.html">
+        定时执行脚本
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/vuepress-blog/assets/js/app.ee30669a.js" defer></script><script src="/vuepress-blog/assets/js/3.9cedbe4c.js" defer></script><script src="/vuepress-blog/assets/js/2.5f0b3217.js" defer></script><script src="/vuepress-blog/assets/js/20.e7530fec.js" defer></script><script src="/vuepress-blog/assets/js/112.32fe761a.js" defer></script>
+  </body>
+</html>

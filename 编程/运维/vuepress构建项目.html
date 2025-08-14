@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vuepress构建项目 | 无为徐生</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/vuepress-blog/icon.png">
+    <meta name="description" content="生活随笔-编程笔记-书法练习轨迹">
+    
+    <link rel="preload" href="/vuepress-blog/assets/css/0.styles.c5cb1392.css" as="style"><link rel="preload" href="/vuepress-blog/assets/js/app.ee30669a.js" as="script"><link rel="preload" href="/vuepress-blog/assets/js/3.9cedbe4c.js" as="script"><link rel="preload" href="/vuepress-blog/assets/js/2.5f0b3217.js" as="script"><link rel="preload" href="/vuepress-blog/assets/js/20.e7530fec.js" as="script"><link rel="preload" href="/vuepress-blog/assets/js/114.b6f94d18.js" as="script"><link rel="prefetch" href="/vuepress-blog/assets/js/1.33058bb1.js"><link rel="prefetch" href="/vuepress-blog/assets/js/100.65184365.js"><link rel="prefetch" href="/vuepress-blog/assets/js/101.fcc33696.js"><link rel="prefetch" href="/vuepress-blog/assets/js/102.47bf3bc1.js"><link rel="prefetch" href="/vuepress-blog/assets/js/103.05dfabff.js"><link rel="prefetch" href="/vuepress-blog/assets/js/104.28c33818.js"><link rel="prefetch" href="/vuepress-blog/assets/js/105.dd8695ad.js"><link rel="prefetch" href="/vuepress-blog/assets/js/106.bb05e9a6.js"><link rel="prefetch" href="/vuepress-blog/assets/js/107.aafd6cae.js"><link rel="prefetch" href="/vuepress-blog/assets/js/108.05ac5505.js"><link rel="prefetch" href="/vuepress-blog/assets/js/109.00141c24.js"><link rel="prefetch" href="/vuepress-blog/assets/js/11.3e329a3b.js"><link rel="prefetch" href="/vuepress-blog/assets/js/110.3a152484.js"><link rel="prefetch" href="/vuepress-blog/assets/js/111.9b496f8b.js"><link rel="prefetch" href="/vuepress-blog/assets/js/112.32fe761a.js"><link rel="prefetch" href="/vuepress-blog/assets/js/113.651cb2aa.js"><link rel="prefetch" href="/vuepress-blog/assets/js/115.eaea7ce5.js"><link rel="prefetch" href="/vuepress-blog/assets/js/116.cf32ae07.js"><link rel="prefetch" href="/vuepress-blog/assets/js/117.6b2d0b64.js"><link rel="prefetch" href="/vuepress-blog/assets/js/118.e57400b1.js"><link rel="prefetch" href="/vuepress-blog/assets/js/119.9e80f096.js"><link rel="prefetch" href="/vuepress-blog/assets/js/12.073f8190.js"><link rel="prefetch" href="/vuepress-blog/assets/js/120.9350d7b7.js"><link rel="prefetch" href="/vuepress-blog/assets/js/13.4555a927.js"><link rel="prefetch" href="/vuepress-blog/assets/js/14.8933d101.js"><link rel="prefetch" href="/vuepress-blog/assets/js/15.68fdb506.js"><link rel="prefetch" href="/vuepress-blog/assets/js/16.b7f61fa2.js"><link rel="prefetch" href="/vuepress-blog/assets/js/17.d075425b.js"><link rel="prefetch" href="/vuepress-blog/assets/js/18.36cedba5.js"><link rel="prefetch" href="/vuepress-blog/assets/js/19.819534ac.js"><link rel="prefetch" href="/vuepress-blog/assets/js/21.c16b052c.js"><link rel="prefetch" href="/vuepress-blog/assets/js/22.ab6c7ca6.js"><link rel="prefetch" href="/vuepress-blog/assets/js/23.ebc8b624.js"><link rel="prefetch" href="/vuepress-blog/assets/js/24.367c574d.js"><link rel="prefetch" href="/vuepress-blog/assets/js/25.13c60cf0.js"><link rel="prefetch" href="/vuepress-blog/assets/js/26.4bd12aca.js"><link rel="prefetch" href="/vuepress-blog/assets/js/27.9b83a65c.js"><link rel="prefetch" href="/vuepress-blog/assets/js/28.f82d2d05.js"><link rel="prefetch" href="/vuepress-blog/assets/js/29.3ca6118f.js"><link rel="prefetch" href="/vuepress-blog/assets/js/30.ba405f3e.js"><link rel="prefetch" href="/vuepress-blog/assets/js/31.f868abc0.js"><link rel="prefetch" href="/vuepress-blog/assets/js/32.26a06c3e.js"><link rel="prefetch" href="/vuepress-blog/assets/js/33.cba55c46.js"><link rel="prefetch" href="/vuepress-blog/assets/js/34.fdfd39f4.js"><link rel="prefetch" href="/vuepress-blog/assets/js/35.429b7fa2.js"><link rel="prefetch" href="/vuepress-blog/assets/js/36.69ecd097.js"><link rel="prefetch" href="/vuepress-blog/assets/js/37.78c4990e.js"><link rel="prefetch" href="/vuepress-blog/assets/js/38.32005d38.js"><link rel="prefetch" href="/vuepress-blog/assets/js/39.b308c0c9.js"><link rel="prefetch" href="/vuepress-blog/assets/js/4.a2c6ee7d.js"><link rel="prefetch" href="/vuepress-blog/assets/js/40.eba3b538.js"><link rel="prefetch" href="/vuepress-blog/assets/js/41.5476ea14.js"><link rel="prefetch" href="/vuepress-blog/assets/js/42.6e443398.js"><link rel="prefetch" href="/vuepress-blog/assets/js/43.387f8c61.js"><link rel="prefetch" href="/vuepress-blog/assets/js/44.524578d9.js"><link rel="prefetch" href="/vuepress-blog/assets/js/45.e64569e3.js"><link rel="prefetch" href="/vuepress-blog/assets/js/46.e3d9da8b.js"><link rel="prefetch" href="/vuepress-blog/assets/js/47.00f8ed4e.js"><link rel="prefetch" href="/vuepress-blog/assets/js/48.bd1dce8a.js"><link rel="prefetch" href="/vuepress-blog/assets/js/49.cd5a3549.js"><link rel="prefetch" href="/vuepress-blog/assets/js/5.18460ae1.js"><link rel="prefetch" href="/vuepress-blog/assets/js/50.bf507ac1.js"><link rel="prefetch" href="/vuepress-blog/assets/js/51.92430a99.js"><link rel="prefetch" href="/vuepress-blog/assets/js/52.003fef9a.js"><link rel="prefetch" href="/vuepress-blog/assets/js/53.6f0f04eb.js"><link rel="prefetch" href="/vuepress-blog/assets/js/54.d51e9bcd.js"><link rel="prefetch" href="/vuepress-blog/assets/js/55.6b6fa295.js"><link rel="prefetch" href="/vuepress-blog/assets/js/56.dc38dad8.js"><link rel="prefetch" href="/vuepress-blog/assets/js/57.204d377f.js"><link rel="prefetch" href="/vuepress-blog/assets/js/58.db391d6e.js"><link rel="prefetch" href="/vuepress-blog/assets/js/59.7262f2a9.js"><link rel="prefetch" href="/vuepress-blog/assets/js/6.cfba504c.js"><link rel="prefetch" href="/vuepress-blog/assets/js/60.5a197bfd.js"><link rel="prefetch" href="/vuepress-blog/assets/js/61.cdb87900.js"><link rel="prefetch" href="/vuepress-blog/assets/js/62.3ac97494.js"><link rel="prefetch" href="/vuepress-blog/assets/js/63.de0482f5.js"><link rel="prefetch" href="/vuepress-blog/assets/js/64.81652d23.js"><link rel="prefetch" href="/vuepress-blog/assets/js/65.c1ac50bd.js"><link rel="prefetch" href="/vuepress-blog/assets/js/66.2a3ea3a1.js"><link rel="prefetch" href="/vuepress-blog/assets/js/67.63517021.js"><link rel="prefetch" href="/vuepress-blog/assets/js/68.a5deaad9.js"><link rel="prefetch" href="/vuepress-blog/assets/js/69.c330a2a3.js"><link rel="prefetch" href="/vuepress-blog/assets/js/7.0d30306c.js"><link rel="prefetch" href="/vuepress-blog/assets/js/70.a28250a4.js"><link rel="prefetch" href="/vuepress-blog/assets/js/71.b30a94a5.js"><link rel="prefetch" href="/vuepress-blog/assets/js/72.5611cc88.js"><link rel="prefetch" href="/vuepress-blog/assets/js/73.582ac0fc.js"><link rel="prefetch" href="/vuepress-blog/assets/js/74.eba8904a.js"><link rel="prefetch" href="/vuepress-blog/assets/js/75.fb571ab9.js"><link rel="prefetch" href="/vuepress-blog/assets/js/76.616e4d46.js"><link rel="prefetch" href="/vuepress-blog/assets/js/77.14234037.js"><link rel="prefetch" href="/vuepress-blog/assets/js/78.868c70f1.js"><link rel="prefetch" href="/vuepress-blog/assets/js/79.881cb03a.js"><link rel="prefetch" href="/vuepress-blog/assets/js/8.39e6fd7c.js"><link rel="prefetch" href="/vuepress-blog/assets/js/80.6fd51105.js"><link rel="prefetch" href="/vuepress-blog/assets/js/81.c2c2496d.js"><link rel="prefetch" href="/vuepress-blog/assets/js/82.6c62c80e.js"><link rel="prefetch" href="/vuepress-blog/assets/js/83.6fafbcfd.js"><link rel="prefetch" href="/vuepress-blog/assets/js/84.4c2c33bc.js"><link rel="prefetch" href="/vuepress-blog/assets/js/85.71589b9d.js"><link rel="prefetch" href="/vuepress-blog/assets/js/86.8139f2e2.js"><link rel="prefetch" href="/vuepress-blog/assets/js/87.a6cc83ea.js"><link rel="prefetch" href="/vuepress-blog/assets/js/88.bd999522.js"><link rel="prefetch" href="/vuepress-blog/assets/js/89.c7ca9aaa.js"><link rel="prefetch" href="/vuepress-blog/assets/js/90.5fffec1d.js"><link rel="prefetch" href="/vuepress-blog/assets/js/91.7124c37b.js"><link rel="prefetch" href="/vuepress-blog/assets/js/92.6a49dd40.js"><link rel="prefetch" href="/vuepress-blog/assets/js/93.347d6258.js"><link rel="prefetch" href="/vuepress-blog/assets/js/94.0c161e53.js"><link rel="prefetch" href="/vuepress-blog/assets/js/95.fab08c7e.js"><link rel="prefetch" href="/vuepress-blog/assets/js/96.2ce5b245.js"><link rel="prefetch" href="/vuepress-blog/assets/js/97.904f9620.js"><link rel="prefetch" href="/vuepress-blog/assets/js/98.8ef175c6.js"><link rel="prefetch" href="/vuepress-blog/assets/js/99.7dc7dfbb.js"><link rel="prefetch" href="/vuepress-blog/assets/js/vendors~docsearch.8ec7876f.js">
+    <link rel="stylesheet" href="/vuepress-blog/assets/css/0.styles.c5cb1392.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vuepress-blog/" class="home-link router-link-active"><!----> <span class="site-name">无为徐生</span></a> <div class="links"><form id="search-form" role="search" class="algolia-search-wrapper search-box"><input id="algolia-search-input" class="search-query"></form> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vuepress-blog/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/vuepress-blog/目录.html" class="nav-link">
+  目录
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="生活" class="dropdown-title"><span class="title">生活</span> <span class="arrow down"></span></button> <button type="button" aria-label="生活" class="mobile-dropdown-title"><span class="title">生活</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-blog/生活/随笔/日常Note.html" class="nav-link">
+  日常Note
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/生活/随笔/诗文浅作.html" class="nav-link">
+  诗文浅作
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/生活/随笔/驾考记事.html" class="nav-link">
+  驾考记事
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/生活/随笔/健身与学习.html" class="nav-link">
+  健身与学习
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/生活/文档/如何练好书法.html" class="nav-link">
+  如何练好书法
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/生活/随笔/我的原神旅行观测记录.html" class="nav-link">
+  我的原神旅行观测记录
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程" class="dropdown-title"><span class="title">编程</span> <span class="arrow down"></span></button> <button type="button" aria-label="编程" class="mobile-dropdown-title"><span class="title">编程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-blog/编程/java/javaNote.html" class="nav-link">
+  javaNote
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/编程/java/排序算法.html" class="nav-link">
+  排序算法
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/编程/运维/gitNote.html" class="nav-link">
+  gitNote
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/编程/运维/linuxNote-x.html" class="nav-link">
+  linuxNote
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/编程/运维/vuepress构建项目.html" class="nav-link">
+  vuepress构建项目
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/编程/数据库/mysqlNote.html" class="nav-link">
+  mysqlNote
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/编程/数据库/oracleNote.html" class="nav-link">
+  oracleNote
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/编程/资料/javaScript笔记.html" class="nav-link">
+  javaScript笔记
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/编程/资料/工具网站readMe.html" class="nav-link">
+  工具网站readMe
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="书法" class="dropdown-title"><span class="title">书法</span> <span class="arrow down"></span></button> <button type="button" aria-label="书法" class="mobile-dropdown-title"><span class="title">书法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-blog/书法/书法/赤壁赋.html" class="nav-link">
+  赤壁赋
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/书法/书法/多宝塔碑.html" class="nav-link">
+  多宝塔碑
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/书法/练习/徐书法.html" class="nav-link">
+  徐书法
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/书法/练习/无为徐生.html" class="nav-link">
+  无为徐生
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/书法/练习/古文诗词.html" class="nav-link">
+  古文诗词
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/书法/练习/书法练习轨迹ReadMe.html" class="nav-link">
+  书法练习轨迹
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/书法/轨迹/有感之杂说.html" class="nav-link">
+  有感之杂说
+</a></li></ul></div></div><div class="nav-item"><a href="/vuepress-blog/关于我.html" class="nav-link">
+  关于我
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/vuepress-blog/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/vuepress-blog/目录.html" class="nav-link">
+  目录
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="生活" class="dropdown-title"><span class="title">生活</span> <span class="arrow down"></span></button> <button type="button" aria-label="生活" class="mobile-dropdown-title"><span class="title">生活</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-blog/生活/随笔/日常Note.html" class="nav-link">
+  日常Note
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/生活/随笔/诗文浅作.html" class="nav-link">
+  诗文浅作
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/生活/随笔/驾考记事.html" class="nav-link">
+  驾考记事
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/生活/随笔/健身与学习.html" class="nav-link">
+  健身与学习
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/生活/文档/如何练好书法.html" class="nav-link">
+  如何练好书法
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/生活/随笔/我的原神旅行观测记录.html" class="nav-link">
+  我的原神旅行观测记录
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程" class="dropdown-title"><span class="title">编程</span> <span class="arrow down"></span></button> <button type="button" aria-label="编程" class="mobile-dropdown-title"><span class="title">编程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-blog/编程/java/javaNote.html" class="nav-link">
+  javaNote
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/编程/java/排序算法.html" class="nav-link">
+  排序算法
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/编程/运维/gitNote.html" class="nav-link">
+  gitNote
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/编程/运维/linuxNote-x.html" class="nav-link">
+  linuxNote
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/编程/运维/vuepress构建项目.html" class="nav-link">
+  vuepress构建项目
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/编程/数据库/mysqlNote.html" class="nav-link">
+  mysqlNote
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/编程/数据库/oracleNote.html" class="nav-link">
+  oracleNote
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/编程/资料/javaScript笔记.html" class="nav-link">
+  javaScript笔记
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/编程/资料/工具网站readMe.html" class="nav-link">
+  工具网站readMe
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="书法" class="dropdown-title"><span class="title">书法</span> <span class="arrow down"></span></button> <button type="button" aria-label="书法" class="mobile-dropdown-title"><span class="title">书法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-blog/书法/书法/赤壁赋.html" class="nav-link">
+  赤壁赋
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/书法/书法/多宝塔碑.html" class="nav-link">
+  多宝塔碑
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/书法/练习/徐书法.html" class="nav-link">
+  徐书法
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/书法/练习/无为徐生.html" class="nav-link">
+  无为徐生
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/书法/练习/古文诗词.html" class="nav-link">
+  古文诗词
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/书法/练习/书法练习轨迹ReadMe.html" class="nav-link">
+  书法练习轨迹
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/书法/轨迹/有感之杂说.html" class="nav-link">
+  有感之杂说
+</a></li></ul></div></div><div class="nav-item"><a href="/vuepress-blog/关于我.html" class="nav-link">
+  关于我
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>java</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>运维</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/vuepress-blog/编程/运维/docker.html" class="sidebar-link">docker</a></li><li><a href="/vuepress-blog/编程/运维/gitNote.html" class="sidebar-link">gitNote</a></li><li><a href="/vuepress-blog/编程/运维/shell语法.html" class="sidebar-link">shell语法</a></li><li><a href="/vuepress-blog/编程/运维/linuxNote-x.html" class="sidebar-link">linuxNote</a></li><li><a href="/vuepress-blog/编程/运维/nginx笔记.html" class="sidebar-link">nginx笔记</a></li><li><a href="/vuepress-blog/编程/运维/定时执行脚本.html" class="sidebar-link">定时执行脚本</a></li><li><a href="/vuepress-blog/编程/运维/gitbook部署博客.html" class="sidebar-link">gitbook部署博客</a></li><li><a href="/vuepress-blog/编程/运维/vuepress构建项目.html" class="active sidebar-link">vuepress构建项目</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vuepress-blog/编程/运维/vuepress构建项目.html#一、vuepress" class="sidebar-link">一、vuepress</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vuepress-blog/编程/运维/vuepress构建项目.html#_1-1-安装" class="sidebar-link">1.1 安装</a></li><li class="sidebar-sub-header"><a href="/vuepress-blog/编程/运维/vuepress构建项目.html#_1-2-部署" class="sidebar-link">1.2 部署</a></li><li class="sidebar-sub-header"><a href="/vuepress-blog/编程/运维/vuepress构建项目.html#_1-3-问题" class="sidebar-link">1.3 问题</a></li><li class="sidebar-sub-header"><a href="/vuepress-blog/编程/运维/vuepress构建项目.html#_1-4-备案号" class="sidebar-link">1.4 备案号</a></li></ul></li><li class="sidebar-sub-header"><a href="/vuepress-blog/编程/运维/vuepress构建项目.html#二、vuepress-theme-reco" class="sidebar-link">二、vuepress-theme-reco</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vuepress-blog/编程/运维/vuepress构建项目.html#_2-1-安装" class="sidebar-link">2.1 安装</a></li><li class="sidebar-sub-header"><a href="/vuepress-blog/编程/运维/vuepress构建项目.html#_2-2-部署" class="sidebar-link">2.2 部署</a></li><li class="sidebar-sub-header"><a href="/vuepress-blog/编程/运维/vuepress构建项目.html#_2-3-备案号" class="sidebar-link">2.3 备案号</a></li></ul></li><li class="sidebar-sub-header"><a href="/vuepress-blog/编程/运维/vuepress构建项目.html#三、插件" class="sidebar-link">三、插件</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vuepress-blog/编程/运维/vuepress构建项目.html#_3-1-阅读量" class="sidebar-link">3.1 阅读量</a></li><li class="sidebar-sub-header"><a href="/vuepress-blog/编程/运维/vuepress构建项目.html#_3-2-时间格式化" class="sidebar-link">3.2 时间格式化</a></li><li class="sidebar-sub-header"><a href="/vuepress-blog/编程/运维/vuepress构建项目.html#_3-3-全局搜索" class="sidebar-link">3.3 全局搜索</a></li><li class="sidebar-sub-header"><a href="/vuepress-blog/编程/运维/vuepress构建项目.html#_3-4-流程图" class="sidebar-link">3.4 流程图</a></li><li class="sidebar-sub-header"><a href="/vuepress-blog/编程/运维/vuepress构建项目.html#_3-5-图片放大" class="sidebar-link">3.5 图片放大</a></li><li class="sidebar-sub-header"><a href="/vuepress-blog/编程/运维/vuepress构建项目.html#_3-6-展示名人名句" class="sidebar-link">3.6 展示名人名句</a></li></ul></li></ul></li><li><a href="/vuepress-blog/编程/运维/批量推送布署徐书法项目.html" class="sidebar-link">批量推送布署徐书法项目</a></li><li><a href="/vuepress-blog/编程/运维/markdown静态博客搭建综述.html" class="sidebar-link">markdown静态博客搭建综述</a></li><li><a href="/vuepress-blog/编程/运维/gitlab、github绑定自定义域名.html" class="sidebar-link">gitlab、github绑定自定义域名</a></li><li><a href="/vuepress-blog/编程/运维/git平台docsify布署markdown文件.html" class="sidebar-link">git平台docsify布署markdown文件</a></li><li><a href="/vuepress-blog/编程/运维/gitlab、github、gitee布署mkdocs主题仓库.html" class="sidebar-link">gitlab、github、gitee布署mkdocs主题仓库</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>数据库</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>资料</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="u-valine u-valine-wrap" data-v-91d000da><span data-flag-title="scott180.github.io/vuepress-blog" class="leancloud-visitors" data-v-91d000da><span class="stat update-time" data-v-91d000da><img src="/update-time.png" class="icon" data-v-91d000da>2023-09-27 17:28:02
+    </span> <span class="stat read-count" data-v-91d000da><img src="/read-count.png" class="icon" data-v-91d000da> <span class="leancloud-visitors-count" data-v-91d000da></span></span></span></div> <div class="theme-default-content content__default"><h1 id="vuepress构建项目"><a href="#vuepress构建项目" class="header-anchor">#</a> vuepress构建项目</h1> <h2 id="一、vuepress"><a href="#一、vuepress" class="header-anchor">#</a> 一、vuepress</h2> <p>使用vuepress构建的博客。
+<a href="https://github.com/scott180/vuepress-blog" target="_blank" rel="noopener noreferrer">github<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <a href="https://gitlab.com/xuyq123/mynotes" target="_blank" rel="noopener noreferrer">gitlab<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <a href="https://scott180.github.io/vuepress-blog" target="_blank" rel="noopener noreferrer">vuepress-blog<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="_1-1-安装"><a href="#_1-1-安装" class="header-anchor">#</a> 1.1 安装</h3> <p>参考 <a href="https://vuepress.vuejs.org/zh/" target="_blank" rel="noopener noreferrer">vuepress<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <a href="https://github.com/codeteenager/blog-vuepress" target="_blank" rel="noopener noreferrer">blog-vuepress<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>在使用前请先安装VuePress</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code>$ <span class="token function">npm</span> <span class="token function">install</span> <span class="token parameter variable">-g</span> vuepress
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token function">mkdir</span> vuepress-starter <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">cd</span> vuepress-starter
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token function">yarn</span> init <span class="token comment"># npm init</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token function">yarn</span> <span class="token function">add</span> <span class="token parameter variable">-D</span> vuepress <span class="token comment"># npm install -D vuepress</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token function">mkdir</span> docs <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">echo</span> <span class="token string">'# Hello VuePress'</span> <span class="token operator">&gt;</span> docs/README.md
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><blockquote><p>在 <code>package.json</code> 中添加一些 <code>scripts</code></p></blockquote> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;docs:dev&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress dev docs&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;docs:build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress build docs&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>使用<code>npm run docs:dev</code>启动项目，启动后在浏览器中使用<code>localhost:8080</code>进行访问</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code>$ <span class="token function">npm</span> run docs:dev
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>使用<code>npm run docs:build</code>打包项目</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code>$ <span class="token function">npm</span> run docs:build
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="_1-2-部署"><a href="#_1-2-部署" class="header-anchor">#</a> 1.2 部署</h3> <p>根目录创建 <code>deploy.sh</code> 文件</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#!/usr/bin/env sh
+
+# 确保脚本抛出遇到的错误
+set -e
+
+# 生成静态文件
+npm run docs:build
+
+# 进入生成的文件夹
+cd docs/.vuepress/dist
+
+# 如果是发布到自定义域名
+# echo 'www.example.com' &gt; CNAME
+
+git init
+git add -A
+git commit -m 'deploy'
+
+# 如果发布到 https://&lt;USERNAME&gt;.github.io
+# git push -f git@github.com:scott180/scott180.github.io.git master
+
+# 如果发布到 https://&lt;USERNAME&gt;.github.io/&lt;REPO&gt;  注意配置 `docs\.vuepress\config.js` 的 `base`
+# git push -f git@github.com:scott180/vuepress-calligraphy.git master:gh-pages
+
+cd -
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><div class="language-c line-numbers-mode"><pre class="language-c"><code>如果要在github绑定域名，如 https<span class="token operator">:</span><span class="token comment">//blog.xushufa.cn/ ，必须在github建立同名项目，如 https://github.com/scott180/blog 。如果子域名和项目不同名，布署时css样式会混乱，网页不能正常访问。 </span>
+而且 `<span class="token punctuation">.</span>vuepress\config<span class="token punctuation">.</span>js` 的 `base` 也要注释掉。
+
+绑定教程可参看： gitlab、github绑定自定义域名  https<span class="token operator">:</span><span class="token comment">//xushufa.cn/docs/bian-cheng/yun-wei/gitlab-githubbang-ding-zi-ding-yi-yu-ming.html  </span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><hr> <p>设置 <code>package.json</code></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+    &quot;scripts&quot;: {
+        &quot;deploy&quot;: &quot;bash deploy.sh&quot;
+      }
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>运行 <code>npm run deploy</code> 即可部署到github静态页面</p> <hr> <blockquote><p>主要命令</p></blockquote> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment"># 启动 </span>
+<span class="token function">npm</span> run docs:dev
+
+<span class="token comment"># 打包</span>
+<span class="token function">npm</span> run docs:build
+
+<span class="token comment"># 部署</span>
+<span class="token function">npm</span> run deploy
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><hr> <blockquote><p>参考项目</p></blockquote> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token function">git</span> clone git@github.com:scott180/vuepress-blog.git
+
+克隆本项目后运行 <span class="token function">npm</span> <span class="token function">install</span> <span class="token parameter variable">-D</span> vuepress 安装相关插件。
+再启动 <span class="token function">npm</span> run docs:dev 项目，有可能会失败，因为版本不太兼容。
+所以可以直接在下方链接下载原始全部项目包 vuepress-blog.20230812.zip ，将 node_modules 依赖包复制到项目，再启动即可。
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p><a href="https://pan.baidu.com/s/1NHLuagvGS5SWC-fHuHByaQ?pwd=576i" target="_blank" rel="noopener noreferrer">百度网盘<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <a href="https://sourceforge.net/p/xdocument/code/ci/master/tree/files/vuepress-blog.20230812.zip" target="_blank" rel="noopener noreferrer">sourceforge<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <hr> <blockquote><p>后续更新</p></blockquote> <div class="language-java line-numbers-mode"><pre class="language-java"><code>首次部署需要按照以上步骤发布项目，后续增加或更新文件只需：
+在本地验证	npm run docs<span class="token operator">:</span>dev
+发布到线上	npm run deploy
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="_1-3-问题"><a href="#_1-3-问题" class="header-anchor">#</a> 1.3 问题</h3> <p>布署vuepress项目到git时可能会遇到一些问题，导致布署失败。现在下方列出具体问题及解决方法。</p> <br> <p><strong>一、注意路径配置问题</strong></p> <ul><li>1、如果要发布路径为用户名+项目名</li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code>如访问地址为 <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">https://scott180.github.io/reco-blog</span><span class="token template-punctuation string">`</span></span> 则
+
+<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">docs\.vuepress\config.js</span><span class="token template-punctuation string">`</span></span> 配置 <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">base</span><span class="token template-punctuation string">`</span></span> 字段为项目名 <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">reco-blog</span><span class="token template-punctuation string">`</span></span>
+
+<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">deploy.sh</span><span class="token template-punctuation string">`</span></span> 配置 <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">git push -f git@github.com:scott180/reco-blog.git master:gh-pages</span><span class="token template-punctuation string">`</span></span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><ul><li>2、如果要绑定域名</li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code>如访问地址为 <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">http://xushufa.cn</span><span class="token template-punctuation string">`</span></span> 则
+
+<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">docs\.vuepress\config.js</span><span class="token template-punctuation string">`</span></span> 配置 <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">base</span><span class="token template-punctuation string">`</span></span> 字段需注释掉
+
+<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">deploy.sh</span><span class="token template-punctuation string">`</span></span> 配置 
+echo <span class="token string">'xushufa.cn'</span> <span class="token operator">&gt;</span> <span class="token constant">CNAME</span>
+<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">git push -f git@github.com:scott180/reco-calligraphy.git master:gh-pages</span><span class="token template-punctuation string">`</span></span>
+
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><hr> <p><strong>二、 github Actions pages build and deployment 报错</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>本地执行deploy正常，但是github的Actions报错了。
+
+错误内容如下：
+Deployment request failed for 5a3201f6016e6e078f0f3c46eb4132a3d9014bdd due to in progress deployment. Please cancel 7e10a83b419c464b908a13787a0b0bfe39cc1ca7 first or wait for it to
+
+{
+    &quot;$id&quot;: &quot;1&quot;,
+    &quot;innerException&quot;: null,
+    &quot;message&quot;: &quot;The user 'System:PublicAccess;aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa' is not authorized to access this resource.&quot;,
+    &quot;typeName&quot;: &quot;Microsoft.TeamFoundation.Framework.Server.UnauthorizedRequestException, Microsoft.TeamFoundation.Framework.Server&quot;,
+    &quot;typeKey&quot;: &quot;UnauthorizedRequestException&quot;,
+    &quot;errorCode&quot;: 0,
+    &quot;eventId&quot;: 3000
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>
+解决方法：
+1、点击 Re-run all jobs 再试一次。
+2、本地vuepress缓存影响，将dist目录删除，重新deploy。
+3、可能是SSH key有问题，换一下，重新deploy。
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><hr> <p><strong>三、npm run docs:build 本地打包项目，丢失css样式</strong></p> <ul><li><p>1、修改<code>base</code>字段为 <code>./</code>   （ 参考 https://blog.csdn.net/JZevin/article/details/109195652 ）<br>
+修改 <code>/docs/.vuepress/config.js</code> 中配置的<code>base</code>字段  <br>
+这里的资源路径不应该是绝对路径，根目录 <code>/</code> ，而应该是相对路径 <code>./</code> <br></p></li> <li><p>2、注释掉 <code>mode</code>  参考  https://www.jianshu.com/p/f9b9edd210f8</p></li></ul> <div class="language-c line-numbers-mode"><pre class="language-c"><code>找到 node_modules\@vuepress\core\lib\client\app<span class="token punctuation">.</span>js文件， 注释掉 <span class="token char">'mode'</span>，让它默认哈希模式。
+
+ <span class="token keyword">const</span> router <span class="token operator">=</span> new <span class="token function">Router</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    base<span class="token operator">:</span> routerBase<span class="token punctuation">,</span>
+    <span class="token comment">// mode: 'history',</span>
+	
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><hr> <p><strong>四、本地npm run docs:dev没问题，但是npm run deploy报错</strong></p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code> create mode <span class="token number">100644</span> <span class="token string">&quot;<span class="token entity" title="\347">\347</span><span class="token entity" title="\274">\274</span><span class="token entity" title="\226">\226</span><span class="token entity" title="\347">\347</span><span class="token entity" title="\250">\250</span><span class="token entity" title="\213">\213</span>/<span class="token entity" title="\350">\350</span><span class="token entity" title="\277">\277</span><span class="token entity" title="\220">\220</span><span class="token entity" title="\347">\347</span><span class="token entity" title="\273">\273</span><span class="token entity" title="\264">\264</span>/<span class="token entity" title="\346">\346</span><span class="token entity" title="\211">\211</span><span class="token entity" title="\271">\271</span><span class="token entity" title="\351">\351</span><span class="token entity" title="\207">\207</span><span class="token entity" title="\217">\217</span><span class="token entity" title="\346">\346</span><span class="token entity" title="\216">\216</span><span class="token entity" title="\250">\250</span><span class="token entity" title="\351">\351</span><span class="token entity" title="\200">\200</span><span class="token entity" title="\201">\201</span><span class="token entity" title="\345">\345</span><span class="token entity" title="\270">\270</span><span class="token entity" title="\203">\203</span><span class="token entity" title="\347">\347</span><span class="token entity" title="\275">\275</span><span class="token entity" title="\262">\262</span><span class="token entity" title="\345">\345</span><span class="token entity" title="\276">\276</span><span class="token entity" title="\220">\220</span><span class="token entity" title="\344">\344</span><span class="token entity" title="\271">\271</span><span class="token entity" title="\246">\246</span><span class="token entity" title="\346">\346</span><span class="token entity" title="\263">\263</span><span class="token entity" title="\225">\225</span><span class="token entity" title="\351">\351</span><span class="token entity" title="\241">\241</span><span class="token entity" title="\271">\271</span><span class="token entity" title="\347">\347</span><span class="token entity" title="\233">\233</span><span class="token entity" title="\256">\256</span>.html&quot;</span>
+ssh: connect to <span class="token function">host</span> github.com port <span class="token number">22</span>: Connection timed out
+fatal: Could not <span class="token builtin class-name">read</span> from remote repository.
+
+Please <span class="token function">make</span> sure you have the correct access rights
+and the repository exists.
+<span class="token function">npm</span> ERR<span class="token operator">!</span> code ELIFECYCLE
+<span class="token function">npm</span> ERR<span class="token operator">!</span> errno <span class="token number">128</span>
+<span class="token function">npm</span> ERR<span class="token operator">!</span> vuepress-blog@1.0.0 deploy: <span class="token variable"><span class="token variable">`</span><span class="token function">bash</span> deploy.sh<span class="token variable">`</span></span>
+<span class="token function">npm</span> ERR<span class="token operator">!</span> Exit status <span class="token number">128</span>
+<span class="token function">npm</span> ERR<span class="token operator">!</span>
+<span class="token function">npm</span> ERR<span class="token operator">!</span> Failed at the vuepress-blog@1.0.0 deploy script.
+<span class="token function">npm</span> ERR<span class="token operator">!</span> This is probably not a problem with npm. There is likely additional logging output above.
+
+<span class="token function">npm</span> ERR<span class="token operator">!</span> A complete log of this run can be found in:
+<span class="token function">npm</span> ERR<span class="token operator">!</span>     E:<span class="token punctuation">\</span>ProgramFiles<span class="token punctuation">\</span>node-v12.22.9-win-x64<span class="token punctuation">\</span>node_cache<span class="token punctuation">\</span>_logs<span class="token punctuation">\</span><span class="token number">2023</span>-09-13T06_38_13_092Z-debug.log
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>exit status 128, stderr: &quot;fatal: protocol error: bad line
+exit status 128 表示在执行命令时出现了错误。
+stderr: &quot;fatal: protocol error: bad line length character: ???\n&amp;...
+这个错误的意思是在执行命令时遇到了无效的字符，可能是因为输入的命令格式不正确或者网络传输过程中出现了问题导致的。建议检查命令的格式是否正确，
+
+
+markdown文件标题下一行的换行格式不符合要求。
+原文：
+# 旅行观测记录
+
+&lt;br/&gt;
+
+&gt; 提瓦特旅行笔记
+
+
+修改：将&lt;br/&gt;改成&lt;br /&gt;，中间加一个空格。或者将&lt;br/&gt;去掉，加一个空行。
+
+
+延伸阅读：
+&lt;br&gt;是HTML写法。 
+&lt;br/&gt;是XHTML1.1的写法，也是XML写法。
+&lt;br /&gt;是XHTML为兼容HTML的写法，也是XML写法。
+
+像&lt;br /&gt;这种写法是比较规范的！
+转自：https://blog.csdn.net/czh500/article/details/107011801
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><hr> <h3 id="_1-4-备案号"><a href="#_1-4-备案号" class="header-anchor">#</a> 1.4 备案号</h3> <blockquote><p>vuepress 底部添加网站备案号：ICP备案号与公安备案号  <a href="https://vuepress.vuejs.org/zh/theme/default-theme-config.html#%E5%AF%8C%E6%96%87%E6%9C%AC-footer" target="_blank" rel="noopener noreferrer">富文本 footer<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>在 docs/README.md 添加备案
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>---
+home: true
+---
+
+::: slot footer
+MIT Licensed | Copyright © 2018-present [Evan You](https://github.com/yyx990803)
+:::
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><hr> <div class="language- line-numbers-mode"><pre class="language-text"><code>---
+home: true
+---
+
+::: slot footer
+Copyright © 2022 · xushufa.cn · 无为徐生 &lt;br/&gt;  [浙ICP备2022008289号-1]( http://beian.miit.gov.cn/ ) &lt;img src=&quot;/ba.png&quot; width=&quot;20&quot;&gt; [浙公网安备 33011002016354号]( http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33011002016354 ) 
+:::
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h2 id="二、vuepress-theme-reco"><a href="#二、vuepress-theme-reco" class="header-anchor">#</a> 二、vuepress-theme-reco</h2> <p>使用vuepress-theme-reco构建的博客。</p> <p><a href="https://github.com/scott180/reco-blog" target="_blank" rel="noopener noreferrer">github<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <a href="https://scott180.github.io/reco-blog" target="_blank" rel="noopener noreferrer">reco-blog<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <a href="https://scott180.github.io/reco-calligraphy" target="_blank" rel="noopener noreferrer">reco-calligraphy<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="_2-1-安装"><a href="#_2-1-安装" class="header-anchor">#</a> 2.1 安装</h3> <p>参考 <a href="https://vuepress.vuejs.org/zh/" target="_blank" rel="noopener noreferrer">vuepress<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <a href="https://vuepress-theme-reco.recoluan.com/views/1.x/configJs.html" target="_blank" rel="noopener noreferrer">vuepress-theme-reco<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <a href="https://github.com/vuepress-reco/vuepress-theme-reco-1.x" target="_blank" rel="noopener noreferrer">vuepress-reco<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <a href="https://blog.csdn.net/qq_42937522/article/details/122676915" target="_blank" rel="noopener noreferrer">vuepress-theme-reco 主题优化<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <a href="https://github.com/scott180/vuepress-calligraphy" target="_blank" rel="noopener noreferrer">vuepress-calligraphy<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment"># init</span>
+<span class="token function">npm</span> <span class="token function">install</span> @vuepress-reco/theme-cli <span class="token parameter variable">-g</span>
+theme-cli init my-blog
+
+<span class="token comment"># install</span>
+<span class="token builtin class-name">cd</span> my-blog
+<span class="token function">npm</span> <span class="token function">install</span>
+
+<span class="token comment"># run</span>
+<span class="token function">npm</span> run dev
+
+<span class="token comment"># build</span>
+<span class="token function">npm</span> run build
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>中文路径无效，需要安装插件
+
+npm install -D  vuepress-plugin-permalink-pinyin
+
+module.exports = {
+  plugins: [
+      // 支持中文文件名
+      [
+        &quot;permalink-pinyin&quot;,
+        {
+          lowercase: true, // Converted into lowercase, default: true
+          separator: &quot;-&quot;, // Separator of the slug, default: '-'
+        },
+      ],
+  ]
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h3 id="_2-2-部署"><a href="#_2-2-部署" class="header-anchor">#</a> 2.2 部署</h3> <p>根目录创建 <code>deploy.sh</code> 文件</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token hashbang comment">#!/usr/bin/env sh</span>
+
+# 确保脚本抛出遇到的错误
+set <span class="token operator">-</span>e
+
+# 生成静态文件
+npm run build
+
+# 进入生成的文件夹
+cd <span class="token punctuation">.</span>vuepress<span class="token operator">/</span>dist
+
+# 如果是发布到自定义域名
+# echo <span class="token string">'www.example.com'</span> <span class="token operator">&gt;</span> <span class="token constant">CNAME</span>
+
+git init
+git add <span class="token operator">-</span><span class="token constant">A</span>
+git commit <span class="token operator">-</span>m <span class="token string">'deploy'</span>
+
+# 如果发布到 https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span><span class="token operator">&lt;</span><span class="token constant">USERNAME</span><span class="token operator">&gt;</span><span class="token punctuation">.</span>github<span class="token punctuation">.</span>io
+# git push <span class="token operator">-</span>f git@github<span class="token punctuation">.</span>com<span class="token operator">:</span>scott180<span class="token operator">/</span>scott180<span class="token punctuation">.</span>github<span class="token punctuation">.</span>io<span class="token punctuation">.</span>git master
+
+# 如果发布到 https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span><span class="token operator">&lt;</span><span class="token constant">USERNAME</span><span class="token operator">&gt;</span><span class="token punctuation">.</span>github<span class="token punctuation">.</span>io<span class="token operator">/</span><span class="token operator">&lt;</span><span class="token constant">REPO</span><span class="token operator">&gt;</span>  注意配置 <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">.vuepress\config.js</span><span class="token template-punctuation string">`</span></span> 的 <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">base</span><span class="token template-punctuation string">`</span></span>
+# git push <span class="token operator">-</span>f git@github<span class="token punctuation">.</span>com<span class="token operator">:</span>scott180<span class="token operator">/</span>reco<span class="token operator">-</span>calligraphy<span class="token punctuation">.</span>git master<span class="token operator">:</span>gh<span class="token operator">-</span>pages
+
+cd <span class="token operator">-</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><hr> <p>设置 <code>package.json</code></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+    &quot;scripts&quot;: {
+        &quot;deploy&quot;: &quot;bash deploy.sh&quot;
+      }
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>运行 <code>npm run deploy</code> 即可部署到github静态页面</p> <h3 id="_2-3-备案号"><a href="#_2-3-备案号" class="header-anchor">#</a> 2.3 备案号</h3> <blockquote><p>vuepress 底部添加网站备案号：ICP备案号与公安备案号  <a href="https://vuepress-theme-reco.recoluan.com/views/1.x/configJs.html#%E5%A4%87%E6%A1%88%E4%BF%A1%E6%81%AF%E5%92%8C%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%A7%8B%E6%97%B6%E9%97%B4" target="_blank" rel="noopener noreferrer">备案信息<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>在 .vuepress/config.js 添加备案
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>module.exports = {
+  themeConfig: {
+    record: '浙ICP备2022008289号-1',
+    recordLink: 'http://beian.miit.gov.cn',
+    cyberSecurityRecord: '浙公网安备 33011002016354号',
+    cyberSecurityLink: 'http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33011002016354',
+    startYear: '2022'
+  }
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h2 id="三、插件"><a href="#三、插件" class="header-anchor">#</a> 三、插件</h2> <p><a href="https://vuepress-theme-reco.recoluan.com/views/other/recommend.html" target="_blank" rel="noopener noreferrer">插件广场<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <a href="https://v1.vuepress.vuejs.org/zh/plugin/official/plugin-medium-zoom.html#%E5%AE%89%E8%A3%85" target="_blank" rel="noopener noreferrer">plugin-medium-zoom<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <a href="https://vuepress-community.netlify.app/zh/plugins/medium-zoom/#%E5%AE%89%E8%A3%85" target="_blank" rel="noopener noreferrer">medium-zoom<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="_3-1-阅读量"><a href="#_3-1-阅读量" class="header-anchor">#</a> 3.1 阅读量</h3> <p>参考 <a href="https://heshiyu1996.github.io/blog/tool/vuepress-stat/" target="_blank" rel="noopener noreferrer">Vuepress-阅读量统计<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <a href="https://valine.js.org/" target="_blank" rel="noopener noreferrer">valine<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <a href="https://console.leancloud.cn/apps" target="_blank" rel="noopener noreferrer">leancloud<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>项目 <a href="https://github.com/scott180/vuepress-calligraphy" target="_blank" rel="noopener noreferrer">vuepress-calligraphy<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>yarn add leancloud-storage -S
+
+yarn add valine -S
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>创建<code>Valine.vue</code> 及 继承默认主题，并在<code>Page.vue</code>下引入 <code>&lt;Valine /&gt;</code>。<a href="https://github.com/scott180/vuepress-calligraphy/commit/18f3aefd2928e5e445a200842e61f9fa888575c5" target="_blank" rel="noopener noreferrer">commit<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="_3-2-时间格式化"><a href="#_3-2-时间格式化" class="header-anchor">#</a> 3.2 时间格式化</h3> <p><a href="https://vuepress.vuejs.org/zh/plugin/official/plugin-last-updated.html" target="_blank" rel="noopener noreferrer">plugin-last-updated<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <a href="http://momentjs.cn/" target="_blank" rel="noopener noreferrer">momentjs<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>npm install moment --save
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+<span class="token punctuation">[</span>
+  <span class="token string">'@vuepress/last-updated'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+	<span class="token function-variable function">transformer</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">timestamp<span class="token punctuation">,</span> lang</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+	  <span class="token comment">// 不要忘了安装 moment</span>
+	  <span class="token keyword">const</span> moment <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'moment'</span><span class="token punctuation">)</span>
+	  moment<span class="token punctuation">.</span><span class="token function">locale</span><span class="token punctuation">(</span>lang<span class="token punctuation">)</span>
+	  <span class="token keyword">return</span> <span class="token function">moment</span><span class="token punctuation">(</span>timestamp<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">format</span><span class="token punctuation">(</span><span class="token string">'YYYY-MM-DD HH:mm:ss'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+<span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token literal-property property">locales</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+	<span class="token string-property property">'/'</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+	  <span class="token literal-property property">lang</span><span class="token operator">:</span> <span class="token string">'zh-CN'</span><span class="token punctuation">,</span>
+	  <span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token string">'VuePress'</span><span class="token punctuation">,</span>
+	  <span class="token literal-property property">description</span><span class="token operator">:</span> <span class="token string">'Vue 驱动的静态网站生成器'</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="_3-3-全局搜索"><a href="#_3-3-全局搜索" class="header-anchor">#</a> 3.3 全局搜索</h3> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token literal-property property">themeConfig</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+<span class="token comment">// algolia 全局搜索</span>
+<span class="token literal-property property">algolia</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">apiKey</span><span class="token operator">:</span> <span class="token string">'123'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">indexName</span><span class="token operator">:</span> <span class="token string">'xushufa'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">appId</span><span class="token operator">:</span> <span class="token string">'456'</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+官网	
+<span class="token literal-property property">https</span><span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>crawler<span class="token punctuation">.</span>algolia<span class="token punctuation">.</span>com<span class="token operator">/</span>admin<span class="token operator">/</span>crawlers<span class="token operator">/</span>9f0f4253<span class="token operator">-</span>4d83<span class="token operator">-</span>44d8<span class="token operator">-</span>9f0a<span class="token operator">-</span>472f436581fd<span class="token operator">/</span>overview
+<span class="token literal-property property">https</span><span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>www<span class="token punctuation">.</span>algolia<span class="token punctuation">.</span>com<span class="token operator">/</span>apps<span class="token operator">/</span><span class="token constant">ODP1ID8WCB</span><span class="token operator">/</span>explorer<span class="token operator">/</span>browse<span class="token operator">/</span>xushufa<span class="token operator">?</span>searchMode<span class="token operator">=</span>search
+
+教程
+<span class="token literal-property property">https</span><span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>docsearch<span class="token punctuation">.</span>algolia<span class="token punctuation">.</span>com<span class="token operator">/</span>docs<span class="token operator">/</span>legacy<span class="token operator">/</span>config<span class="token operator">-</span>file<span class="token operator">/</span>
+<span class="token literal-property property">https</span><span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>www<span class="token punctuation">.</span>cnblogs<span class="token punctuation">.</span>com<span class="token operator">/</span>yayujs<span class="token operator">/</span>p<span class="token operator">/</span><span class="token number">15982507</span><span class="token punctuation">.</span>html
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><div class="language-java line-numbers-mode"><pre class="language-java"><code>搜索为空，一般是 pathsToMatch 没配置好
+crawler<span class="token punctuation">.</span>algolia<span class="token punctuation">.</span>com <span class="token operator">--</span> <span class="token class-name">Editor</span> <span class="token operator">--</span> <span class="token keyword">new</span> <span class="token class-name">Crawle</span> <span class="token operator">--</span> pathsToMatch
+
+pathsToMatch<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;https://blog.xushufa.cn/**&quot;</span><span class="token punctuation">]</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="_3-4-流程图"><a href="#_3-4-流程图" class="header-anchor">#</a> 3.4 流程图</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>参考
+https://vuepress-plugin-mermaidjs.efrane.com/
+https://www.npmjs.com/package/vuepress-plugin-mermaidjs?activeTab=readme
+https://github.com/vuejs/vuepress/issues/111
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><div class="language-js line-numbers-mode"><pre class="language-js"><code>下载   
+npm install <span class="token operator">--</span>save<span class="token operator">-</span>dev vuepress<span class="token operator">-</span>plugin<span class="token operator">-</span>mermaidjs
+或
+yarn add <span class="token operator">-</span><span class="token constant">D</span> vuepress<span class="token operator">-</span>plugin<span class="token operator">-</span>mermaidjs
+
+
+配置
+<span class="token comment">// .vuepress/config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token comment">// ...</span>
+    <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">'vuepress-plugin-mermaidjs'</span>
+    <span class="token punctuation">]</span>
+    <span class="token comment">// ...</span>
+<span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><div class="language-js line-numbers-mode"><pre class="language-js"><code>
+引号格式不支持，只能用箭头格式的。
+
+
+添加文件
+<span class="token comment">// .vuepress/components/mermaid.vue</span>
+
+<span class="token operator">&lt;</span>template<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">&quot;mermaid&quot;</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>slot<span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>slot<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">&gt;</span>
+
+<span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">mounted</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">&quot;mermaid/dist/mermaid&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">m</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      m<span class="token punctuation">.</span><span class="token function">initialize</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        <span class="token literal-property property">startOnLoad</span><span class="token operator">:</span> <span class="token boolean">true</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      m<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+
+
+
+使用这种格式的
+### Random mermaid example
+
+<span class="token operator">&lt;</span>mermaid<span class="token operator">&gt;</span>
+graph <span class="token constant">TD</span>
+  <span class="token constant">A</span><span class="token punctuation">[</span>Silvester<span class="token punctuation">]</span> <span class="token operator">--</span><span class="token operator">&gt;</span><span class="token operator">|</span>Get money<span class="token operator">|</span> <span class="token constant">B</span><span class="token punctuation">(</span>Go shopping<span class="token punctuation">)</span>
+  <span class="token constant">B</span> <span class="token operator">--</span><span class="token operator">&gt;</span> <span class="token constant">C</span><span class="token punctuation">{</span>Let me think<span class="token punctuation">}</span>
+  <span class="token constant">C</span> <span class="token operator">--</span><span class="token operator">&gt;</span><span class="token operator">|</span>One<span class="token operator">|</span> <span class="token constant">D</span><span class="token punctuation">[</span>Laptop<span class="token punctuation">]</span>
+  <span class="token constant">C</span> <span class="token operator">--</span><span class="token operator">&gt;</span><span class="token operator">|</span>Two<span class="token operator">|</span> <span class="token constant">E</span><span class="token punctuation">[</span>iPhone<span class="token punctuation">]</span>
+  <span class="token constant">C</span> <span class="token operator">--</span><span class="token operator">&gt;</span><span class="token operator">|</span>Three<span class="token operator">|</span> <span class="token constant">F</span><span class="token punctuation">[</span>Car<span class="token punctuation">]</span>
+  <span class="token constant">C</span> <span class="token operator">--</span><span class="token operator">&gt;</span><span class="token operator">|</span>Four<span class="token operator">|</span> <span class="token constant">F</span><span class="token punctuation">[</span>Mac<span class="token punctuation">]</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>mermaid<span class="token operator">&gt;</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br></div></div><hr> <h3 id="_3-5-图片放大"><a href="#_3-5-图片放大" class="header-anchor">#</a> 3.5 图片放大</h3> <blockquote><p>图片放大</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>yarn add -D @vuepress/plugin-medium-zoom
+# OR npm install -D @vuepress/plugin-medium-zoom
+
+
+module.exports = {
+  plugins: {
+    '@vuepress/medium-zoom': {
+      selector: 'img.zoom-custom-imgs',
+      // medium-zoom options here
+      // See: https://github.com/francoischalifour/medium-zoom#options
+      options: {
+        margin: 16
+      }
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><hr> <div class="language- line-numbers-mode"><pre class="language-text"><code>npm install -D vuepress-plugin-medium-zoom
+
+
+// .vuepress/config.js
+module.exports = {
+  plugins: [
+    [
+      'vuepress-plugin-medium-zoom',
+      {
+        selector: '.my-wrapper .my-img',
+        delay: 1000,
+        options: {
+          margin: 24,
+          background: '#BADA55',
+          scrollOffset: 0,
+        },
+      },
+    ],
+  ],
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><h3 id="_3-6-展示名人名句"><a href="#_3-6-展示名人名句" class="header-anchor">#</a> 3.6 展示名人名句</h3> <blockquote><p>默认随机展示名人名句</p></blockquote> <p>参考 <a href="https://github.com/zpj80231/vuepress-plugin-boxx" target="_blank" rel="noopener noreferrer">vuepress-plugin-boxx<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>在文件<span class="token keyword">package</span><span class="token punctuation">.</span>json中的devDependencies下加入<span class="token string">&quot;vuepress-plugin-boxx&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.0.7&quot;</span>：
+
+
+<span class="token string-property property">&quot;devDependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;vuepress-plugin-boxx&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.0.7&quot;</span>
+<span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>在 vuepress 的config.js中配置plugins：
+
+&quot;plugins&quot;: [
+    [&quot;vuepress-plugin-boxx&quot;]
+]
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token function">npm</span> <span class="token function">install</span>
+
+在文档标题前一行添加 <span class="token operator">&lt;</span>Boxx/<span class="token operator">&gt;</span>
+
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><hr></div> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/vuepress-blog/编程/运维/gitbook部署博客.html" class="prev">
+        gitbook部署博客
+      </a></span> <span class="next"><a href="/vuepress-blog/编程/运维/批量推送布署徐书法项目.html">
+        批量推送布署徐书法项目
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/vuepress-blog/assets/js/app.ee30669a.js" defer></script><script src="/vuepress-blog/assets/js/3.9cedbe4c.js" defer></script><script src="/vuepress-blog/assets/js/2.5f0b3217.js" defer></script><script src="/vuepress-blog/assets/js/20.e7530fec.js" defer></script><script src="/vuepress-blog/assets/js/114.b6f94d18.js" defer></script>
+  </body>
+</html>
